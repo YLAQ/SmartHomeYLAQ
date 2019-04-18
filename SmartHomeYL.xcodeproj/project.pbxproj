@@ -1,0 +1,687 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
+		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
+		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
+		80C92ADD22633AE400D265F1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80C92ADC22633AE400D265F1 /* Assets.xcassets */; };
+		80C92AE022633AE400D265F1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92ADE22633AE400D265F1 /* LaunchScreen.storyboard */; };
+		80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AE922633B2100D265F1 /* HomepageViewController.swift */; };
+		80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */; };
+		80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AED22633B3900D265F1 /* MypageViewController.swift */; };
+		80C92AF822633C4100D265F1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AF522633C1F00D265F1 /* Charts.framework */; };
+		80C92AF922633C4100D265F1 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AF522633C1F00D265F1 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80C92B022263412D00D265F1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AFF2263412C00D265F1 /* RealmSwift.framework */; };
+		80C92B032263412D00D265F1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AFF2263412C00D265F1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80C92B042263412D00D265F1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B012263412C00D265F1 /* Realm.framework */; };
+		80C92B052263412D00D265F1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B012263412C00D265F1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80C92B0722634ACD00D265F1 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B0622634ACD00D265F1 /* database.swift */; };
+		80C92B0E2263685000D265F1 /* LoginpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B0D2263685000D265F1 /* LoginpageViewController.swift */; };
+		80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B1822671A3900D265F1 /* RegisterpageViewController.swift */; };
+		80C92B3A226721A500D265F1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B292267213A00D265F1 /* RxSwift.framework */; };
+		80C92B3B226721A500D265F1 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B292267213A00D265F1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80C92B3E226721AA00D265F1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B2B2267213A00D265F1 /* RxCocoa.framework */; };
+		80C92B3F226721AA00D265F1 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B2B2267213A00D265F1 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B4D226727AC00D265F1 /* RegisterNetworkService.swift */; };
+		80C92B502267296400D265F1 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B4F2267296400D265F1 /* RegisterService.swift */; };
+		80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5122672A7600D265F1 /* RegisterViewModel.swift */; };
+		80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5322672BD500D265F1 /* BindingExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		80C92AF422633C1F00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
+			remoteInfo = Charts;
+		};
+		80C92AF622633C1F00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
+			remoteInfo = ChartsTests;
+		};
+		80C92AFA22633C4100D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A58A4ED274A941CA248EA921;
+			remoteInfo = Charts;
+		};
+		80C92B282267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8A56AD71AD7424700B4673B;
+			remoteInfo = RxSwift;
+		};
+		80C92B2A2267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C809396D1B8A71760088E94D;
+			remoteInfo = RxCocoa;
+		};
+		80C92B2C2267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8093BC71B8A71F00088E94D;
+			remoteInfo = RxBlocking;
+		};
+		80C92B2E2267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C88FA50C1C25C44800CCFEA4;
+			remoteInfo = RxTest;
+		};
+		80C92B302267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83508C31C386F6F0027C24C;
+			remoteInfo = "AllTests-iOS";
+		};
+		80C92B322267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83509841C38740E0027C24C;
+			remoteInfo = "AllTests-tvOS";
+		};
+		80C92B342267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C83509941C38742C0027C24C;
+			remoteInfo = "AllTests-macOS";
+		};
+		80C92B362267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C85BA04B1C3878740075D68E;
+			remoteInfo = Microoptimizations;
+		};
+		80C92B382267213A00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
+			remoteInfo = Benchmarks;
+		};
+		80C92B3C226721A500D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
+			remoteInfo = RxSwift;
+		};
+		80C92B40226721AA00D265F1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = C80938F51B8A71760088E94D;
+			remoteInfo = RxCocoa;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		80C92AFC22633C4200D265F1 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				80C92B3B226721A500D265F1 /* RxSwift.framework in Embed Frameworks */,
+				80C92B052263412D00D265F1 /* Realm.framework in Embed Frameworks */,
+				80C92B032263412D00D265F1 /* RealmSwift.framework in Embed Frameworks */,
+				80C92B3F226721AA00D265F1 /* RxCocoa.framework in Embed Frameworks */,
+				80C92AF922633C4100D265F1 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		80C92ADA22633AE200D265F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		80C92ADC22633AE400D265F1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		80C92ADF22633AE400D265F1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		80C92AE122633AE400D265F1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80C92AE922633B2100D265F1 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
+		80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartpageViewController.swift; sourceTree = "<group>"; };
+		80C92AED22633B3900D265F1 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
+		80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
+		80C92AFF2263412C00D265F1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		80C92B012263412C00D265F1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		80C92B0622634ACD00D265F1 /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
+		80C92B0D2263685000D265F1 /* LoginpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginpageViewController.swift; sourceTree = "<group>"; };
+		80C92B1822671A3900D265F1 /* RegisterpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterpageViewController.swift; sourceTree = "<group>"; };
+		80C92B1C2267213900D265F1 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = "../../RxSwift-master/Rx.xcodeproj"; sourceTree = "<group>"; };
+		80C92B4D226727AC00D265F1 /* RegisterNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNetworkService.swift; sourceTree = "<group>"; };
+		80C92B4F2267296400D265F1 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
+		80C92B5122672A7600D265F1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
+		80C92B5322672BD500D265F1 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		80C92ACF22633AE200D265F1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C92B3A226721A500D265F1 /* RxSwift.framework in Frameworks */,
+				80C92B042263412D00D265F1 /* Realm.framework in Frameworks */,
+				80C92B022263412D00D265F1 /* RealmSwift.framework in Frameworks */,
+				80C92B3E226721AA00D265F1 /* RxCocoa.framework in Frameworks */,
+				80C92AF822633C4100D265F1 /* Charts.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		80C92AC922633AE200D265F1 = {
+			isa = PBXGroup;
+			children = (
+				80C92B1C2267213900D265F1 /* Rx.xcodeproj */,
+				80C92B012263412C00D265F1 /* Realm.framework */,
+				80C92AFF2263412C00D265F1 /* RealmSwift.framework */,
+				80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */,
+				80C92AD422633AE200D265F1 /* SmartHomeYL */,
+				80C92AD322633AE200D265F1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		80C92AD322633AE200D265F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80C92AD222633AE200D265F1 /* SmartHomeYL.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C92AD422633AE200D265F1 /* SmartHomeYL */ = {
+			isa = PBXGroup;
+			children = (
+				80C92ADC22633AE400D265F1 /* Assets.xcassets */,
+				80C92AE822633B0B00D265F1 /* ViewControllers */,
+				80C92AD522633AE200D265F1 /* AppDelegate.swift */,
+				80C92AD722633AE200D265F1 /* ViewController.swift */,
+				80C92AD922633AE200D265F1 /* Main.storyboard */,
+				80C92ADE22633AE400D265F1 /* LaunchScreen.storyboard */,
+				80C92AE122633AE400D265F1 /* Info.plist */,
+				80C92B0622634ACD00D265F1 /* database.swift */,
+			);
+			path = SmartHomeYL;
+			sourceTree = "<group>";
+		};
+		80C92AE822633B0B00D265F1 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				80C92B4C2267277000D265F1 /* Register */,
+				80C92B0D2263685000D265F1 /* LoginpageViewController.swift */,
+				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
+				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
+				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		80C92AF022633C1F00D265F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80C92AF522633C1F00D265F1 /* Charts.framework */,
+				80C92AF722633C1F00D265F1 /* ChartsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C92B1D2267213900D265F1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				80C92B292267213A00D265F1 /* RxSwift.framework */,
+				80C92B2B2267213A00D265F1 /* RxCocoa.framework */,
+				80C92B2D2267213A00D265F1 /* RxBlocking.framework */,
+				80C92B2F2267213A00D265F1 /* RxTest.framework */,
+				80C92B312267213A00D265F1 /* AllTests-iOS.xctest */,
+				80C92B332267213A00D265F1 /* AllTests-tvOS.xctest */,
+				80C92B352267213A00D265F1 /* AllTests-macOS.xctest */,
+				80C92B372267213A00D265F1 /* PerformanceTests.app */,
+				80C92B392267213A00D265F1 /* Benchmarks.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		80C92B4C2267277000D265F1 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				80C92B4D226727AC00D265F1 /* RegisterNetworkService.swift */,
+				80C92B4F2267296400D265F1 /* RegisterService.swift */,
+				80C92B5122672A7600D265F1 /* RegisterViewModel.swift */,
+				80C92B5322672BD500D265F1 /* BindingExtensions.swift */,
+				80C92B1822671A3900D265F1 /* RegisterpageViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		80C92AD122633AE200D265F1 /* SmartHomeYL */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 80C92AE422633AE400D265F1 /* Build configuration list for PBXNativeTarget "SmartHomeYL" */;
+			buildPhases = (
+				80C92ACE22633AE200D265F1 /* Sources */,
+				80C92ACF22633AE200D265F1 /* Frameworks */,
+				80C92AD022633AE200D265F1 /* Resources */,
+				80C92AFC22633C4200D265F1 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				80C92AFB22633C4100D265F1 /* PBXTargetDependency */,
+				80C92B3D226721A500D265F1 /* PBXTargetDependency */,
+				80C92B41226721AA00D265F1 /* PBXTargetDependency */,
+			);
+			name = SmartHomeYL;
+			productName = SmartHomeYL;
+			productReference = 80C92AD222633AE200D265F1 /* SmartHomeYL.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		80C92ACA22633AE200D265F1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "yu li";
+				TargetAttributes = {
+					80C92AD122633AE200D265F1 = {
+						CreatedOnToolsVersion = 10.2;
+					};
+				};
+			};
+			buildConfigurationList = 80C92ACD22633AE200D265F1 /* Build configuration list for PBXProject "SmartHomeYL" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 80C92AC922633AE200D265F1;
+			productRefGroup = 80C92AD322633AE200D265F1 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 80C92AF022633C1F00D265F1 /* Products */;
+					ProjectRef = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
+				},
+				{
+					ProductGroup = 80C92B1D2267213900D265F1 /* Products */;
+					ProjectRef = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				80C92AD122633AE200D265F1 /* SmartHomeYL */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		80C92AF522633C1F00D265F1 /* Charts.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Charts.framework;
+			remoteRef = 80C92AF422633C1F00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92AF722633C1F00D265F1 /* ChartsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ChartsTests.xctest;
+			remoteRef = 80C92AF622633C1F00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B292267213A00D265F1 /* RxSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxSwift.framework;
+			remoteRef = 80C92B282267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B2B2267213A00D265F1 /* RxCocoa.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxCocoa.framework;
+			remoteRef = 80C92B2A2267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B2D2267213A00D265F1 /* RxBlocking.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxBlocking.framework;
+			remoteRef = 80C92B2C2267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B2F2267213A00D265F1 /* RxTest.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RxTest.framework;
+			remoteRef = 80C92B2E2267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B312267213A00D265F1 /* AllTests-iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-iOS.xctest";
+			remoteRef = 80C92B302267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B332267213A00D265F1 /* AllTests-tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-tvOS.xctest";
+			remoteRef = 80C92B322267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B352267213A00D265F1 /* AllTests-macOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AllTests-macOS.xctest";
+			remoteRef = 80C92B342267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B372267213A00D265F1 /* PerformanceTests.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			name = PerformanceTests.app;
+			path = Microoptimizations.app;
+			remoteRef = 80C92B362267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		80C92B392267213A00D265F1 /* Benchmarks.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = Benchmarks.xctest;
+			remoteRef = 80C92B382267213A00D265F1 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		80C92AD022633AE200D265F1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C92AE022633AE400D265F1 /* LaunchScreen.storyboard in Resources */,
+				80C92ADD22633AE400D265F1 /* Assets.xcassets in Resources */,
+				80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		80C92ACE22633AE200D265F1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
+				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
+				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
+				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
+				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
+				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
+				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
+				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,
+				80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */,
+				80C92B0E2263685000D265F1 /* LoginpageViewController.swift in Sources */,
+				80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */,
+				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		80C92AFB22633C4100D265F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Charts;
+			targetProxy = 80C92AFA22633C4100D265F1 /* PBXContainerItemProxy */;
+		};
+		80C92B3D226721A500D265F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxSwift;
+			targetProxy = 80C92B3C226721A500D265F1 /* PBXContainerItemProxy */;
+		};
+		80C92B41226721AA00D265F1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RxCocoa;
+			targetProxy = 80C92B40226721AA00D265F1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		80C92AD922633AE200D265F1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C92ADA22633AE200D265F1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		80C92ADE22633AE400D265F1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				80C92ADF22633AE400D265F1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		80C92AE222633AE400D265F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		80C92AE322633AE400D265F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		80C92AE522633AE400D265F1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R393YN2P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SmartHomeYL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		80C92AE622633AE400D265F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = R393YN2P93;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = SmartHomeYL/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		80C92ACD22633AE200D265F1 /* Build configuration list for PBXProject "SmartHomeYL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C92AE222633AE400D265F1 /* Debug */,
+				80C92AE322633AE400D265F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		80C92AE422633AE400D265F1 /* Build configuration list for PBXNativeTarget "SmartHomeYL" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				80C92AE522633AE400D265F1 /* Debug */,
+				80C92AE622633AE400D265F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 80C92ACA22633AE200D265F1 /* Project object */;
+}
