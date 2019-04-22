@@ -56,7 +56,7 @@ class RegisterService {
         }
         
         //判断电话位数
-        if numberOfCharacters < 11 {
+        if numberOfCharacters != 11 {
             return .failed(message: "电话号码格式有误")
         }
         

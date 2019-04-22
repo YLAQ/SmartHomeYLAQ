@@ -1,0 +1,6 @@
+module Pods_SmartHomeYL {
+  umbrella header "Pods-SmartHomeYL-umbrella.h"
+
+  export *
+  module * { export * }
+}

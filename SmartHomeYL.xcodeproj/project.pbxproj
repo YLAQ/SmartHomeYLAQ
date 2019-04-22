@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */; };
+		806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */; };
+		806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 806D3FD22269D02D008DBE49 /* SetUpViewController.swift */; };
+		8086D45C2269DCF6006CC125 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45A2269DCF5006CC125 /* RealmSwift.framework */; };
+		8086D45D2269DCF6006CC125 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45A2269DCF5006CC125 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8086D45E2269DCF6006CC125 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; };
+		8086D45F2269DCF6006CC125 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -15,125 +22,16 @@
 		80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AE922633B2100D265F1 /* HomepageViewController.swift */; };
 		80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */; };
 		80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AED22633B3900D265F1 /* MypageViewController.swift */; };
-		80C92AF822633C4100D265F1 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AF522633C1F00D265F1 /* Charts.framework */; };
-		80C92AF922633C4100D265F1 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AF522633C1F00D265F1 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		80C92B022263412D00D265F1 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AFF2263412C00D265F1 /* RealmSwift.framework */; };
-		80C92B032263412D00D265F1 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92AFF2263412C00D265F1 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		80C92B042263412D00D265F1 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B012263412C00D265F1 /* Realm.framework */; };
-		80C92B052263412D00D265F1 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B012263412C00D265F1 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80C92B0722634ACD00D265F1 /* database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B0622634ACD00D265F1 /* database.swift */; };
 		80C92B0E2263685000D265F1 /* LoginpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B0D2263685000D265F1 /* LoginpageViewController.swift */; };
 		80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B1822671A3900D265F1 /* RegisterpageViewController.swift */; };
-		80C92B3A226721A500D265F1 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B292267213A00D265F1 /* RxSwift.framework */; };
-		80C92B3B226721A500D265F1 /* RxSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B292267213A00D265F1 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		80C92B3E226721AA00D265F1 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B2B2267213A00D265F1 /* RxCocoa.framework */; };
-		80C92B3F226721AA00D265F1 /* RxCocoa.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 80C92B2B2267213A00D265F1 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B4D226727AC00D265F1 /* RegisterNetworkService.swift */; };
 		80C92B502267296400D265F1 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B4F2267296400D265F1 /* RegisterService.swift */; };
 		80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5122672A7600D265F1 /* RegisterViewModel.swift */; };
 		80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5322672BD500D265F1 /* BindingExtensions.swift */; };
+		80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */; };
+		EC0550DE94EFED3B13ED0761 /* libPods-SmartHomeYL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		80C92AF422633C1F00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 65AD9E95D9ED4DC0BD73A743;
-			remoteInfo = Charts;
-		};
-		80C92AF622633C1F00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 1CBBC58C6CE1EBEE9852CE41;
-			remoteInfo = ChartsTests;
-		};
-		80C92AFA22633C4100D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A58A4ED274A941CA248EA921;
-			remoteInfo = Charts;
-		};
-		80C92B282267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8A56AD71AD7424700B4673B;
-			remoteInfo = RxSwift;
-		};
-		80C92B2A2267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C809396D1B8A71760088E94D;
-			remoteInfo = RxCocoa;
-		};
-		80C92B2C2267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8093BC71B8A71F00088E94D;
-			remoteInfo = RxBlocking;
-		};
-		80C92B2E2267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C88FA50C1C25C44800CCFEA4;
-			remoteInfo = RxTest;
-		};
-		80C92B302267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83508C31C386F6F0027C24C;
-			remoteInfo = "AllTests-iOS";
-		};
-		80C92B322267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83509841C38740E0027C24C;
-			remoteInfo = "AllTests-tvOS";
-		};
-		80C92B342267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C83509941C38742C0027C24C;
-			remoteInfo = "AllTests-macOS";
-		};
-		80C92B362267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C85BA04B1C3878740075D68E;
-			remoteInfo = Microoptimizations;
-		};
-		80C92B382267213A00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = C8E8BA551E2C181A00A4AC2C;
-			remoteInfo = Benchmarks;
-		};
-		80C92B3C226721A500D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C8A56AD61AD7424700B4673B;
-			remoteInfo = RxSwift;
-		};
-		80C92B40226721AA00D265F1 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = C80938F51B8A71760088E94D;
-			remoteInfo = RxCocoa;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		80C92AFC22633C4200D265F1 /* Embed Frameworks */ = {
@@ -142,11 +40,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				80C92B3B226721A500D265F1 /* RxSwift.framework in Embed Frameworks */,
-				80C92B052263412D00D265F1 /* Realm.framework in Embed Frameworks */,
-				80C92B032263412D00D265F1 /* RealmSwift.framework in Embed Frameworks */,
-				80C92B3F226721AA00D265F1 /* RxCocoa.framework in Embed Frameworks */,
-				80C92AF922633C4100D265F1 /* Charts.framework in Embed Frameworks */,
+				8086D45F2269DCF6006CC125 /* Realm.framework in Embed Frameworks */,
+				8086D45D2269DCF6006CC125 /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -154,6 +49,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		20F77CF9766C56BA1853C6B7 /* Pods-SmartHomeYL.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeYL.release.xcconfig"; path = "Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL.release.xcconfig"; sourceTree = "<group>"; };
+		806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemLogViewController.swift; sourceTree = "<group>"; };
+		806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStoreViewController.swift; sourceTree = "<group>"; };
+		806D3FD22269D02D008DBE49 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
+		8086D45A2269DCF5006CC125 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		8086D45B2269DCF6006CC125 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -164,17 +65,16 @@
 		80C92AE922633B2100D265F1 /* HomepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageViewController.swift; sourceTree = "<group>"; };
 		80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SmartpageViewController.swift; sourceTree = "<group>"; };
 		80C92AED22633B3900D265F1 /* MypageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MypageViewController.swift; sourceTree = "<group>"; };
-		80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Charts.xcodeproj; path = "../../Charts-master/Charts.xcodeproj"; sourceTree = "<group>"; };
-		80C92AFF2263412C00D265F1 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
-		80C92B012263412C00D265F1 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 		80C92B0622634ACD00D265F1 /* database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = database.swift; sourceTree = "<group>"; };
 		80C92B0D2263685000D265F1 /* LoginpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginpageViewController.swift; sourceTree = "<group>"; };
 		80C92B1822671A3900D265F1 /* RegisterpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterpageViewController.swift; sourceTree = "<group>"; };
-		80C92B1C2267213900D265F1 /* Rx.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Rx.xcodeproj; path = "../../RxSwift-master/Rx.xcodeproj"; sourceTree = "<group>"; };
 		80C92B4D226727AC00D265F1 /* RegisterNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterNetworkService.swift; sourceTree = "<group>"; };
 		80C92B4F2267296400D265F1 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		80C92B5122672A7600D265F1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		80C92B5322672BD500D265F1 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyManageViewController.swift; sourceTree = "<group>"; };
+		F4F3939566B44F1C3A11A6EA /* Pods-SmartHomeYL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeYL.debug.xcconfig"; path = "Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL.debug.xcconfig"; sourceTree = "<group>"; };
+		F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartHomeYL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -182,26 +82,53 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80C92B3A226721A500D265F1 /* RxSwift.framework in Frameworks */,
-				80C92B042263412D00D265F1 /* Realm.framework in Frameworks */,
-				80C92B022263412D00D265F1 /* RealmSwift.framework in Frameworks */,
-				80C92B3E226721AA00D265F1 /* RxCocoa.framework in Frameworks */,
-				80C92AF822633C4100D265F1 /* Charts.framework in Frameworks */,
+				8086D45E2269DCF6006CC125 /* Realm.framework in Frameworks */,
+				8086D45C2269DCF6006CC125 /* RealmSwift.framework in Frameworks */,
+				EC0550DE94EFED3B13ED0761 /* libPods-SmartHomeYL.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5F9D84E50BF8C321C8CD2D1F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F4F3939566B44F1C3A11A6EA /* Pods-SmartHomeYL.debug.xcconfig */,
+				20F77CF9766C56BA1853C6B7 /* Pods-SmartHomeYL.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		806D3FCF2269CF6B008DBE49 /* MyPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
+				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
+				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
+				806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */,
+				806D3FD22269D02D008DBE49 /* SetUpViewController.swift */,
+			);
+			path = MyPageVC;
+			sourceTree = "<group>";
+		};
+		80B199092269C3DE002EFE23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		80C92AC922633AE200D265F1 = {
 			isa = PBXGroup;
 			children = (
-				80C92B1C2267213900D265F1 /* Rx.xcodeproj */,
-				80C92B012263412C00D265F1 /* Realm.framework */,
-				80C92AFF2263412C00D265F1 /* RealmSwift.framework */,
-				80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */,
+				8086D45B2269DCF6006CC125 /* Realm.framework */,
+				8086D45A2269DCF5006CC125 /* RealmSwift.framework */,
 				80C92AD422633AE200D265F1 /* SmartHomeYL */,
 				80C92AD322633AE200D265F1 /* Products */,
+				80B199092269C3DE002EFE23 /* Frameworks */,
+				5F9D84E50BF8C321C8CD2D1F /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -218,7 +145,6 @@
 			children = (
 				80C92ADC22633AE400D265F1 /* Assets.xcassets */,
 				80C92AE822633B0B00D265F1 /* ViewControllers */,
-				80C92AD522633AE200D265F1 /* AppDelegate.swift */,
 				80C92AD722633AE200D265F1 /* ViewController.swift */,
 				80C92AD922633AE200D265F1 /* Main.storyboard */,
 				80C92ADE22633AE400D265F1 /* LaunchScreen.storyboard */,
@@ -231,38 +157,14 @@
 		80C92AE822633B0B00D265F1 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				80C92B4C2267277000D265F1 /* Register */,
+				80C92AD522633AE200D265F1 /* AppDelegate.swift */,
 				80C92B0D2263685000D265F1 /* LoginpageViewController.swift */,
+				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
-				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
+				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		80C92AF022633C1F00D265F1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80C92AF522633C1F00D265F1 /* Charts.framework */,
-				80C92AF722633C1F00D265F1 /* ChartsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		80C92B1D2267213900D265F1 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				80C92B292267213A00D265F1 /* RxSwift.framework */,
-				80C92B2B2267213A00D265F1 /* RxCocoa.framework */,
-				80C92B2D2267213A00D265F1 /* RxBlocking.framework */,
-				80C92B2F2267213A00D265F1 /* RxTest.framework */,
-				80C92B312267213A00D265F1 /* AllTests-iOS.xctest */,
-				80C92B332267213A00D265F1 /* AllTests-tvOS.xctest */,
-				80C92B352267213A00D265F1 /* AllTests-macOS.xctest */,
-				80C92B372267213A00D265F1 /* PerformanceTests.app */,
-				80C92B392267213A00D265F1 /* Benchmarks.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		80C92B4C2267277000D265F1 /* Register */ = {
@@ -284,6 +186,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 80C92AE422633AE400D265F1 /* Build configuration list for PBXNativeTarget "SmartHomeYL" */;
 			buildPhases = (
+				4560C82CE270EA9726CDAC26 /* [CP] Check Pods Manifest.lock */,
 				80C92ACE22633AE200D265F1 /* Sources */,
 				80C92ACF22633AE200D265F1 /* Frameworks */,
 				80C92AD022633AE200D265F1 /* Resources */,
@@ -292,9 +195,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				80C92AFB22633C4100D265F1 /* PBXTargetDependency */,
-				80C92B3D226721A500D265F1 /* PBXTargetDependency */,
-				80C92B41226721AA00D265F1 /* PBXTargetDependency */,
 			);
 			name = SmartHomeYL;
 			productName = SmartHomeYL;
@@ -327,103 +227,12 @@
 			mainGroup = 80C92AC922633AE200D265F1;
 			productRefGroup = 80C92AD322633AE200D265F1 /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 80C92AF022633C1F00D265F1 /* Products */;
-					ProjectRef = 80C92AEF22633C1F00D265F1 /* Charts.xcodeproj */;
-				},
-				{
-					ProductGroup = 80C92B1D2267213900D265F1 /* Products */;
-					ProjectRef = 80C92B1C2267213900D265F1 /* Rx.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				80C92AD122633AE200D265F1 /* SmartHomeYL */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		80C92AF522633C1F00D265F1 /* Charts.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Charts.framework;
-			remoteRef = 80C92AF422633C1F00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92AF722633C1F00D265F1 /* ChartsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = ChartsTests.xctest;
-			remoteRef = 80C92AF622633C1F00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B292267213A00D265F1 /* RxSwift.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxSwift.framework;
-			remoteRef = 80C92B282267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B2B2267213A00D265F1 /* RxCocoa.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxCocoa.framework;
-			remoteRef = 80C92B2A2267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B2D2267213A00D265F1 /* RxBlocking.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxBlocking.framework;
-			remoteRef = 80C92B2C2267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B2F2267213A00D265F1 /* RxTest.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = RxTest.framework;
-			remoteRef = 80C92B2E2267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B312267213A00D265F1 /* AllTests-iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-iOS.xctest";
-			remoteRef = 80C92B302267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B332267213A00D265F1 /* AllTests-tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-tvOS.xctest";
-			remoteRef = 80C92B322267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B352267213A00D265F1 /* AllTests-macOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "AllTests-macOS.xctest";
-			remoteRef = 80C92B342267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B372267213A00D265F1 /* PerformanceTests.app */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.application;
-			name = PerformanceTests.app;
-			path = Microoptimizations.app;
-			remoteRef = 80C92B362267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		80C92B392267213A00D265F1 /* Benchmarks.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = Benchmarks.xctest;
-			remoteRef = 80C92B382267213A00D265F1 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		80C92AD022633AE200D265F1 /* Resources */ = {
@@ -438,6 +247,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4560C82CE270EA9726CDAC26 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SmartHomeYL-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		80C92ACE22633AE200D265F1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -447,36 +281,22 @@
 				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
+				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
 				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,
+				80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */,
 				80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */,
 				80C92B0E2263685000D265F1 /* LoginpageViewController.swift in Sources */,
 				80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */,
+				806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */,
+				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,
 				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		80C92AFB22633C4100D265F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Charts;
-			targetProxy = 80C92AFA22633C4100D265F1 /* PBXContainerItemProxy */;
-		};
-		80C92B3D226721A500D265F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxSwift;
-			targetProxy = 80C92B3C226721A500D265F1 /* PBXContainerItemProxy */;
-		};
-		80C92B41226721AA00D265F1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = RxCocoa;
-			targetProxy = 80C92B40226721AA00D265F1 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		80C92AD922633AE200D265F1 /* Main.storyboard */ = {
@@ -616,6 +436,7 @@
 		};
 		80C92AE522633AE400D265F1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F4F3939566B44F1C3A11A6EA /* Pods-SmartHomeYL.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -639,6 +460,7 @@
 		};
 		80C92AE622633AE400D265F1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20F77CF9766C56BA1853C6B7 /* Pods-SmartHomeYL.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;

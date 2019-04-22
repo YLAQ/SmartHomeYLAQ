@@ -7,9 +7,10 @@
 //
 
 import UIKit
-import RxSwift
-import RxCocoa
 import RealmSwift
+import RxCocoa
+import RxSwift
+
 class RegisterpageViewController: UIViewController {
 
     //用户名输入框、以及验证结果显示标签
@@ -35,7 +36,6 @@ class RegisterpageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
         
         //初始化ViewModel
         let viewModel = RegisterViewModel(
@@ -96,6 +96,7 @@ class RegisterpageViewController: UIViewController {
                 }
                 //打印出数据库地址
                 print(realm.configuration.fileURL ?? "")
+//                self.dismiss(animated: false, completion: nil)
             })
             .disposed(by: disposeBag)
     }
@@ -104,7 +105,10 @@ class RegisterpageViewController: UIViewController {
     func showMessage(_ message: String) {
         let alertController = UIAlertController(title: nil,
                                                 message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "确定", style: .cancel, handler: nil)
+        let okAction = UIAlertAction(title: "确定", style: .cancel, handler: { //点击确定返回登录界面
+            action in
+            self.dismiss(animated: false, completion: nil)
+        })
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
     }

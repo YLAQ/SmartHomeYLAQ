@@ -15,9 +15,6 @@ class LoginpageViewController: UIViewController,   UITextFieldDelegate {
     var txtPwd:UITextField!
     var loginButton:UIButton!
     var registerButton:UIButton!
-//    @IBOutlet weak var txtUser: UITextField!
-//    @IBOutlet weak var txtPwd: UITextField!
-//    @IBOutlet weak var loginButton: UIButton!
     
     //左手离脑袋的距离
     var offsetLeftHand:CGFloat = 60
@@ -33,15 +30,14 @@ class LoginpageViewController: UIViewController,   UITextFieldDelegate {
     
     //登录框状态
     var showType:LoginShowType = LoginShowType.NONE
-    
+    //输入为空提示
     func showMsgbox(_message: String, _title: String = "哎呀"){
-        
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
         let btnOK = UIAlertAction(title: "好的", style: .default, handler: nil)
         alert.addAction(btnOK)
         self.present(alert, animated: true, completion: nil)
-        
     }
+    
     //登录点击事件
     @objc func handleLogin(sender:UIButton){
         if txtUser.text == ""{
@@ -52,19 +48,32 @@ class LoginpageViewController: UIViewController,   UITextFieldDelegate {
             showMsgbox(_message: "密码不能为空噢")
             return
         }
-        let realm = try! Realm()
-        let user = Users()
-        user.name = self.txtUser.text!
-        user.password = self.txtPwd.text!
+        let user = try! Realm().objects(Users.self)
         //打印出数据库地址
-        print(realm.configuration.fileURL ?? "")
+        if user.count == 0 {
+            showMsgbox(_message: "不存在该用户，请先注册~")
+        } else {
+            for item in user {
+                if txtUser.text == item.name && txtPwd.text == item.password{
+                    let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tabpage")
+                    //推出新的Controller
+                    self.present(vc, animated: true, completion: nil)
+                    //保存用户名
+                    UserDefaults.standard.setValue(item.name, forKey: "userName")
+                } else {
+                    showMsgbox(_message: "帐号或密码输入错误")
+                    return
+                }
+            }
+        }
+        
     }
     
     //注册点击事件
     @objc func handleRegister(sender:UIButton){
-        let VC=RegisterpageViewController()
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Registerpage")
         //推出新的Controller
-        self.present(VC, animated: false, completion: nil)
+        self.present(vc, animated: true, completion: nil)
     }
     
     
