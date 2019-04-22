@@ -103,7 +103,6 @@
 		806D3FCF2269CF6B008DBE49 /* MyPageVC */ = {
 			isa = PBXGroup;
 			children = (
-				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
 				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
 				806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */,
@@ -162,6 +161,7 @@
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
+				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);
 			path = ViewControllers;

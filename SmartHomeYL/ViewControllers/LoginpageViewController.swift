@@ -49,7 +49,7 @@ class LoginpageViewController: UIViewController,   UITextFieldDelegate {
             return
         }
         let user = try! Realm().objects(Users.self)
-        //打印出数据库地址
+        //判断用户是否存在数据库
         if user.count == 0 {
             showMsgbox(_message: "不存在该用户，请先注册~")
         } else {
