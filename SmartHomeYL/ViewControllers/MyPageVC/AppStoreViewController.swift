@@ -18,7 +18,11 @@ class AppStoreViewController: UIViewController {
         //弹出消息框
         let alertController = UIAlertController(title: "觉得好用的话，给我个评价吧！",
                                                 message: nil, preferredStyle: .alert)
-        let cancelAction = UIAlertAction(title: "暂不评价", style: .cancel, handler: nil)
+        let cancelAction = UIAlertAction(title: "暂不评价", style: .default,
+                                         handler: {
+                                            action in
+                                            self.back()
+        })
         let okAction = UIAlertAction(title: "好的", style: .default,
                                      handler: {
                                         action in
@@ -44,6 +48,10 @@ class AppStoreViewController: UIViewController {
                 UIApplication.shared.openURL(url)
             }
         }
+    }
+    
+    func back() {
+         self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

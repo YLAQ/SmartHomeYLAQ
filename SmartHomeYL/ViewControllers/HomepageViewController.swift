@@ -47,6 +47,14 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var pmLable: UILabel! //pm2.5
     @IBOutlet weak var tips: UITextView! //小贴士
     
+    //添加设备按钮点击
+    @IBAction func addEquBtn(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddEquipmentpage")
+        //推出新的Controller
+        self.present(vc, animated: true, completion: nil)
+    }
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         userName.text = "\(usernameexit()) 的家"

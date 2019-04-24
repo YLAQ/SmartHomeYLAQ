@@ -14,6 +14,9 @@
 		8086D45D2269DCF6006CC125 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45A2269DCF5006CC125 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8086D45E2269DCF6006CC125 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; };
 		8086D45F2269DCF6006CC125 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */; };
+		8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D464226ED249006CC125 /* ModifyViewController.swift */; };
+		8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D468226F38BC006CC125 /* FeedbackViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -55,6 +58,9 @@
 		806D3FD22269D02D008DBE49 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		8086D45A2269DCF5006CC125 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		8086D45B2269DCF6006CC125 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
+		8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipmentViewController.swift; sourceTree = "<group>"; };
+		8086D464226ED249006CC125 /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
+		8086D468226F38BC006CC125 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,8 +109,10 @@
 		806D3FCF2269CF6B008DBE49 /* MyPageVC */ = {
 			isa = PBXGroup;
 			children = (
+				8086D464226ED249006CC125 /* ModifyViewController.swift */,
 				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
 				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
+				8086D468226F38BC006CC125 /* FeedbackViewController.swift */,
 				806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */,
 				806D3FD22269D02D008DBE49 /* SetUpViewController.swift */,
 			);
@@ -160,6 +168,7 @@
 				80C92B0D2263685000D265F1 /* LoginpageViewController.swift */,
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
+				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
 				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
 				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
@@ -278,7 +287,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
+				8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */,
 				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
+				8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
@@ -292,6 +303,7 @@
 				80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */,
 				806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */,
 				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,
+				8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */,
 				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

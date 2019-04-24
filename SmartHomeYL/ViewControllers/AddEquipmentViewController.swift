@@ -1,25 +1,30 @@
 //
-//  SetUpViewController.swift
+//  AddEquipmentViewController.swift
 //  SmartHomeYL
 //
-//  Created by hua li on 2019/4/19.
+//  Created by hua li on 2019/4/23.
 //  Copyright © 2019 yu li. All rights reserved.
 //
 
 import UIKit
 
-class SetUpViewController: UIViewController {
+class AddEquipmentViewController: UIViewController {
 
+    let addButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: nil)
+    let cameraButton = UIBarButtonItem(barButtonSystemItem: .camera, target: self, action: nil)
+    let editButton = UIBarButtonItem(barButtonSystemItem: .edit, target: self, action: nil)
+    
+    
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //同时添加多个按钮
+        self.navigationItem.rightBarButtonItems = [addButton,cameraButton,editButton]
         // Do any additional setup after loading the view.
     }
     
-    //返回按钮
-    @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
-    }
+
     /*
     // MARK: - Navigation
 

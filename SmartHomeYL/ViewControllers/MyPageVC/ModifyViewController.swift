@@ -1,25 +1,25 @@
 //
-//  SetUpViewController.swift
+//  ModifyViewController.swift
 //  SmartHomeYL
 //
-//  Created by hua li on 2019/4/19.
+//  Created by hua li on 2019/4/23.
 //  Copyright © 2019 yu li. All rights reserved.
 //
 
 import UIKit
 
-class SetUpViewController: UIViewController {
+class ModifyViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
-    
     //返回按钮
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
     /*
     // MARK: - Navigation
 

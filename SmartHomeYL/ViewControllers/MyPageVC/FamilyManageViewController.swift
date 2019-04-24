@@ -12,11 +12,15 @@ class FamilyManageViewController: UIViewController {
     
     var itemString:String?
     
-    @IBOutlet weak var textField: UITextField!
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+    }
+    
+    //返回按钮
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {

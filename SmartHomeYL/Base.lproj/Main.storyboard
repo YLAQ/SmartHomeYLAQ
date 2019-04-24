@@ -42,6 +42,19 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRN-ws-IEW">
                                 <rect key="frame" x="16" y="331" width="343" height="287"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEK-l2-8eL">
+                                        <rect key="frame" x="128" y="195" width="86" height="38"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <state key="normal" title="添加设备">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addEquBtn:" destination="YH0-tg-V7G" eventType="touchUpInside" id="qMK-rM-LoL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.69795552599999999" green="0.80937545320000004" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </scrollView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yOV-OP-Nbn">
@@ -97,7 +110,11 @@
                                 <rect key="frame" x="16" y="188" width="343" height="135"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <string key="text">改善空气质量小建议：
+1. 开窗通风。
+开窗通风是最为常见也是最为简单的改善室内空气质量的方法了，即使是在冬季也要隔一段时间就进行室内通风，短时间的也可以，但是一定要记得开窗通风。开窗通风有利于室内的空气流通，提高空气质量。但是如果是北方干燥，而且沙尘较多的地区，就要注意开窗通风的时间了，平时最好是紧闭门窗，可以在雨雪过后的天气打开门窗通风，这个时候空气清新，通风最好。一天中，不要在傍晚的时候通风，可以在空气湿度较好早晨，等到阳光出来的时候，可以拉上纱帘。
+2. 绿色植物。
+种植绿色植物不仅有很好的观赏作用，同时也有改善空气质量的作用，常见的改善空气质量小能手有虎尾兰、芦荟、吊兰等绿植。如果是刚装修过的房间，也可以通过使用活性炭来清除室内的有害物质，最好是每十平米放一盆。</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
@@ -165,17 +182,35 @@
                                         <rect key="frame" x="8" y="13" width="66" height="66"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lHQ-bf-bCq">
-                                        <rect key="frame" x="261" y="29" width="62" height="30"/>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zw0-qG-oWd">
+                                        <rect key="frame" x="261" y="11" width="62" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="修改资料"/>
                                         <connections>
-                                            <segue destination="Meo-6i-SeP" kind="show" id="F23-Va-vuM"/>
+                                            <segue destination="Meo-6i-SeP" kind="show" id="k4S-PU-xh3"/>
                                         </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.69795552599999999" green="0.80937545320000004" blue="0.96080166099999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eil-57-aUB">
+                                <rect key="frame" x="144" y="554" width="86" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="退出登录"/>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="kbt-0A-9DH" eventType="touchUpInside" id="Jq4-hF-svt"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MNj-tw-36T">
+                                <rect key="frame" x="16" y="165" width="343" height="381"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kbt-0A-9DH" id="Mdy-Iu-E7V"/>
+                                    <outlet property="delegate" destination="kbt-0A-9DH" id="V2t-lR-Er3"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Ffq-W4-vtv"/>
@@ -184,29 +219,33 @@
                     <navigationItem key="navigationItem" title="Title" id="tYM-tW-f0v"/>
                     <connections>
                         <outlet property="hp" destination="Wkg-AM-XJy" id="Ut7-XG-1Dk"/>
-                        <outlet property="modifyBtn" destination="lHQ-bf-bCq" id="jUu-HM-yry"/>
+                        <outlet property="table" destination="MNj-tw-36T" id="Kib-SC-pNF"/>
                         <outlet property="tel" destination="0r9-dF-vC5" id="5af-Rv-Ihm"/>
                         <outlet property="username" destination="76U-ZG-knE" id="zBe-8N-6f2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hUA-qY-6mr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1154" y="-10"/>
+            <point key="canvasLocation" x="1152.8" y="-10.344827586206897"/>
         </scene>
         <!--Title-->
         <scene sceneID="4IR-JZ-3g3">
             <objects>
-                <viewController id="Meo-6i-SeP" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Modifypage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Meo-6i-SeP" customClass="ModifyViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="an2-tO-YPT">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1iI-wf-Tsu">
-                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ldH-Qu-wBt">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="9ck-Yb-ja2">
-                                        <barButtonItem key="leftBarButtonItem" title="Item" id="tpN-fW-BVD"/>
+                                    <navigationItem title="修改资料" id="lYI-9f-cEu">
+                                        <barButtonItem key="leftBarButtonItem" title="🔙" id="bVJ-3c-2Tf">
+                                            <connections>
+                                                <action selector="back:" destination="Meo-6i-SeP" id="O8N-o8-2d4"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -227,6 +266,21 @@
                     <view key="view" contentMode="scaleToFill" id="Szz-t7-EuG">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z6D-9K-Ldv">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="消息中心" id="ncs-pJ-HCb">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="SAP-MZ-TYi">
+                                            <connections>
+                                                <action selector="back:" destination="R9V-oP-DkK" id="pOS-pc-HGg"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="aeb-x4-IJT"/>
                     </view>
@@ -234,6 +288,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WeZ-SB-MZx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="817" y="698"/>
+        </scene>
+        <!--Feedback View Controller-->
+        <scene sceneID="kIB-PU-zwe">
+            <objects>
+                <viewController storyboardIdentifier="Feedbackpage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="DvQ-fA-W8t" customClass="FeedbackViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EEb-uj-AKJ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3cf-qc-Z2j">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="帮助与反馈" id="Fya-GL-NTe">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="0Fe-GC-iT9">
+                                            <connections>
+                                                <action selector="back:" destination="DvQ-fA-W8t" id="9i0-td-66E"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7xW-nk-ioO"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3k-jw-rTG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1482" y="698"/>
         </scene>
         <!--Family Manage View Controller-->
         <scene sceneID="frP-HQ-bdf">
@@ -243,31 +327,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="d2a-iY-RG3">
-                                <rect key="frame" x="139" y="98" width="97" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="brM-CA-ga2">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <items>
-                                    <navigationItem title="Title" id="Dnc-wO-eSa"/>
+                                    <navigationItem title="家庭管理" id="Dnc-wO-eSa">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="72G-Fi-aXm">
+                                            <connections>
+                                                <action selector="back:" destination="T6T-6B-SyD" id="ANY-Cx-NiP"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
                                 </items>
                             </navigationBar>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="L4X-nC-OwG"/>
                     </view>
-                    <connections>
-                        <outlet property="textField" destination="d2a-iY-RG3" id="Qir-LA-ahU"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="afM-f8-rQB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2150" y="698"/>
+            <point key="canvasLocation" x="172" y="698"/>
+        </scene>
+        <!--Add Equipment View Controller-->
+        <scene sceneID="fIn-c2-SPu">
+            <objects>
+                <viewController storyboardIdentifier="AddEquipmentpage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="YWb-s5-ODb" customClass="AddEquipmentViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xb8-bW-4Ia">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cRI-5i-Cfx">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="8Wz-Uu-AyM"/>
+                                </items>
+                            </navigationBar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="eh6-G3-tFr"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rR9-W9-lxC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-644" y="698"/>
         </scene>
         <!--Set Up View Controller-->
         <scene sceneID="ESG-vj-2DU">
@@ -276,13 +380,28 @@
                     <view key="view" contentMode="scaleToFill" id="aSc-F9-lV0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RJJ-Id-rrW">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="设置" id="4Wf-Bn-vZa">
+                                        <barButtonItem key="leftBarButtonItem" title="返回" id="vbZ-cl-aYf">
+                                            <connections>
+                                                <action selector="back:" destination="xqu-MG-Xai" id="M8c-pb-VEB"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="S03-8D-FeK"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DSN-7y-yDM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="166" y="698"/>
+            <point key="canvasLocation" x="2815" y="698"/>
         </scene>
         <!--App Store View Controller-->
         <scene sceneID="rx9-mI-gAl">
@@ -297,7 +416,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nEj-IE-4xs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1482" y="698"/>
+            <point key="canvasLocation" x="2145" y="698"/>
         </scene>
         <!--Tab-->
         <scene sceneID="sgg-al-yMp">

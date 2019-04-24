@@ -1,18 +1,18 @@
 //
-//  SetUpViewController.swift
+//  FeedbackViewController.swift
 //  SmartHomeYL
 //
-//  Created by hua li on 2019/4/19.
+//  Created by hua li on 2019/4/23.
 //  Copyright © 2019 yu li. All rights reserved.
 //
 
 import UIKit
 
-class SetUpViewController: UIViewController {
+class FeedbackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
     
