@@ -14,10 +14,7 @@ class SmartpageViewController: UIViewController {
 
     //折线图
     var chartView: LineChartView!
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        
+    @IBOutlet weak var cell: UITableView!
         
 //
 //        print(realm.configuration.fileURL ?? "")
@@ -74,6 +71,6 @@ class SmartpageViewController: UIViewController {
 //        chartView.leftAxis.zeroLineDashLengths = [4, 2] //0刻度线使用虚线样式
 //        //设置折现图数据
 //        chartView.data = chartData
-    }
+//    }
 
 }

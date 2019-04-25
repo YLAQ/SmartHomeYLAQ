@@ -6,5 +6,5 @@ target 'SmartHomeYL' do
 pod 'RxSwift'
 pod 'RxCocoa'
 pod 'Charts'
-pod 'RealmSwift'
+pod 'LLCycleScrollView'
 end

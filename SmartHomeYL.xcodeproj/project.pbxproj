@@ -17,6 +17,11 @@
 		8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */; };
 		8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D464226ED249006CC125 /* ModifyViewController.swift */; };
 		8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D468226F38BC006CC125 /* FeedbackViewController.swift */; };
+		8086D47A22708D3F006CC125 /* userNameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D47922708D3F006CC125 /* userNameChangeViewController.swift */; };
+		8086D47C22708D7D006CC125 /* userPassChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D47B22708D7D006CC125 /* userPassChangeViewController.swift */; };
+		8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D47D22708D9D006CC125 /* userPhoneChangeViewController.swift */; };
+		8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D482227166BB006CC125 /* ScenepageViewController.swift */; };
+		8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D484227166F2006CC125 /* ChartspageViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -61,6 +66,11 @@
 		8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipmentViewController.swift; sourceTree = "<group>"; };
 		8086D464226ED249006CC125 /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
 		8086D468226F38BC006CC125 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
+		8086D47922708D3F006CC125 /* userNameChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameChangeViewController.swift; sourceTree = "<group>"; };
+		8086D47B22708D7D006CC125 /* userPassChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPassChangeViewController.swift; sourceTree = "<group>"; };
+		8086D47D22708D9D006CC125 /* userPhoneChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPhoneChangeViewController.swift; sourceTree = "<group>"; };
+		8086D482227166BB006CC125 /* ScenepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenepageViewController.swift; sourceTree = "<group>"; };
+		8086D484227166F2006CC125 /* ChartspageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartspageViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -109,7 +119,7 @@
 		806D3FCF2269CF6B008DBE49 /* MyPageVC */ = {
 			isa = PBXGroup;
 			children = (
-				8086D464226ED249006CC125 /* ModifyViewController.swift */,
+				8086D4782270664A006CC125 /* Modify */,
 				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
 				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
 				8086D468226F38BC006CC125 /* FeedbackViewController.swift */,
@@ -117,6 +127,27 @@
 				806D3FD22269D02D008DBE49 /* SetUpViewController.swift */,
 			);
 			path = MyPageVC;
+			sourceTree = "<group>";
+		};
+		8086D4782270664A006CC125 /* Modify */ = {
+			isa = PBXGroup;
+			children = (
+				8086D464226ED249006CC125 /* ModifyViewController.swift */,
+				8086D47922708D3F006CC125 /* userNameChangeViewController.swift */,
+				8086D47D22708D9D006CC125 /* userPhoneChangeViewController.swift */,
+				8086D47B22708D7D006CC125 /* userPassChangeViewController.swift */,
+			);
+			path = Modify;
+			sourceTree = "<group>";
+		};
+		8086D48122716663006CC125 /* SmartPageVC */ = {
+			isa = PBXGroup;
+			children = (
+				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
+				8086D482227166BB006CC125 /* ScenepageViewController.swift */,
+				8086D484227166F2006CC125 /* ChartspageViewController.swift */,
+			);
+			path = SmartPageVC;
 			sourceTree = "<group>";
 		};
 		80B199092269C3DE002EFE23 /* Frameworks */ = {
@@ -169,8 +200,8 @@
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
-				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
 				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
+				8086D48122716663006CC125 /* SmartPageVC */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);
 			path = ViewControllers;
@@ -200,6 +231,7 @@
 				80C92ACF22633AE200D265F1 /* Frameworks */,
 				80C92AD022633AE200D265F1 /* Resources */,
 				80C92AFC22633C4200D265F1 /* Embed Frameworks */,
+				AAC348B028C5C03E51A27DE0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -279,6 +311,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		AAC348B028C5C03E51A27DE0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -288,11 +337,15 @@
 			files = (
 				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
 				8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */,
+				8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */,
 				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
 				8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */,
+				8086D47C22708D7D006CC125 /* userPassChangeViewController.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
+				8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
+				8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */,
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
@@ -300,6 +353,7 @@
 				80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */,
 				80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */,
 				80C92B0E2263685000D265F1 /* LoginpageViewController.swift in Sources */,
+				8086D47A22708D3F006CC125 /* userNameChangeViewController.swift in Sources */,
 				80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */,
 				806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */,
 				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,

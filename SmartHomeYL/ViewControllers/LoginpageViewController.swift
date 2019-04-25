@@ -8,7 +8,7 @@
 
 import UIKit
 import RealmSwift
-class LoginpageViewController: UIViewController,   UITextFieldDelegate {
+class LoginpageViewController: UIViewController, UITextFieldDelegate {
     
     //用户密码输入框
     var txtUser:UITextField!
@@ -79,7 +79,11 @@ class LoginpageViewController: UIViewController,   UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        let page = UIView(frame: self.view.bounds)
+        page.backgroundColor = UIColor(red: 255/255, green: 239/255, blue: 213/255, alpha: 100)
+        self.view.addSubview(page)
+        
         //获取屏幕尺寸
         let mainSize = UIScreen.main.bounds.size
         

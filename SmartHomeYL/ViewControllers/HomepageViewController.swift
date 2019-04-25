@@ -24,6 +24,7 @@ class HomepageViewController: UIViewController {
     //UIViewController对象的视图已经加入到窗口时调用
     override func viewDidAppear(_ animated: Bool){
         super.viewDidAppear(animated)
+        
         let username = usernameexit()
         //username为空则跳转登录界面，存在则return
         if username == "" {
@@ -57,6 +58,7 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         userName.text = "\(usernameexit()) 的家"
         //获取当前时间
         let now = Date()

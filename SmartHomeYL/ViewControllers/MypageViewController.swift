@@ -14,8 +14,8 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var username: UILabel! //用户名
     @IBOutlet weak var tel: UILabel! //手机号
     @IBOutlet weak var hp: UIImageView! //头像
-    @IBOutlet weak var table: UITableView!
-    var allnames:Dictionary<Int, [String]>?
+    @IBOutlet weak var table: UITableView! //tableview
+    var allnames:Dictionary<Int, [String]>? //cell名称
     
     //判断username是否存在，存在即返回值，不存在即设为空
     func usernameexit() -> String {
