@@ -51,6 +51,11 @@ class AddEquipmentViewController: UIViewController {
         self.peripheral?.writeValue(data!, for: self.characteristic!, type: CBCharacteristicWriteType.withResponse)
     }
     
+    @IBAction func tz(_ sender: Any) {
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "testpage")
+        self.present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 

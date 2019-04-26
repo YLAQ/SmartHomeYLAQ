@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -119,6 +119,7 @@
 		806D3FCF2269CF6B008DBE49 /* MyPageVC */ = {
 			isa = PBXGroup;
 			children = (
+				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				8086D4782270664A006CC125 /* Modify */,
 				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
 				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
@@ -200,7 +201,6 @@
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
-				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				8086D48122716663006CC125 /* SmartPageVC */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);

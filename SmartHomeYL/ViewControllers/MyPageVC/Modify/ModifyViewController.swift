@@ -25,7 +25,7 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
-                "昵称","手机号"]),
+                "用户名","手机号"]),
             1:[String]([
                 "密码"])
         ];
@@ -101,18 +101,17 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         table.deselectRow(at: indexPath, animated: true)
         let itemString = self.allnames![indexPath.section]![indexPath.row]
         switch itemString {
-        //家庭管理
-        case "昵称":
+        
+        case "用户名":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userNameChange")
-            //推出新的Controller
             self.present(vc, animated: true, completion: nil)
-           
-        //消息中心
+            print("dian")
+            
         case "密码":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userPassChange")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)
-        //帮助与反馈
+            
         case "手机号":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userPhoneChange")
             //推出新的Controller

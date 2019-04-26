@@ -63,6 +63,9 @@ class ScenepageViewController: UIViewController {
         gohomebtn.frame = CGRect.init(x: 0, y: buttonyj.ll_y + 30, width: w, height: 100)
         gohomebtn.setImage(UIImage(named:"hp2"), for: .normal)
         scrollView.addSubview(gohomebtn)
+//        //设置圆角
+//        gohomebtn.layer.masksToBounds = true
+//        gohomebtn.layer.cornerRadius = 5.0
 //        let gohomeimg = UIImage(named: "hp2")
 //        let gohomeview = UIImageView(image: gohomeimg)
 //        gohomeview.frame = CGRect.init(x: 0, y: buttonyj.ll_y + 30, width: w, height: 100)
@@ -89,5 +92,14 @@ class ScenepageViewController: UIViewController {
         scrollView.addSubview(sunsetbtn)
 
     }
+    
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
 }
 
