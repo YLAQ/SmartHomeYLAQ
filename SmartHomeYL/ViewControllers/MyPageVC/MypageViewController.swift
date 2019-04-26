@@ -16,6 +16,9 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var hp: UIImageView! //头像
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
+    //cell图片
+    var count = 0
+    var imgs:[String] = ["jiating","xiaoxi","bangzhu","appstore","shezhi"]
     
     //判断username是否存在，存在即返回值，不存在即设为空
     func usernameexit() -> String {
@@ -30,6 +33,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func loadView() {
         super.loadView()
+        
         //用户名、电话
         let name = usernameexit()
         let user = try! Realm().objects(Users.self)
@@ -43,6 +47,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         //用户头像
         hp.image = UIImage(named: "hp")
         hp.layer.cornerRadius = 33
+        
     }
     
     @IBAction func logoutBtn(_ sender: Any) {
@@ -72,7 +77,9 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         table.register(UITableViewCell.self,
                        forCellReuseIdentifier: "SwiftCell")
         //分隔线
-        table.separatorColor = UIColor.white
+        table.separatorColor = UIColor.clear
+        table.backgroundColor = UIColor.clear
+
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -92,7 +99,8 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView()
-        footerView.backgroundColor = UIColor.white
+//        footerView.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 216/255, alpha: 0.9)
+        footerView.backgroundColor = UIColor.clear
         return footerView
     }
     
@@ -107,7 +115,15 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         let secno = indexPath.section
         var data = self.allnames?[secno]
         cell.textLabel?.text = data![indexPath.row]
-        cell.imageView!.image = UIImage(named:"image1.png")
+        //cell图片
+        cell.imageView!.image = UIImage(named:imgs[count])
+        count = count + 1
+        
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        //        //选中背景修改成绿色
+        //        cell.selectedBackgroundView = UIView()
+        //        cell.selectedBackgroundView?.backgroundColor =
+        //            UIColor(red: 135/255, green: 191/255, blue: 49/255, alpha: 1)
         return cell
     }
     

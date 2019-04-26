@@ -1,8 +1,9 @@
 {
   "images" : [
     {
-      "idiom" : "iphone",
       "size" : "20x20",
+      "idiom" : "iphone",
+      "filename" : "gaitubao_40x40_WechatIMG133.jpeg",
       "scale" : "2x"
     },
     {

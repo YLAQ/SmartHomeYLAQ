@@ -14,6 +14,9 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
      var adHeaders:[String]? //头部名称
+    //cell图片
+    var count = 0
+    var imgs:[String] = ["user-boy","phone","mima"]
     
     override func loadView() {
         super.loadView()
@@ -36,9 +39,17 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         //创建一个重用的单元格
         table.register(UITableViewCell.self,
                        forCellReuseIdentifier: "SwiftCell")
+        
+        //修改导航栏背景颜色
+//    self.navigationController?.navigationBar.barTintColor = UIColor(red: 252/255, green: 239/255, blue: 216/255, alpha: 0.1)
+        //将背景栏设置为不透明
 
+        UINavigationBar.appearance().barTintColor = UIColor(red: 249/255, green: 237/255, blue: 218/255, alpha: 100)
+        
         //分隔线
-        table.separatorColor = UIColor.white
+        //分隔线
+        table.separatorColor = UIColor.clear
+        table.backgroundColor = UIColor.clear
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -59,7 +70,7 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
         //修改header背景颜色
-        header.backgroundView?.backgroundColor = UIColor.white
+        header.backgroundView?.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3)
         header.textLabel?.textColor = UIColor.lightGray
 //        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
 //        header.textLabel?.frame = header.frame
@@ -76,7 +87,7 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView()
-        footerView.backgroundColor = UIColor.white
+        footerView.backgroundColor = UIColor.clear
         return footerView
     }
     
@@ -91,7 +102,10 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         let secno = indexPath.section
         var data = self.allnames?[secno]
         cell.textLabel?.text = data![indexPath.row]
-        cell.imageView!.image = UIImage(named:"image1.png")
+        //cell图片
+        cell.imageView!.image = UIImage(named:imgs[count])
+        count = count + 1
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
         return cell
     }
     
