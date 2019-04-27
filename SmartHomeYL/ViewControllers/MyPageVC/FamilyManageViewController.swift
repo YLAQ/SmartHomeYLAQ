@@ -14,32 +14,33 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
     var adHeaders:[String]? //头部名称
-    var imgs:[String] = ["home","dizhi","chuangpu","jiating"]
+    var imgs:[String] = ["home","dizhi","chuangpu","jiating","jiating"]
+    @IBOutlet weak var kuang: UIButton!
     
     override func loadView() {
         super.loadView()
-        //用户名、电话
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //初始化数据，这一次数据，我们放在属性列表文件里
-        self.allnames =  [
+        self.allnames =  [ 
             0:[String]([
                 "家庭名称","家庭地址","房间管理"]),
             1:[String]([
-                "密码"])
+                "爸爸","妈妈"])
         ];
         self.adHeaders = [
-            "",
+            "基本信息",
             "家庭成员"
         ]
         //创建一个重用的单元格
         table.register(UITableViewCell.self,
                        forCellReuseIdentifier: "SwiftCell")
         
+        table.backgroundColor = UIColor.clear
         //分隔线
-        table.separatorColor = UIColor.white
+        table.separatorColor = UIColor.clear
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -60,11 +61,8 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
     func tableView(_ tableView: UITableView, willDisplayHeaderView view: UIView, forSection section: Int) {
         guard let header = view as? UITableViewHeaderFooterView else { return }
         //修改header背景颜色
-        header.backgroundView?.backgroundColor = UIColor.white
+        header.backgroundView?.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.3)
         header.textLabel?.textColor = UIColor.lightGray
-        //        header.textLabel?.font = UIFont.boldSystemFont(ofSize: 18)
-        //        header.textLabel?.frame = header.frame
-        //        header.textLabel?.textAlignment = .center
     }
     
     
@@ -77,7 +75,7 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView()
-        footerView.backgroundColor = UIColor.white
+        footerView.backgroundColor = UIColor.clear
         return footerView
     }
     
@@ -95,7 +93,8 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
         //cell图片
             cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
-//        }
+        //cell背景色
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
         
         return cell
     }
@@ -139,6 +138,9 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
     //返回按钮
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func move(_ sender: Any) {
     }
 }
 

@@ -7,7 +7,7 @@
 //
 
 import UIKit
-import Kingfisher
+import Kingfisher 
 
 /// Style
 public enum PageControlStyle {

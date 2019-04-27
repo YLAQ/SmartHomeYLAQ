@@ -18,7 +18,7 @@ class SystemLogViewController: UIViewController {
     
     //返回按钮
     @IBAction func back(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+         self.dismiss(animated: true, completion: nil)
     }
     
 

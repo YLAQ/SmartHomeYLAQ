@@ -10,13 +10,17 @@ import UIKit
 
 class AppStoreViewController: UIViewController {
     
+    @IBOutlet weak var img: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        img.image = UIImage(named: "qb")
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
         //弹出消息框
-        let alertController = UIAlertController(title: "觉得好用的话，给我个评价吧！",
+        let alertController = UIAlertController(title: "觉得好用的话，可以给一个评价吗~",
                                                 message: nil, preferredStyle: .alert)
         let cancelAction = UIAlertAction(title: "暂不评价", style: .default,
                                          handler: {

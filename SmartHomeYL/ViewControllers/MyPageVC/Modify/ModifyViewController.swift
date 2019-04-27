@@ -39,17 +39,10 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         //创建一个重用的单元格
         table.register(UITableViewCell.self,
                        forCellReuseIdentifier: "SwiftCell")
-        
-        //修改导航栏背景颜色
-//    self.navigationController?.navigationBar.barTintColor = UIColor(red: 252/255, green: 239/255, blue: 216/255, alpha: 0.1)
-        //将背景栏设置为不透明
 
-        UINavigationBar.appearance().barTintColor = UIColor(red: 249/255, green: 237/255, blue: 218/255, alpha: 100)
-        
-        //分隔线
+        table.backgroundColor = UIColor.clear
         //分隔线
         table.separatorColor = UIColor.clear
-        table.backgroundColor = UIColor.clear
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -144,4 +137,5 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
     @IBAction func back(_ sender: Any) {
         self.dismiss(animated: true, completion: nil)
     }
+    
 }
