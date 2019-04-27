@@ -662,6 +662,49 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-wh-ef5">
+                                <rect key="frame" x="16" y="74" width="202" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="请选择您要连接的设备：">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-1Q-5om">
+                                <rect key="frame" x="16" y="145" width="127" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="温度传感器" image="wendu">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-oM-lfW">
+                                <rect key="frame" x="196" y="145" width="132" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" 湿度传感器" image="shidu">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-z2-VRW">
+                                <rect key="frame" x="16" y="213" width="142" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="PM2.5传感器" image="pm">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
+                                <rect key="frame" x="16" y="279" width="132" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" 红外感应器" image="jingbao">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Ta-sKe">
+                                <rect key="frame" x="197" y="213" width="91" height="35"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title=" LED灯" image="dengpao">
+                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="zCt-7P-avv"/>
@@ -669,7 +712,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BqO-M9-yBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2013" y="-8"/>
+            <point key="canvasLocation" x="-2013.5999999999999" y="-8.5457271364317844"/>
         </scene>
         <!--Add Equipment View Controller-->
         <scene sceneID="G6f-OQ-Tsh">
@@ -1093,6 +1136,8 @@
     </scenes>
     <resources>
         <image name="add" width="50" height="50"/>
+        <image name="dengpao" width="35" height="35"/>
+        <image name="jingbao" width="35" height="35"/>
         <image name="pm" width="35" height="35"/>
         <image name="shanchu" width="30" height="30"/>
         <image name="shidu" width="35" height="35"/>
