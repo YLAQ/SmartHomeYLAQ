@@ -22,6 +22,7 @@
 		8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D47D22708D9D006CC125 /* userPhoneChangeViewController.swift */; };
 		8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D482227166BB006CC125 /* ScenepageViewController.swift */; };
 		8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D484227166F2006CC125 /* ChartspageViewController.swift */; };
+		80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16E3122748C3200981525 /* AddExampleViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -71,6 +72,7 @@
 		8086D47D22708D9D006CC125 /* userPhoneChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userPhoneChangeViewController.swift; sourceTree = "<group>"; };
 		8086D482227166BB006CC125 /* ScenepageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenepageViewController.swift; sourceTree = "<group>"; };
 		8086D484227166F2006CC125 /* ChartspageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartspageViewController.swift; sourceTree = "<group>"; };
+		80B16E3122748C3200981525 /* AddExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExampleViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -201,6 +203,7 @@
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
+				80B16E3122748C3200981525 /* AddExampleViewController.swift */,
 				8086D48122716663006CC125 /* SmartPageVC */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);
@@ -346,6 +349,7 @@
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
 				8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */,
+				80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */,
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
