@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kkU-QB-OPu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZKJ-57-r8L">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -37,7 +37,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JUP-R0-i5X">
-                                        <rect key="frame" x="223" y="0.0" width="112" height="83"/>
+                                        <rect key="frame" x="236" y="11" width="79" height="65"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                 </subviews>
@@ -129,7 +129,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hn6-fd-oY7"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="首页" id="L2l-gZ-cG5"/>
+                    <tabBarItem key="tabBarItem" title="首页" image="shouyetab" id="L2l-gZ-cG5"/>
                     <connections>
                         <outlet property="date" destination="aqO-Zy-QBF" id="Vuw-bH-mCV"/>
                         <outlet property="humiLable" destination="9Gf-Yh-ApZ" id="eks-I6-ZaD"/>
@@ -201,7 +201,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="JPe-6J-RoF"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="智能" id="gKS-CK-DKh"/>
+                    <tabBarItem key="tabBarItem" title="智能" image="zhinengtab" id="gKS-CK-DKh"/>
                     <connections>
                         <outlet property="tb" destination="EuB-ZI-Czp" id="j50-R8-eH2"/>
                         <outlet property="zn" destination="Ewk-Mo-qqy" id="Hxx-MI-MY9"/>
@@ -280,7 +280,7 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Ffq-W4-vtv"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="我的" id="1eS-wg-5HR"/>
+                    <tabBarItem key="tabBarItem" title="我的" image="wodetab" id="1eS-wg-5HR"/>
                     <navigationItem key="navigationItem" title="Title" id="tYM-tW-f0v"/>
                     <connections>
                         <outlet property="hp" destination="Wkg-AM-XJy" id="Ut7-XG-1Dk"/>
@@ -760,6 +760,9 @@
                                 <state key="normal" title="温度传感器" image="wendu">
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95202803938356162" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="wd:" destination="kkU-QB-OPu" eventType="touchUpInside" id="AIZ-8v-Gj9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-oM-lfW">
                                 <rect key="frame" x="197" y="150" width="160" height="55"/>
@@ -768,6 +771,9 @@
                                 <state key="normal" title=" 湿度传感器" image="shidu">
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95408818493150682" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="sd:" destination="kkU-QB-OPu" eventType="touchUpInside" id="sDD-QH-F6v"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-z2-VRW">
                                 <rect key="frame" x="16" y="235" width="160" height="55"/>
@@ -776,6 +782,20 @@
                                 <state key="normal" title="PM2.5传感器" image="pm">
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94774721746575341" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="pm:" destination="kkU-QB-OPu" eventType="touchUpInside" id="Z6X-dP-iKX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
+                                <rect key="frame" x="16" y="321" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" 红外感应器" image="baojing">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94729238013698636" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="redline:" destination="kkU-QB-OPu" eventType="touchUpInside" id="OoT-Q2-zeq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Ta-sKe">
                                 <rect key="frame" x="197" y="235" width="160" height="55"/>
@@ -784,14 +804,9 @@
                                 <state key="normal" title=" LED灯" image="dengpao">
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529965753422" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
-                                <rect key="frame" x="16" y="321" width="160" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title=" 红外感应器" image="jingbao">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94729238013698636" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
+                                <connections>
+                                    <action selector="led:" destination="kkU-QB-OPu" eventType="touchUpInside" id="cgK-pt-wL2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zCt-7P-avv"/>
@@ -856,6 +871,17 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE6-ez-e1Z">
+                                <rect key="frame" x="28" y="306" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="烟雾报警器" image="xiangyan">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="smoke:" destination="kkU-QB-OPu" eventType="touchUpInside" id="zhq-yB-maz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="VmC-PW-iX0"/>
@@ -915,6 +941,62 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mSI-Wn-f3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-239.19999999999999" y="724.58770614692662"/>
+        </scene>
+        <!--Red Line View Controller-->
+        <scene sceneID="bpd-Pe-3za">
+            <objects>
+                <viewController storyboardIdentifier="Redpage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="yZe-zk-Uun" customClass="RedLineViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="d0s-nv-BIq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="Vaj-JD-rSZ">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="红外报警" id="guQ-oe-s5y">
+                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="JVv-Y7-FoA">
+                                            <color key="tintColor" red="0.41716074939999997" green="0.50812160969999998" blue="0.60785651210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="back:" destination="yZe-zk-Uun" id="fwk-UA-uhp"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aKF-oa-A2E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mZH-Kr-z4k">
+                                <rect key="frame" x="62" y="113" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hX2-js-YaA">
+                                <rect key="frame" x="16" y="399" width="359" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="vwK-Xe-lMs"/>
+                    </view>
+                    <connections>
+                        <outlet property="img" destination="mZH-Kr-z4k" id="xoV-01-auW"/>
+                        <outlet property="lable" destination="hX2-js-YaA" id="Yle-Mf-YxY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HRf-3h-uTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-247.19999999999999" y="1401.9490254872564"/>
         </scene>
         <!--Chartspage View Controller-->
         <scene sceneID="QO1-H8-Gar">
@@ -1117,6 +1199,7 @@
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="OY7-SA-BAy"/>
                     </view>
                     <connections>
@@ -1288,16 +1371,20 @@
         </scene>
     </scenes>
     <resources>
-        <image name="add" width="50" height="50"/>
+        <image name="add" width="35" height="35"/>
+        <image name="baojing" width="35" height="35"/>
         <image name="dengpao" width="35" height="35"/>
-        <image name="jingbao" width="35" height="35"/>
         <image name="pm" width="35" height="35"/>
         <image name="shanchu" width="30" height="30"/>
         <image name="shidu" width="35" height="35"/>
+        <image name="shouyetab" width="35" height="35"/>
         <image name="submit" width="35" height="35"/>
         <image name="tb" width="35" height="35"/>
         <image name="tuichu" width="35" height="35"/>
         <image name="wendu" width="35" height="35"/>
+        <image name="wodetab" width="35" height="35"/>
+        <image name="xiangyan" width="35" height="35"/>
+        <image name="zhinengtab" width="35" height="35"/>
         <image name="zn" width="35" height="35"/>
     </resources>
 </document>

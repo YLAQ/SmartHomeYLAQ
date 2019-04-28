@@ -66,17 +66,16 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
        
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg.jpg")!)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"lgbg.jpg")!)
+        
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
                 "家庭管理"]),
             1:[String]([
-                "消息中心"]),
-            2:[String]([
                 "帮助与反馈",
                 "去评分"]),
-            3:[String]([
+            2:[String]([
                 "设置"])
         ];
         
@@ -89,7 +88,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 4
+        return 3
     }
     
     //表格行数

@@ -38,6 +38,7 @@ class ChartspageViewController: UIViewController {
         //查询所有的消费记录
         let items = realm.objects(getDatas.self)
         
+        
         //清空数据库
         try! realm.write {
             realm.deleteAll()
@@ -45,16 +46,16 @@ class ChartspageViewController: UIViewController {
         //打印出数据库地址
         print(realm.configuration.fileURL ?? "")
         //可使用数组创建
-        let item1 = getDatas(value: [1,18.34,77,28,false,false,Date()])
-        let item2 = getDatas(value: [2,21.25,74,27,false,false,Date()])
-        let item3 = getDatas(value: [3,23.62,66,30,false,false,Date()])
-        let item4 = getDatas(value: [4,25.91,62,33,true,true,Date()])
-        let item5 = getDatas(value: [5,26.27,61,32,false,false,Date()])
-        let item6 = getDatas(value: [6,23.73,68,35,false,false,Date()])
-        let item7 = getDatas(value: [7,24.03,70,29,true,false,Date()])
-        let item8 = getDatas(value: [8,22.34,64,33,false,false,Date()])
-        let item9 = getDatas(value: [9,21.69,80,36,true,false,Date()])
-        let item10 = getDatas(value: [10,19.11,77,31,false,false,Date()])
+        let item1 = getDatas(value: [1,20.34,55,28,false,false,Date()])
+        let item2 = getDatas(value: [2,18.25,53,27,false,false,Date()])
+        let item3 = getDatas(value: [3,17.62,56,30,false,false,Date()])
+        let item4 = getDatas(value: [4,16.91,62,33,true,true,Date()])
+        let item5 = getDatas(value: [5,17.27,61,32,false,false,Date()])
+        let item6 = getDatas(value: [6,17.73,58,35,false,false,Date()])
+        let item7 = getDatas(value: [7,17.03,54,29,true,false,Date()])
+        let item8 = getDatas(value: [8,18.34,54,33,false,false,Date()])
+        let item9 = getDatas(value: [9,18.69,50,36,true,false,Date()])
+        let item10 = getDatas(value: [10,19.11,57,31,false,false,Date()])
         
         // 数据持久化操作（类型记录也会自动添加的）
         try! realm.write {
@@ -69,7 +70,6 @@ class ChartspageViewController: UIViewController {
             realm.add(item9)
             realm.add(item10)
         }
-        
         
         
         //数据库
@@ -109,8 +109,12 @@ class ChartspageViewController: UIViewController {
         chartDataSet.drawCirclesEnabled = false //不绘制转折点
         chartDataSet.mode = .horizontalBezier
         chartView.xAxis.labelPosition = .bottom
-        let xValues = ["10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
-//        chartView.drawGridBackgroundEnabled = true  //绘制图形区域背景
+        let xValues = ["21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
+//        chartView.drawGridBackgroundEnabled = true
+        let formatter3 = NumberFormatter()  //自定义格式
+        formatter3.positiveSuffix = "°"  //数字后缀单位
+        chartDataSet.valueFormatter = DefaultValueFormatter(formatter: formatter3)
+        //绘制图形区域背景
         chartView.drawBordersEnabled = false  //绘制图形区域边框
         chartDataSet.lineWidth = 2 //修改线条大小
         chartDataSet.colors = [.blue] //线条颜色
@@ -167,7 +171,7 @@ class ChartspageViewController: UIViewController {
         chartDataSet2.drawCirclesEnabled = false //不绘制转折点
         chartDataSet2.mode = .horizontalBezier
         chartView2.xAxis.labelPosition = .bottom
-        let xValues2 = ["10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
+        let xValues2 = ["21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
         let formatter = NumberFormatter()  //自定义格式
         formatter.positiveSuffix = "%"  //数字后缀单位
         chartDataSet2.valueFormatter = DefaultValueFormatter(formatter: formatter)
@@ -228,7 +232,7 @@ class ChartspageViewController: UIViewController {
         chartDataSet3.drawCirclesEnabled = false //不绘制转折点
         chartDataSet3.mode = .horizontalBezier
         chartView3.xAxis.labelPosition = .bottom
-        let xValues3 = ["10:00","11:00","12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00"]
+        let xValues3 = ["21:00","22:00","23:00","00:00","01:00","02:00","03:00","04:00","05:00","06:00"]
         let formatter2 = NumberFormatter()  //自定义格式
         formatter2.positiveSuffix = "μg/m³"  //数字后缀单位
         chartDataSet3.valueFormatter = DefaultValueFormatter(formatter: formatter2)

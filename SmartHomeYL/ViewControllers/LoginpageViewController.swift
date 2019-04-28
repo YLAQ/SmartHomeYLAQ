@@ -80,7 +80,7 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg.jpg")!)
+       self.view.layer.contents = UIImage(named: "bg")?.cgImage
         
         //获取屏幕尺寸
         let mainSize = UIScreen.main.bounds.size
@@ -181,7 +181,6 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
         txtPwd.clearButtonMode = .whileEditing  //编辑时出现清除按钮
 //        txtPwd.becomeFirstResponder() //键盘弹出
 //        txtPwd.returnKeyType = UIReturnKeyType.done //表示完成输入
-        //http://www.hangge.com/blog/cache/detail_530.html
         
         //密码输入框左侧图标
         let imgPwd =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
