@@ -30,7 +30,7 @@ class RegisterNetworkService {
     
     //可注册用户
     func signup(_ username: String, phone: String, password: String) -> Observable<Bool> {
-        //这里我们没有真正去发起请求，而是模拟这个操作（平均每3次有1次失败）
+        //没有真正去发起请求，而是模拟这个操作（平均每3次有1次失败）
         let signupSucceed = true
         return Observable.just(signupSucceed).self
     }

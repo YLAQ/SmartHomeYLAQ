@@ -70,10 +70,8 @@ class HomepageViewController: UIViewController {
         dformatter.dateFormat = "yyyy年MM月dd"
         print("当前日期时间：\(dformatter.string(from: now)) \(week())")
         date.text = "\(dformatter.string(from: now))  \(week())"
-        //延迟5秒执行
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-            self.pmLable.text = "35μg/m³"
-        }
+        
+        
 //        tips.layer.borderWidth = 0.5
 //        tips.layer.borderColor = UIColor.lightGray.cgColor
 //        tips.layer.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5).cgColor
@@ -116,5 +114,6 @@ class HomepageViewController: UIViewController {
             return "error"
         }
     }
+    
 }
 

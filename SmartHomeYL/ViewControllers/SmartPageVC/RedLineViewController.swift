@@ -22,15 +22,13 @@ class RedLineViewController: UIViewController {
             self.lable.textColor = UIColor.red
             self.showMsgbox(_message: "请注意，红外警报已被触发！")
         }
-//        img.image = UIImage(named: "red")
-//        lable.text = "警报：有人靠近！"
-//        lable.textColor = UIColor.red
+
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 15) {
             self.img.image = UIImage(named: "green")
             self.lable.text = "安全~无人在附近"
             self.lable.textColor = UIColor.green
         }
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 30) {
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 27) {
             self.img.image = UIImage(named: "red")
             self.lable.text = "警报：有人靠近！"
             self.lable.textColor = UIColor.red

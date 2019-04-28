@@ -53,18 +53,20 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
         if user.count == 0 {
             showMsgbox(_message: "不存在该用户，请先注册~")
         } else {
+            print(user.count)
             for item in user {
+                print(item.name)
                 if txtUser.text == item.name && txtPwd.text == item.password{
                     let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Tabpage")
                     //推出新的Controller
                     self.present(vc, animated: true, completion: nil)
                     //保存用户名
                     UserDefaults.standard.setValue(item.name, forKey: "userName")
-                } else {
-                    showMsgbox(_message: "帐号或密码输入错误")
                     return
                 }
             }
+            showMsgbox(_message: "帐号或密码输入错误")
+            return
         }
         
     }
