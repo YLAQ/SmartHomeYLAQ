@@ -24,10 +24,35 @@ class userPassChangeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.contents = UIImage(named: "bg4")?.cgImage
         lable1.text = ""
         lable2.text = ""
         lable1.textColor = UIColor.red
         lable2.textColor = UIColor.red
+        
+        txt1.layer.cornerRadius = 5
+        txt1.layer.borderColor = UIColor.lightGray.cgColor
+        txt1.layer.borderWidth = 0.5
+        txt1.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        txt1.leftViewMode = UITextField.ViewMode.always
+        txt1.placeholder = "输入密码"
+        txt1.clearButtonMode = .whileEditing
+        //用户名输入框左侧图标
+        let imgUser =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser.image = UIImage(named:"mm")
+        txt1.leftView!.addSubview(imgUser)
+        
+        txt2.layer.cornerRadius = 5
+        txt2.layer.borderColor = UIColor.lightGray.cgColor
+        txt2.layer.borderWidth = 0.5
+        txt2.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        txt2.leftViewMode = UITextField.ViewMode.always
+        txt2.placeholder = "再次输入密码"
+        txt2.clearButtonMode = .whileEditing
+        //用户名输入框左侧图标
+        let imgUser2 =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser2.image = UIImage(named:"mm")
+        txt2.leftView!.addSubview(imgUser2)
         
         let realm = try! Realm()
         //打印出数据库地址

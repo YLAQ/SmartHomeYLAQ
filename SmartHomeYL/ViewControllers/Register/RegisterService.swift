@@ -29,8 +29,11 @@ class RegisterService {
         
         let numberOfCharacters = username.count
         //判断用户名位数
-        if numberOfCharacters > 10 ,numberOfCharacters < 5{
-            return .just(.failed(message: "用户名长度为5-10个字符"))
+        if numberOfCharacters < 4{
+            return .just(.failed(message: "用户名长度为4-10个字符"))
+        }
+        if numberOfCharacters > 10{
+            return .just(.failed(message: "用户名长度为4-10个字符"))
         }
         
         //判断用户名是否只有数字和字母

@@ -19,6 +19,7 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
     
     override func loadView() {
         super.loadView()
+        self.view.layer.contents = UIImage(named: "bg3")?.cgImage
     }
     
     override func viewDidLoad() {
@@ -94,7 +95,7 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
             cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
         //cell背景色
-        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         
         return cell
     }

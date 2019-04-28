@@ -12,7 +12,7 @@ class SystemLogViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.view.layer.contents = UIImage(named: "bg3")?.cgImage
         // Do any additional setup after loading the view.
     }
     

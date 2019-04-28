@@ -22,6 +22,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.contents = UIImage(named: "bg3")?.cgImage
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
@@ -29,7 +30,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
             1:[String]([
                 "地区","语言"]),
             2:[String]([
-                "关于YLAQ's"])
+                "关于LSC's"])
         ];
         self.adHeaders = [
             "通用",
@@ -97,7 +98,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
         //cell背景色
-        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         
         return cell
     }

@@ -22,6 +22,7 @@ class FeedbackViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.contents = UIImage(named: "bg3")?.cgImage
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
@@ -94,7 +95,7 @@ class FeedbackViewController: UIViewController, UITableViewDataSource, UITableVi
         cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
         //cell背景色
-        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         
         return cell
     }

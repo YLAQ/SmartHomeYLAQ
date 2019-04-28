@@ -11,6 +11,7 @@ import UIKit
 class ModifyViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
 
+    @IBOutlet weak var navi: UINavigationBar!
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
      var adHeaders:[String]? //头部名称
@@ -25,6 +26,9 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       //图片不变形
+        self.view.layer.contents = UIImage(named: "bg3")?.cgImage
+//        navi.barTintColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.1)
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
@@ -98,7 +102,7 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         //cell图片
         cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
-        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         return cell
     }
     

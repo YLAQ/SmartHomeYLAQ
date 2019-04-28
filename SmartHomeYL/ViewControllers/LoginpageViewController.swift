@@ -80,15 +80,13 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let page = UIView(frame: self.view.bounds)
-        page.backgroundColor = UIColor(red: 255/255, green: 239/255, blue: 213/255, alpha: 100)
-        self.view.addSubview(page)
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg.jpg")!)
         
         //获取屏幕尺寸
         let mainSize = UIScreen.main.bounds.size
         
         //猫头鹰头部
-        let imgLogin =  UIImageView(frame:CGRect(x: mainSize.width/2-211/2, y: 100, width: 211, height: 109))
+        let imgLogin =  UIImageView(frame:CGRect(x: mainSize.width/2-211/2, y: 50, width: 211, height: 109))
         imgLogin.image = UIImage(named:"owl-login")
         imgLogin.layer.masksToBounds = true
         self.view.addSubview(imgLogin)
@@ -106,7 +104,7 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
         imgLogin.addSubview(imgRightHand)
         
         //登录框背景
-        let vLogin =  UIView(frame:CGRect(x: 15, y: 200, width: mainSize.width - 30, height: 260))
+        let vLogin =  UIView(frame:CGRect(x: 15, y: 150, width: mainSize.width - 30, height: 260))
         vLogin.layer.borderWidth = 0.5
         vLogin.layer.borderColor = UIColor.lightGray.cgColor
         vLogin.backgroundColor = UIColor.white

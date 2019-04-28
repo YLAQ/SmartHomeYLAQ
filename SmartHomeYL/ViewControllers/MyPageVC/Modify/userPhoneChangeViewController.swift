@@ -22,8 +22,21 @@ class userPhoneChangeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.layer.contents = UIImage(named: "bg4")?.cgImage
         lable.text = ""
         lable.textColor = UIColor.red
+        
+        txt.layer.cornerRadius = 5
+        txt.layer.borderColor = UIColor.lightGray.cgColor
+        txt.layer.borderWidth = 0.5
+        txt.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        txt.leftViewMode = UITextField.ViewMode.always
+        txt.placeholder = "输入手机号"
+        txt.clearButtonMode = .whileEditing
+        //用户名输入框左侧图标
+        let imgUser =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser.image = UIImage(named:"sj")
+        txt.leftView!.addSubview(imgUser)
         
         let realm = try! Realm()
         //打印出数据库地址

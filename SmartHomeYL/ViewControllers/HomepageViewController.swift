@@ -41,12 +41,14 @@ class HomepageViewController: UIViewController {
     }
     
     
+    @IBOutlet weak var weather: UIImageView! //天气
     @IBOutlet weak var userName: UILabel! //用户名
     @IBOutlet weak var date: UILabel! //日期
     @IBOutlet weak var tempLable: UILabel! //温度
     @IBOutlet weak var humiLable: UILabel! //湿度
     @IBOutlet weak var pmLable: UILabel! //pm2.5
     @IBOutlet weak var tips: UITextView! //小贴士
+    @IBOutlet weak var scrollView: UIScrollView!
     
     //添加设备按钮点击
     @IBAction func addEquBtn(_ sender: Any) {
@@ -58,7 +60,8 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg.jpg")!)
+        weather.image = UIImage(named: "weather")
         userName.text = "\(usernameexit()) 的家"
         //获取当前时间
         let now = Date()
@@ -67,6 +70,14 @@ class HomepageViewController: UIViewController {
         dformatter.dateFormat = "yyyy年MM月dd"
         print("当前日期时间：\(dformatter.string(from: now)) \(week())")
         date.text = "\(dformatter.string(from: now))  \(week())"
+        
+//        tips.layer.borderWidth = 0.5
+//        tips.layer.borderColor = UIColor.lightGray.cgColor
+//        tips.layer.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5).cgColor
+//        tips.layer.cornerRadius = 5
+//        tips.layer.shadowOpacity = 0.8//设置阴影透明度
+//        tips.layer.shadowOffset = CGSize(width: 2, height: 2)//设置阴影偏移量
+        scrollView.layer.cornerRadius = 10
     }
     
     //小贴士

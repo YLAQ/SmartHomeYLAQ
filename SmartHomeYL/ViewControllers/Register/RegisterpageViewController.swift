@@ -37,6 +37,53 @@ class RegisterpageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.view.layer.contents = UIImage(named: "bg4")?.cgImage
+        //用户名
+        usernameOutlet.layer.cornerRadius = 5
+        usernameOutlet.layer.borderColor = UIColor.lightGray.cgColor
+        usernameOutlet.layer.borderWidth = 0.5
+        usernameOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        usernameOutlet.leftViewMode = UITextField.ViewMode.always
+        usernameOutlet.placeholder = "请输入用户名"
+        usernameOutlet.clearButtonMode = .whileEditing
+        let imgUser1 =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser1.image = UIImage(named:"yh")
+        usernameOutlet.leftView!.addSubview(imgUser1)
+        //手机号
+        userphoneOutlet.layer.cornerRadius = 5
+        userphoneOutlet.layer.borderColor = UIColor.lightGray.cgColor
+        userphoneOutlet.layer.borderWidth = 0.5
+        userphoneOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        userphoneOutlet.leftViewMode = UITextField.ViewMode.always
+        userphoneOutlet.placeholder = "请输入手机号"
+        userphoneOutlet.clearButtonMode = .whileEditing
+        //用户名输入框左侧图标
+        let imgUser2 =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser2.image = UIImage(named:"sj")
+        userphoneOutlet.leftView!.addSubview(imgUser2)
+        //密码
+        passwordOutlet.layer.cornerRadius = 5
+        passwordOutlet.layer.borderColor = UIColor.lightGray.cgColor
+        passwordOutlet.layer.borderWidth = 0.5
+        passwordOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        passwordOutlet.leftViewMode = UITextField.ViewMode.always
+        passwordOutlet.placeholder = "请输入密码"
+        passwordOutlet.clearButtonMode = .whileEditing
+        let imgUser3 =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
+        imgUser3.image = UIImage(named:"mm")
+        passwordOutlet.leftView!.addSubview(imgUser3)
+        //再次密码
+        repeatedPasswordOutlet.layer.cornerRadius = 5
+        repeatedPasswordOutlet.layer.borderColor = UIColor.lightGray.cgColor
+        repeatedPasswordOutlet.layer.borderWidth = 0.5
+        repeatedPasswordOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
+        repeatedPasswordOutlet.leftViewMode = UITextField.ViewMode.always
+        repeatedPasswordOutlet.placeholder = "请再次输入密码"
+        repeatedPasswordOutlet.clearButtonMode = .whileEditing
+        let imgUser4 =  UIImageView(frame:CGRect(x:  11, y: 11, width: 22, height: 22))
+        imgUser4.image = UIImage(named:"mm")
+        repeatedPasswordOutlet.leftView!.addSubview(imgUser4)
+        
         //初始化ViewModel
         let viewModel = RegisterViewModel(
             input: (
@@ -111,5 +158,14 @@ class RegisterpageViewController: UIViewController {
         })
         alertController.addAction(okAction)
         self.present(alertController, animated: true, completion: nil)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
+    //返回按钮
+    @IBAction func back(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
 }

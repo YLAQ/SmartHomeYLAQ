@@ -16,6 +16,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet weak var hp: UIImageView! //头像
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
+    @IBOutlet weak var logout: UIButton! //退出登录按钮
     //cell图片
     var count = 0
     var imgs:[String] = ["jiating","xiaoxi","bangzhu","appstore","shezhi"]
@@ -48,6 +49,9 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         hp.image = UIImage(named: "hp")
         hp.layer.cornerRadius = 33
         
+        logout.layer.cornerRadius = 10
+        logout.layer.shadowOpacity = 0.5
+        logout.layer.shadowOffset = CGSize(width: 1, height: 1)
     }
     
     @IBAction func logoutBtn(_ sender: Any) {
@@ -61,6 +65,8 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"bg.jpg")!)
         //初始化数据，这一次数据，我们放在属性列表文件里
         self.allnames =  [
             0:[String]([
@@ -119,7 +125,9 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         cell.imageView!.image = UIImage(named:imgs[count])
         count = count + 1
         
-        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.2)
+        cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
+        
+        
         //        //选中背景修改成绿色
         //        cell.selectedBackgroundView = UIView()
         //        cell.selectedBackgroundView?.backgroundColor =
