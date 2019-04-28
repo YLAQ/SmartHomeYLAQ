@@ -68,6 +68,7 @@ class RegisterpageViewController: UIViewController {
         passwordOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
         passwordOutlet.leftViewMode = UITextField.ViewMode.always
         passwordOutlet.placeholder = "请输入密码"
+        passwordOutlet.isSecureTextEntry = true
         passwordOutlet.clearButtonMode = .whileEditing
         let imgUser3 =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
         imgUser3.image = UIImage(named:"mm")
@@ -79,6 +80,7 @@ class RegisterpageViewController: UIViewController {
         repeatedPasswordOutlet.leftView = UIView(frame:CGRect(x: 0, y: 0, width: 44, height: 44))
         repeatedPasswordOutlet.leftViewMode = UITextField.ViewMode.always
         repeatedPasswordOutlet.placeholder = "请再次输入密码"
+        repeatedPasswordOutlet.isSecureTextEntry = true
         repeatedPasswordOutlet.clearButtonMode = .whileEditing
         let imgUser4 =  UIImageView(frame:CGRect(x:  11, y: 11, width: 22, height: 22))
         imgUser4.image = UIImage(named:"mm")

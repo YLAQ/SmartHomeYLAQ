@@ -80,7 +80,7 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-       self.view.layer.contents = UIImage(named: "bg")?.cgImage
+       self.view.layer.contents = UIImage(named: "bg2")?.cgImage
         
         //获取屏幕尺寸
         let mainSize = UIScreen.main.bounds.size
