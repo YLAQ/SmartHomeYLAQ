@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s9t-q9-92Q">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kkU-QB-OPu">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -316,6 +316,9 @@
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
                                 <items>
                                     <navigationItem title="修改资料" id="lYI-9f-cEu">
                                         <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="bVJ-3c-2Tf">
@@ -359,7 +362,7 @@
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="用户名修改" id="7x6-G7-mVN">
@@ -443,7 +446,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="密码修改" id="Ury-qP-AQG">
@@ -546,7 +549,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="手机号修改" id="h23-EL-Q2n">
@@ -632,7 +635,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="消息中心" id="zEd-nE-SER">
@@ -672,7 +675,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="帮助与反馈" id="tHs-An-fxi">
@@ -718,12 +721,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-v7-nXc">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-v7-nXc">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="textShadowColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
@@ -737,56 +740,60 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-wh-ef5">
-                                <rect key="frame" x="16" y="74" width="202" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="请选择您要连接的设备：">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-1Q-5om">
-                                <rect key="frame" x="16" y="145" width="127" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="温度传感器" image="wendu">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-oM-lfW">
-                                <rect key="frame" x="196" y="145" width="132" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" 湿度传感器" image="shidu">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-z2-VRW">
-                                <rect key="frame" x="16" y="213" width="142" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="PM2.5传感器" image="pm">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
-                                <rect key="frame" x="16" y="279" width="132" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" 红外感应器" image="jingbao">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Ta-sKe">
-                                <rect key="frame" x="197" y="213" width="91" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title=" LED灯" image="dengpao">
-                                    <color key="titleColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                            </button>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9I8-l3-xjD">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-wh-ef5">
+                                <rect key="frame" x="16" y="84" width="225" height="36"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="请选择您要连接的设备：">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-1Q-5om">
+                                <rect key="frame" x="16" y="150" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="温度传感器" image="wendu">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95202803938356162" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-oM-lfW">
+                                <rect key="frame" x="197" y="150" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" 湿度传感器" image="shidu">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95408818493150682" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-z2-VRW">
+                                <rect key="frame" x="16" y="235" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="PM2.5传感器" image="pm">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94774721746575341" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Ta-sKe">
+                                <rect key="frame" x="197" y="235" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" LED灯" image="dengpao">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529965753422" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
+                                <rect key="frame" x="16" y="321" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title=" 红外感应器" image="jingbao">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94729238013698636" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="zCt-7P-avv"/>
                     </view>
                 </viewController>
@@ -831,7 +838,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="添加设备" id="9kv-o7-sHD">
@@ -875,7 +882,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="场景控制" id="RdC-3b-clJ">
@@ -894,7 +901,7 @@
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-ca-LEr">
-                                <rect key="frame" x="0.0" y="79" width="375" height="508"/>
+                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                         </subviews>
@@ -918,7 +925,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1FQ-Jl-5Ic">
-                                <rect key="frame" x="0.0" y="77" width="375" height="515"/>
+                                <rect key="frame" x="0.0" y="77" width="375" height="590"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </scrollView>
                             <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="e9Z-g8-Kec">
@@ -927,7 +934,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="图表统计" id="Sm9-qZ-TGz">
@@ -980,7 +987,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="家庭管理" id="qCI-ZB-UAW">
@@ -998,7 +1005,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="23"/>
                                 <state key="normal" title="移除家庭" image="shanchu">
-                                    <color key="titleColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
                                     <action selector="move:" destination="T6T-6B-SyD" eventType="touchUpInside" id="Jhn-5N-Y6j"/>
@@ -1035,7 +1042,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="设置" id="Hi9-xQ-1zB">
@@ -1087,7 +1094,7 @@
                                 <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.38592560279999999" green="0.28108960560000001" blue="0.20649432609999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
                                     <navigationItem title="给我们评分吧~" id="hDX-9S-oVC">

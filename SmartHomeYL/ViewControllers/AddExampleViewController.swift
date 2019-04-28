@@ -19,6 +19,8 @@ class AddExampleViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.view.layer.contents = UIImage(named: "bg4")?.cgImage
     }
     
     

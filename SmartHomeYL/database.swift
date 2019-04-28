@@ -16,9 +16,15 @@ class getDatas:Object {
     //id
     @objc dynamic var id = 1
     //温度
-    @objc dynamic var temprature = ""
+    @objc dynamic var temprature = 0.00
     //湿度
     @objc dynamic var humidity = 0.00
+    //pm2.5
+    @objc dynamic var pm = 0.00
+    //led灯
+    @objc dynamic var led = false
+    //红外感应
+    @objc dynamic var redline = false
     //时间
     @objc dynamic var date = Date()
 }
