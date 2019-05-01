@@ -92,12 +92,12 @@ class ScenepageViewController: UIViewController {
         scrollView.addSubview(buttonzn)
        buttonzn.setTitleColor(UIColor(red: 50/255, green: 49/255, blue: 45/255, alpha: 0.8),for: .normal)
         buttonzn.frame = CGRect.init(x: 0, y: awayhomebtn.ll_y + 170, width: 80, height: 30)
-        buttonzn.setTitle("红外报警", for: .normal)
+        buttonzn.setTitle("智能编排", for: .normal)
         
         //日落时关灯
         let sunsetbtn = UIButton.init(type: .custom)
         sunsetbtn.frame = CGRect.init(x: 0, y: buttonzn.ll_y + 30, width: w, height: 200)
-        sunsetbtn.setImage(UIImage(named:"alert"), for: .normal)
+        sunsetbtn.setImage(UIImage(named:"diy"), for: .normal)
         scrollView.addSubview(sunsetbtn)
         sunsetbtn.addTarget(self, action:#selector(alert(sender:)), for: .touchUpInside)
         //文字说明
@@ -106,7 +106,7 @@ class ScenepageViewController: UIViewController {
         buttonsun.setTitleColor(UIColor(red: 50/255, green: 49/255, blue: 45/255, alpha: 0.8),for: .normal)
         buttonsun.backgroundColor = UIColor(red: 253/255, green: 253/255, blue: 253/255, alpha: 0.7)
         buttonsun.frame = CGRect.init(x: 0, y: sunsetbtn.ll_y + 170, width: w , height: 30)
-        buttonsun.setTitle("点击进入红外报警模块", for: .normal)
+        buttonsun.setTitle("定制属于您自己的智能编排", for: .normal)
         //点击事件
     }
     

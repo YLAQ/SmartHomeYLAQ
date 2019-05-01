@@ -30,7 +30,7 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
             1:[String]([
                 "地区","语言"]),
             2:[String]([
-                "关于LSC's"])
+                "关于YLAQ's"])
         ];
         self.adHeaders = [
             "通用",

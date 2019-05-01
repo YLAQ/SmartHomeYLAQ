@@ -65,7 +65,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        
         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"lgbg.jpg")!)
         
         //初始化数据，这一次数据，我们放在属性列表文件里
@@ -73,9 +73,11 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
             0:[String]([
                 "家庭管理"]),
             1:[String]([
+                "消息中心"]),
+            2:[String]([
                 "帮助与反馈",
                 "去评分"]),
-            2:[String]([
+            3:[String]([
                 "设置"])
         ];
         
@@ -84,11 +86,11 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         //分隔线
         table.separatorColor = UIColor.clear
         table.backgroundColor = UIColor.clear
-
+        
     }
     //分区
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return 4
     }
     
     //表格行数
@@ -99,12 +101,12 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     // UITableViewDataSource协议中的方法，该方法的返回值决定指定分区的尾部
     func tableView(_ tableView:UITableView, titleForFooterInSection section:Int)->String? {
-//        let data = self.allnames?[section]
+        //        let data = self.allnames?[section]
         return " "
     }
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
         let footerView = UIView()
-//        footerView.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 216/255, alpha: 0.9)
+        //        footerView.backgroundColor = UIColor(red: 252/255, green: 239/255, blue: 216/255, alpha: 0.9)
         footerView.backgroundColor = UIColor.clear
         return footerView
     }
@@ -136,7 +138,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     // UITableViewDelegate 方法，处理列表项的选中事件
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-
+        
         table.deselectRow(at: indexPath, animated: true)
         let itemString = self.allnames![indexPath.section]![indexPath.row]
         switch itemString {
@@ -182,4 +184,3 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     
     
 }
-

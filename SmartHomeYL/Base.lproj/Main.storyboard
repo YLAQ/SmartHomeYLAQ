@@ -93,7 +93,7 @@
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.19945954623287671" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3r0-ux-eJJ">
-                                <rect key="frame" x="15" y="188" width="343" height="328"/>
+                                <rect key="frame" x="15" y="188" width="343" height="122"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98439019918441772" green="0.98810487985610962" blue="0.99608021974563599" alpha="0.39953446061643838" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">🌝改善空气质量小建议：
@@ -110,11 +110,11 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRN-ws-IEW">
-                                <rect key="frame" x="14" y="527" width="345" height="80"/>
+                                <rect key="frame" x="14" y="318" width="345" height="289"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEK-l2-8eL">
-                                        <rect key="frame" x="110" y="15" width="124" height="50"/>
+                                        <rect key="frame" x="110" y="119" width="124" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="添加设备" image="add">
                                             <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.80383133561643838" colorSpace="custom" customColorSpace="displayP3"/>
@@ -808,6 +808,17 @@
                                     <action selector="led:" destination="kkU-QB-OPu" eventType="touchUpInside" id="cgK-pt-wL2"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE6-ez-e1Z">
+                                <rect key="frame" x="197" y="321" width="160" height="55"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <state key="normal" title="烟雾报警器" image="xiangyan">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529970000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="smoke:" destination="kkU-QB-OPu" eventType="touchUpInside" id="zhq-yB-maz"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="zCt-7P-avv"/>
                     </view>
@@ -871,17 +882,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE6-ez-e1Z">
-                                <rect key="frame" x="28" y="306" width="160" height="55"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
-                                <state key="normal" title="烟雾报警器" image="xiangyan">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529970000003" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="smoke:" destination="kkU-QB-OPu" eventType="touchUpInside" id="zhq-yB-maz"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="VmC-PW-iX0"/>

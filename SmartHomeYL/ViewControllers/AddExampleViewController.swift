@@ -53,14 +53,14 @@ class AddExampleViewController: UIViewController {
         }
     }
     
-//    @IBAction func smoke(_ sender: Any) {
-//        view.makeLoading(title: "正在连接烟雾报警器...", enable: true)
-//        //延迟5秒执行
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
-//            self.showMsgbox(_message: "设备连接成功(๑`▽´๑)۶")
-//            self.view.dismissLoading()
-//        }
-//    }
+    @IBAction func smoke(_ sender: Any) {
+        view.makeLoading(title: "正在连接烟雾报警器...", enable: true)
+        //延迟5秒执行
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
+            self.showMsgbox(_message: "设备连接成功(๑`▽´๑)۶")
+            self.view.dismissLoading()
+        }
+    }
     
     //提示
     func showMsgbox(_message: String, _title: String = "欧阔~"){
