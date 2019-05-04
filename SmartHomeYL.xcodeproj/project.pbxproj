@@ -25,6 +25,14 @@
 		8088E42F2275EC6B00461802 /* HsuFPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E42E2275EC6B00461802 /* HsuFPSView.swift */; };
 		8088E4312275ECA700461802 /* HsuBallRoatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4302275ECA700461802 /* HsuBallRoatationView.swift */; };
 		8088E437227603E800461802 /* RedLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E436227603E800461802 /* RedLineViewController.swift */; };
+		8088E4742279E6D300461802 /* YCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4702279E6D200461802 /* YCContentView.swift */; };
+		8088E4752279E6D300461802 /* YCPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4712279E6D200461802 /* YCPageView.swift */; };
+		8088E4762279E6D300461802 /* YCTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4722279E6D200461802 /* YCTitleView.swift */; };
+		8088E4772279E6D300461802 /* YCTitleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4732279E6D200461802 /* YCTitleStyle.swift */; };
+		8088E4792279E77800461802 /* UIColor-Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4782279E77800461802 /* UIColor-Extension.swift */; };
+		8088E480227AD22500461802 /* TempratureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E47F227AD22500461802 /* TempratureViewController.swift */; };
+		8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E481227AD5E700461802 /* HumidityViewController.swift */; };
+		8088E484227AD67E00461802 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E483227AD67E00461802 /* PMViewController.swift */; };
 		80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16E3122748C3200981525 /* AddExampleViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
@@ -78,6 +86,14 @@
 		8088E42E2275EC6B00461802 /* HsuFPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuFPSView.swift; sourceTree = "<group>"; };
 		8088E4302275ECA700461802 /* HsuBallRoatationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuBallRoatationView.swift; sourceTree = "<group>"; };
 		8088E436227603E800461802 /* RedLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLineViewController.swift; sourceTree = "<group>"; };
+		8088E4702279E6D200461802 /* YCContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCContentView.swift; sourceTree = "<group>"; };
+		8088E4712279E6D200461802 /* YCPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCPageView.swift; sourceTree = "<group>"; };
+		8088E4722279E6D200461802 /* YCTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCTitleView.swift; sourceTree = "<group>"; };
+		8088E4732279E6D200461802 /* YCTitleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCTitleStyle.swift; sourceTree = "<group>"; };
+		8088E4782279E77800461802 /* UIColor-Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor-Extension.swift"; sourceTree = "<group>"; };
+		8088E47F227AD22500461802 /* TempratureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempratureViewController.swift; sourceTree = "<group>"; };
+		8088E481227AD5E700461802 /* HumidityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityViewController.swift; sourceTree = "<group>"; };
+		8088E483227AD67E00461802 /* PMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
 		80B16E3122748C3200981525 /* AddExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExampleViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -156,6 +172,7 @@
 				8086D482227166BB006CC125 /* ScenepageViewController.swift */,
 				8086D484227166F2006CC125 /* ChartspageViewController.swift */,
 				8088E436227603E800461802 /* RedLineViewController.swift */,
+				8088E47E227AD20400461802 /* Charts */,
 			);
 			path = SmartPageVC;
 			sourceTree = "<group>";
@@ -167,6 +184,28 @@
 				8088E4302275ECA700461802 /* HsuBallRoatationView.swift */,
 			);
 			path = RoundLoadView;
+			sourceTree = "<group>";
+		};
+		8088E46F2279E6D200461802 /* PageView */ = {
+			isa = PBXGroup;
+			children = (
+				8088E4782279E77800461802 /* UIColor-Extension.swift */,
+				8088E4702279E6D200461802 /* YCContentView.swift */,
+				8088E4712279E6D200461802 /* YCPageView.swift */,
+				8088E4722279E6D200461802 /* YCTitleView.swift */,
+				8088E4732279E6D200461802 /* YCTitleStyle.swift */,
+			);
+			path = PageView;
+			sourceTree = "<group>";
+		};
+		8088E47E227AD20400461802 /* Charts */ = {
+			isa = PBXGroup;
+			children = (
+				8088E47F227AD22500461802 /* TempratureViewController.swift */,
+				8088E481227AD5E700461802 /* HumidityViewController.swift */,
+				8088E483227AD67E00461802 /* PMViewController.swift */,
+			);
+			path = Charts;
 			sourceTree = "<group>";
 		};
 		80B199092269C3DE002EFE23 /* Frameworks */ = {
@@ -200,6 +239,7 @@
 		80C92AD422633AE200D265F1 /* SmartHomeYL */ = {
 			isa = PBXGroup;
 			children = (
+				8088E46F2279E6D200461802 /* PageView */,
 				8088E42D2275EC4800461802 /* RoundLoadView */,
 				80C92ADC22633AE400D265F1 /* Assets.xcassets */,
 				80C92AE822633B0B00D265F1 /* ViewControllers */,
@@ -356,7 +396,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
+				8088E480227AD22500461802 /* TempratureViewController.swift in Sources */,
 				8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */,
+				8088E4742279E6D300461802 /* YCContentView.swift in Sources */,
 				8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */,
 				8088E42F2275EC6B00461802 /* HsuFPSView.swift in Sources */,
 				8088E437227603E800461802 /* RedLineViewController.swift in Sources */,
@@ -364,13 +406,17 @@
 				8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */,
 				8086D47C22708D7D006CC125 /* userPassChangeViewController.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
+				8088E4792279E77800461802 /* UIColor-Extension.swift in Sources */,
 				8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
 				8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */,
 				80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */,
+				8088E484227AD67E00461802 /* PMViewController.swift in Sources */,
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
+				8088E4752279E6D300461802 /* YCPageView.swift in Sources */,
+				8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
 				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,
 				80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */,
@@ -381,8 +427,10 @@
 				806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */,
 				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,
 				8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */,
+				8088E4772279E6D300461802 /* YCTitleStyle.swift in Sources */,
 				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
 				8088E4312275ECA700461802 /* HsuBallRoatationView.swift in Sources */,
+				8088E4762279E6D300461802 /* YCTitleView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

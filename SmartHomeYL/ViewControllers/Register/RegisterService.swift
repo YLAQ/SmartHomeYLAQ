@@ -37,9 +37,9 @@ class RegisterService {
         }
         
         //判断用户名是否只有数字和字母
-        if username.rangeOfCharacter(from: CharacterSet.alphanumerics.inverted) != nil {
-            return .just(.failed(message: "用户名只能包含数字和字母"))
-        }
+//        if username.rangeOfCharacter(from: CharacterSet.alphanumerics.inverted) != nil {
+//            return .just(.failed(message: "用户名只能包含数字和字母"))
+//        }
         
         //发起网络请求检查用户名是否已存在
         return networkService
@@ -55,6 +55,13 @@ class RegisterService {
             .startWith(.validating) //在发起网络请求前，先返回一个“正在检查”的验证结果
     }
     
+    //判断是否数字
+    func isPurnInt(string: String) -> Bool {
+        let scan: Scanner = Scanner(string: string)
+        var val:Int = 0
+        return scan.scanInt(&val) && scan.isAtEnd
+    }
+    
     //验证电话
     func validatePhone(_ phone: String) -> ValidationResult {
         let numberOfCharacters = phone.count
@@ -62,6 +69,10 @@ class RegisterService {
         //判断电话是否为空
         if numberOfCharacters == 0 {
             return .empty
+        }
+        
+        if isPurnInt(string: phone) == false {
+            return .failed(message: "电话号码格式有误")
         }
         
         //判断电话位数

@@ -47,17 +47,17 @@
                                 <rect key="frame" x="14" y="117" width="345" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="20°C" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xz-fw-bWL">
-                                        <rect key="frame" x="19" y="37" width="80" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暂无数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Xz-fw-bWL">
+                                        <rect key="frame" x="20" y="37" width="80" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="64%RH" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gf-Yh-ApZ">
-                                        <rect key="frame" x="119" y="37" width="80" height="25"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暂无数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gf-Yh-ApZ">
+                                        <rect key="frame" x="121" y="37" width="80" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -82,18 +82,35 @@
                                             <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="33μg/m³" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt9-5N-lSS">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="暂无数据" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt9-5N-lSS">
                                         <rect key="frame" x="203" y="37" width="128" height="25"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                         <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="0.19945954623287671" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRN-ws-IEW">
+                                <rect key="frame" x="16" y="438" width="343" height="169"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEK-l2-8eL">
+                                        <rect key="frame" x="103" y="59" width="124" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="添加设备" image="add">
+                                            <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.80383133561643838" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="addEquBtn:" destination="YH0-tg-V7G" eventType="touchUpInside" id="qMK-rM-LoL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.98439019920000004" green="0.98810487989999995" blue="0.99608021970000005" alpha="0.79585830480821917" colorSpace="custom" customColorSpace="displayP3"/>
+                            </scrollView>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3r0-ux-eJJ">
-                                <rect key="frame" x="15" y="188" width="343" height="122"/>
+                                <rect key="frame" x="15" y="199" width="343" height="222"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.98439019918441772" green="0.98810487985610962" blue="0.99608021974563599" alpha="0.39953446061643838" colorSpace="custom" customColorSpace="displayP3"/>
                                 <string key="text">🌝改善空气质量小建议：
@@ -109,23 +126,6 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IRN-ws-IEW">
-                                <rect key="frame" x="14" y="318" width="345" height="289"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEK-l2-8eL">
-                                        <rect key="frame" x="110" y="119" width="124" height="50"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" title="添加设备" image="add">
-                                            <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.80383133561643838" colorSpace="custom" customColorSpace="displayP3"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="addEquBtn:" destination="YH0-tg-V7G" eventType="touchUpInside" id="qMK-rM-LoL"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.98439019920000004" green="0.98810487989999995" blue="0.99608021970000005" alpha="0.79585830480821917" colorSpace="custom" customColorSpace="displayP3"/>
-                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="hn6-fd-oY7"/>
                     </view>
@@ -152,53 +152,6 @@
                     <view key="view" contentMode="scaleToFill" id="Qg5-8g-2vH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-Mo-qqy">
-                                <rect key="frame" x="16" y="70" width="343" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.80388484589999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="场景控制" image="zn">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.59980386500000005" green="0.58857303859999999" blue="0.56470280890000002" alpha="0.6016160103" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutBtn:" destination="kbt-0A-9DH" eventType="touchUpInside" id="ZjI-Uf-zju"/>
-                                    <action selector="zn:" destination="CNV-kY-EMc" eventType="touchUpInside" id="vAU-pj-0VI"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuB-ZI-Czp">
-                                <rect key="frame" x="16" y="304" width="343" height="58"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.80388484589999998" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title=" 图表统计" image="tb">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                    <color key="titleShadowColor" red="0.59980386500000005" green="0.58857303859999999" blue="0.56470280890000002" alpha="0.6016160103" colorSpace="custom" customColorSpace="displayP3"/>
-                                </state>
-                                <connections>
-                                    <action selector="logoutBtn:" destination="kbt-0A-9DH" eventType="touchUpInside" id="tJV-Ue-MY8"/>
-                                    <action selector="tb:" destination="CNV-kY-EMc" eventType="touchUpInside" id="oDz-Bf-Ujj"/>
-                                </connections>
-                            </button>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-VA-nI9">
-                                <rect key="frame" x="16" y="136" width="343" height="124"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
-                                <string key="text">⏏️场景控制包含一键执行与智能编排两个子模块。
-在一键执行模块中，根据系统划分出的不同场景，您可以在相对应状态下一键对多种设备进行一系列操作。
-在智能编排模块中，您可根据需求自定义一套属于自己的一键操作流程，使软件使用更加得心应手。</string>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="⏏️图表模块对当日的空气质量、室内温度、湿度、pm2.5值与当日的用电情况进行统计并以图表的形势呈现，让您对一天内相关数据的变化趋势有更加直观的体验。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pD0-MM-0an">
-                                <rect key="frame" x="16" y="370" width="343" height="85"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="JPe-6J-RoF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="智能" image="zhinengtab" id="gKS-CK-DKh"/>
@@ -406,7 +359,7 @@
                                             <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="submit:" destination="qM7-wl-xhE" eventType="touchUpInside" id="CLd-q3-PED"/>
+                                            <action selector="submit:" destination="qM7-wl-xhE" eventType="touchUpInside" id="fYY-OF-SJy"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="grO-6a-AZ4">
@@ -498,10 +451,7 @@
                                             <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="back:" destination="baT-1b-TSM" eventType="touchUpInside" id="D8D-qy-UGb"/>
-                                            <action selector="back:" destination="aEF-kh-MFi" eventType="touchUpInside" id="dm2-cj-zH9"/>
-                                            <action selector="submit:" destination="baT-1b-TSM" eventType="touchUpInside" id="Tmq-JJ-MmL"/>
-                                            <action selector="submit:" destination="qM7-wl-xhE" eventType="touchUpInside" id="ve0-Tw-n9Z"/>
+                                            <action selector="submit:" destination="baT-1b-TSM" eventType="touchUpInside" id="WkF-db-bxT"/>
                                         </connections>
                                     </button>
                                     <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0ri-eb-o3p">
@@ -593,9 +543,7 @@
                                             <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         </state>
                                         <connections>
-                                            <action selector="back:" destination="aEF-kh-MFi" eventType="touchUpInside" id="NKP-cJ-t44"/>
-                                            <action selector="submit:" destination="qM7-wl-xhE" eventType="touchUpInside" id="bdK-mm-ZRA"/>
-                                            <action selector="submit:" destination="aEF-kh-MFi" eventType="touchUpInside" id="wAk-oz-7e2"/>
+                                            <action selector="submit:" destination="aEF-kh-MFi" eventType="touchUpInside" id="jVu-fA-1iH"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PJo-MQ-tDI">
@@ -851,8 +799,8 @@
                                     <action selector="didClickPost:" destination="ve3-eo-L3Y" eventType="touchUpInside" id="reb-DY-Pwu"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-0w-Hb7">
-                                <rect key="frame" x="101" y="148" width="161" height="30"/>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OxK-0w-Hb7">
+                                <rect key="frame" x="101" y="103" width="161" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -882,8 +830,16 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzH-QZ-sii">
+                                <rect key="frame" x="164" y="371" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="addd:" destination="ve3-eo-L3Y" eventType="touchUpInside" id="RIw-UY-WdC"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.97971981760000004" green="0.93444192410000004" blue="0.85489052529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="VmC-PW-iX0"/>
                     </view>
                     <connections>
@@ -892,55 +848,69 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VDd-tJ-P0n" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1361" y="-10"/>
+            <point key="canvasLocation" x="-1362.4000000000001" y="-10.344827586206897"/>
         </scene>
-        <!--Scenepage View Controller-->
-        <scene sceneID="btN-xQ-CFO">
+        <!--View Controller-->
+        <scene sceneID="5Rl-F1-xxd">
             <objects>
-                <viewController storyboardIdentifier="Scenepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="CK6-cs-VDr" customClass="ScenepageViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Dlt-wg-mGB">
+                <viewController id="S7L-lX-fYN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E0g-Za-DOH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="9w0-hK-vK4">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="场景控制" id="RdC-3b-clJ">
-                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="RbQ-yd-jOd">
-                                            <color key="tintColor" red="0.41716074939999997" green="0.50812160969999998" blue="0.60785651210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <connections>
-                                                <action selector="back:" destination="CK6-cs-VDr" id="NT3-En-IWC"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aNj-FL-Kef">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ewk-Mo-qqy">
+                                <rect key="frame" x="16" y="96" width="343" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MzA-ca-LEr">
-                                <rect key="frame" x="0.0" y="79" width="375" height="588"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.80388484589999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="场景控制" image="zn">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.59980386500000005" green="0.58857303859999999" blue="0.56470280890000002" alpha="0.6016160103" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="kbt-0A-9DH" eventType="touchUpInside" id="ZjI-Uf-zju"/>
+                                    <action selector="zn:" destination="CNV-kY-EMc" eventType="touchUpInside" id="vAU-pj-0VI"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EuB-ZI-Czp">
+                                <rect key="frame" x="16" y="330" width="343" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.80388484589999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title=" 图表统计" image="tb">
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleShadowColor" red="0.59980386500000005" green="0.58857303859999999" blue="0.56470280890000002" alpha="0.6016160103" colorSpace="custom" customColorSpace="displayP3"/>
+                                </state>
+                                <connections>
+                                    <action selector="logoutBtn:" destination="kbt-0A-9DH" eventType="touchUpInside" id="tJV-Ue-MY8"/>
+                                    <action selector="tb:" destination="CNV-kY-EMc" eventType="touchUpInside" id="oDz-Bf-Ujj"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gf5-VA-nI9">
+                                <rect key="frame" x="16" y="162" width="343" height="124"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <string key="text">⏏️场景控制包含一键执行与智能编排两个子模块。
+在一键执行模块中，根据系统划分出的不同场景，您可以在相对应状态下一键对多种设备进行一系列操作。
+在智能编排模块中，您可根据需求自定义一套属于自己的一键操作流程，使软件使用更加得心应手。</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="⏏️图表模块对当日的空气质量、室内温度、湿度、pm2.5值与当日的用电情况进行统计并以图表的形势呈现，让您对一天内相关数据的变化趋势有更加直观的体验。" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="pD0-MM-0an">
+                                <rect key="frame" x="16" y="396" width="343" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="gUU-Ga-pcM"/>
+                        <viewLayoutGuide key="safeArea" id="pTt-Cd-n7o"/>
                     </view>
-                    <connections>
-                        <outlet property="scrollView" destination="MzA-ca-LEr" id="SQH-Dy-FQc"/>
-                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="mSI-Wn-f3T" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lhq-XK-f8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-239.19999999999999" y="724.58770614692662"/>
+            <point key="canvasLocation" x="-644" y="770"/>
         </scene>
         <!--Red Line View Controller-->
         <scene sceneID="bpd-Pe-3za">
@@ -996,55 +966,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HRf-3h-uTW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-247.19999999999999" y="1401.9490254872564"/>
-        </scene>
-        <!--Chartspage View Controller-->
-        <scene sceneID="QO1-H8-Gar">
-            <objects>
-                <viewController storyboardIdentifier="Chartspage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="s9t-q9-92Q" customClass="ChartspageViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="Pxv-W3-LmQ">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1FQ-Jl-5Ic">
-                                <rect key="frame" x="0.0" y="77" width="375" height="590"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </scrollView>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="e9Z-g8-Kec">
-                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <textAttributes key="titleTextAttributes">
-                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                </textAttributes>
-                                <items>
-                                    <navigationItem title="图表统计" id="Sm9-qZ-TGz">
-                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="Uk1-AZ-rT4">
-                                            <color key="tintColor" red="0.41716074939999997" green="0.50812160969999998" blue="0.60785651210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <connections>
-                                                <action selector="back:" destination="s9t-q9-92Q" id="Sna-jB-r5p"/>
-                                            </connections>
-                                        </barButtonItem>
-                                    </navigationItem>
-                                </items>
-                            </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JKg-Pj-0NP">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                            </view>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="1gN-G4-SaJ"/>
-                    </view>
-                    <connections>
-                        <outlet property="scrollView" destination="1FQ-Jl-5Ic" id="G4y-dI-sys"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rsm-22-RG8" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="408.80000000000001" y="724.58770614692662"/>
+            <point key="canvasLocation" x="86" y="771"/>
         </scene>
         <!--Family Manage View Controller-->
         <scene sceneID="frP-HQ-bdf">

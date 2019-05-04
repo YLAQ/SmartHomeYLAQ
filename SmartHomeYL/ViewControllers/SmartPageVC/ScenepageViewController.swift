@@ -11,27 +11,20 @@ import LLCycleScrollView
 
 class ScenepageViewController: UIViewController {
     
-    @IBOutlet weak var scrollView: UIScrollView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        // Do any additional setup after loading the view.
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-        
+        self.view.layer.contents = UIImage(named: "bg4")?.cgImage
         //屏幕宽度
         let w = UIScreen.main.bounds.width
-        
+        let scrollView = UIScrollView(frame:CGRect(x:0,y:0,width:w,height:588))
+        scrollView.backgroundColor = UIColor(red: 250/255, green: 246/255, blue: 237/255, alpha: 0.5)
         //scrollView大小
-        scrollView.contentSize = CGSize(width:w,height:810);
-        
+        scrollView.contentSize = CGSize(width:w,height:850)
+          self.view.addSubview(scrollView)
         //banner
         let imagesURLStrings = [
             "bn1","bn2","bn3","bn4","bn5"
-        ];
+        ]
         let banner = LLCycleScrollView.llCycleScrollViewWithArrow(CGRect.init(x: 0, y: 0, width: w, height: 200), arrowLRImages: [UIImage.init(named: "zuojiantou")!, UIImage.init(named: "youjiantou")!], imageURLPaths: imagesURLStrings, titles:nil, didSelectItemAtIndex: { index in
 //            print("当前点击图片的位置为:\(index)")
         })
@@ -42,7 +35,7 @@ class ScenepageViewController: UIViewController {
         // 设置当前PageControl的样式
         banner.customPageControlStyle = .snake
         // 非.system的状态下，设置PageControl的tintColor
-        banner.customPageControlInActiveTintColor = UIColor.lightGray
+        banner.customPageControlInActiveTintColor = UIColor(r: 211, g: 211, b: 211)
         // 设置PageControl的位置
         banner.pageControlPosition = .center
         // 非.system的状态下，设置PageControl的间距(默认为8.0)

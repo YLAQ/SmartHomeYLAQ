@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class HomepageViewController: UIViewController {
 
@@ -49,10 +50,11 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var pmLable: UILabel! //pm2.5
     @IBOutlet weak var tips: UITextView! //小贴士
     @IBOutlet weak var scrollView: UIScrollView!
+    var token : NotificationToken? = nil //监听
     
     //添加设备按钮点击
     @IBAction func addEquBtn(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddExamplePage")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddEquipmentpage")
         //推出新的Controller
         self.present(vc, animated: true, completion: nil)
     }
@@ -79,6 +81,33 @@ class HomepageViewController: UIViewController {
 //        tips.layer.shadowOpacity = 0.8//设置阴影透明度
 //        tips.layer.shadowOffset = CGSize(width: 2, height: 2)//设置阴影偏移量
         scrollView.layer.cornerRadius = 10
+        
+        //数据库监听
+        let realm = try! Realm()
+//        try! realm.write {
+//            realm.deleteAll()
+//        }
+        let result = realm.objects(getDatas.self) 
+        token = result.observe({ (changes: RealmCollectionChange) in
+            switch changes {
+            case .initial:
+                //Results 现在已经填充完毕，可以不需要阻塞 UI 就可以被访问
+                debugPrint("首页数据初始化")
+                break
+            case .update(_, deletions: _, insertions: _, modifications: _):
+                //数据库发生更改（增删改）调用
+                debugPrint("首页数据更新")
+                
+                //查询所有环境数据信息
+                let items = realm.objects(getDatas.self)
+                self.tempLable.text = "\(items.last!.temprature)°C"
+                self.humiLable.text = "\(items.last!.humidity)%RH"
+                self.pmLable.text = "\(items.last!.pm)μg/m³"
+                break
+            default:
+                break
+            }
+        })
     }
     
     //小贴士

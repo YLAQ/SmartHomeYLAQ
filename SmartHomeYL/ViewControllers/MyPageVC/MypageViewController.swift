@@ -11,6 +11,7 @@ import RealmSwift
 
 class MypageViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var token : NotificationToken? = nil
     @IBOutlet weak var username: UILabel! //用户名
     @IBOutlet weak var tel: UILabel! //手机号
     @IBOutlet weak var hp: UIImageView! //头像
@@ -37,14 +38,21 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         
         //用户名、电话
         let name = usernameexit()
-        let user = try! Realm().objects(Users.self)
+        //使用默认的数据库
+        let realm = try! Realm()
+        //查询所有用户信息
+        let items = realm.objects(Users.self)
+        //打印出数据库地址
+        print(realm.configuration.fileURL ?? "")
+        
         username.text = name
-        for item in user {
+        tel.text = ""
+        for item in items {
             if name == item.name {
                 tel.text = item.phone
-                print(item.phone)
             }
         }
+        
         //用户头像
         hp.image = UIImage(named: "hp")
         hp.layer.cornerRadius = 33
@@ -52,10 +60,41 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         logout.layer.cornerRadius = 10
         logout.layer.shadowOpacity = 0.5
         logout.layer.shadowOffset = CGSize(width: 1, height: 1)
+        
+        
+        //数据库监听
+        let result = realm.objects(Users.self)
+        token = result.observe({ (changes: RealmCollectionChange) in
+            switch changes {
+            case .initial:
+                //Results 现在已经填充完毕，可以不需要阻塞 UI 就可以被访问
+                debugPrint("用户信息初始化")
+                break
+            case .update(_, deletions: _, insertions: _, modifications: _):
+                //数据库发生更改（增删改）调用
+                debugPrint("用户信息更新")
+                //用户名、电话
+                let name = self.usernameexit()
+                //使用默认的数据库
+                let realm = try! Realm()
+                //查询所有用户信息
+                let items = realm.objects(Users.self)
+                
+                self.username.text = name
+                for item in items {
+                    if name == item.name {
+                        self.tel.text = item.phone
+                    }
+                }
+                break
+            default:
+                break
+            }
+        })
     }
     
     @IBAction func logoutBtn(_ sender: Any) {
-        //删除当前用户
+        //删除当前UserDefaults，退出用户
         UserDefaults.standard.setValue("", forKey: "userName")
         let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loginpage")
         //返回Loginpage
@@ -144,31 +183,26 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         switch itemString {
         //家庭管理
         case "家庭管理":
-            print("case0")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "FamilyManagepage")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)
         //消息中心
         case "消息中心":
-            print("case1")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SystemLogpage")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)
         //帮助与反馈
         case "帮助与反馈":
-            print("case2")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Feedbackpage")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)
         //去评分
         case "去评分":
-            print("case3")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AppStorepage")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)
         //设置
         case "设置":
-            print("case4")
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "SetUppage")
             //推出新的Controller
             self.present(vc, animated: true, completion: nil)

@@ -58,13 +58,22 @@ class userPhoneChangeViewController: UIViewController {
         }
     }
     
+    //判断是否数字
+    func isPurnInt(string: String) -> Bool {
+        let scan: Scanner = Scanner(string: string)
+        var val:Int = 0
+        return scan.scanInt(&val) && scan.isAtEnd
+    }
+    
     @IBAction func submit(_ sender: Any) {
         if txt.text == ""{
             lable.text = "手机号不能为空"
             //            showMsgbox(_message: "用户名不能为空噢")
             return
+        } else if isPurnInt(string: txt.text!) == false {
+            lable.text = "手机号格式有误"
         } else if txt.text!.count != 11{
-            lable.text = "手机号格式不正确"
+            lable.text = "手机号格式有误"
         } else {
             let name = usernameexit()
             let realm = try! Realm()
@@ -78,7 +87,7 @@ class userPhoneChangeViewController: UIViewController {
                     }
                     print("新手机号：\(item.phone)")
                     //保存用户名
-
+                    
                 }
             }
             showMsgboxwc(_message: "手机号修改成功")
@@ -86,12 +95,14 @@ class userPhoneChangeViewController: UIViewController {
         }
     }
     
+    //输入为空提示
     func showMsgbox(_message: String, _title: String = "哎呀"){
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
         let btnOK = UIAlertAction(title: "好的", style: .default, handler: nil)
         alert.addAction(btnOK)
         self.present(alert, animated: true, completion: nil)
     }
+    
     
     func showMsgboxwc(_message: String, _title: String = "搞定~"){
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
