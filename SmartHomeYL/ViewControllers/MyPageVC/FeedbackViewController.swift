@@ -107,10 +107,10 @@ class FeedbackViewController: UIViewController, UITableViewDataSource, UITableVi
         let itemString = self.allnames![indexPath.section]![indexPath.row]
         switch itemString {
             
-        case "家庭名称":
-            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userNameChange")
+        case "怎么在app中添加设备？":
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Helpspage") as! HelpsViewController
+            vc.id = "1"
             self.present(vc, animated: true, completion: nil)
-            print("dian")
             
         case "房间管理":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userPassChange")

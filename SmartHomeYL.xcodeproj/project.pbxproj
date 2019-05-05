@@ -33,6 +33,8 @@
 		8088E480227AD22500461802 /* TempratureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E47F227AD22500461802 /* TempratureViewController.swift */; };
 		8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E481227AD5E700461802 /* HumidityViewController.swift */; };
 		8088E484227AD67E00461802 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E483227AD67E00461802 /* PMViewController.swift */; };
+		8088E48A227DAA8F00461802 /* AddArduino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E489227DAA8F00461802 /* AddArduino.swift */; };
+		8088E48C227DAE5200461802 /* HelpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E48B227DAE5200461802 /* HelpsViewController.swift */; };
 		80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16E3122748C3200981525 /* AddExampleViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
@@ -94,6 +96,8 @@
 		8088E47F227AD22500461802 /* TempratureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TempratureViewController.swift; sourceTree = "<group>"; };
 		8088E481227AD5E700461802 /* HumidityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumidityViewController.swift; sourceTree = "<group>"; };
 		8088E483227AD67E00461802 /* PMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
+		8088E489227DAA8F00461802 /* AddArduino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArduino.swift; sourceTree = "<group>"; };
+		8088E48B227DAE5200461802 /* HelpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpsViewController.swift; sourceTree = "<group>"; };
 		80B16E3122748C3200981525 /* AddExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExampleViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -148,6 +152,7 @@
 				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
 				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
 				8086D468226F38BC006CC125 /* FeedbackViewController.swift */,
+				8088E48B227DAE5200461802 /* HelpsViewController.swift */,
 				806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */,
 				806D3FD22269D02D008DBE49 /* SetUpViewController.swift */,
 			);
@@ -260,6 +265,7 @@
 				80C92B4C2267277000D265F1 /* Register */,
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
 				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
+				8088E489227DAA8F00461802 /* AddArduino.swift */,
 				80B16E3122748C3200981525 /* AddExampleViewController.swift */,
 				8086D48122716663006CC125 /* SmartPageVC */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
@@ -408,6 +414,7 @@
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
 				8088E4792279E77800461802 /* UIColor-Extension.swift in Sources */,
 				8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */,
+				8088E48C227DAE5200461802 /* HelpsViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
 				8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */,
@@ -416,6 +423,7 @@
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
 				8088E4752279E6D300461802 /* YCPageView.swift in Sources */,
+				8088E48A227DAA8F00461802 /* AddArduino.swift in Sources */,
 				8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
 				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,

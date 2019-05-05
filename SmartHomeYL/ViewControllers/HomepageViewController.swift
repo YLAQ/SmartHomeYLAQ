@@ -54,7 +54,7 @@ class HomepageViewController: UIViewController {
     
     //添加设备按钮点击
     @IBAction func addEquBtn(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddEquipmentpage")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddExamplepage")
         //推出新的Controller
         self.present(vc, animated: true, completion: nil)
     }
@@ -87,7 +87,7 @@ class HomepageViewController: UIViewController {
 //        try! realm.write {
 //            realm.deleteAll()
 //        }
-        let result = realm.objects(getDatas.self) 
+        let result = realm.objects(getDatas.self)
         token = result.observe({ (changes: RealmCollectionChange) in
             switch changes {
             case .initial:
