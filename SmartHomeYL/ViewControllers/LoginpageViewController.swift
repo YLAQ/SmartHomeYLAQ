@@ -31,7 +31,7 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
     //登录框状态
     var showType:LoginShowType = LoginShowType.NONE
     //输入为空提示
-    func showMsgbox(_message: String, _title: String = "哎呀"){
+    func showMsgbox(_message: String, _title: String){
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
         let btnOK = UIAlertAction(title: "好的", style: .default, handler: nil)
         alert.addAction(btnOK)
@@ -41,17 +41,17 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
     //登录点击事件
     @objc func handleLogin(sender:UIButton){
         if txtUser.text == ""{
-            showMsgbox(_message: "帐号不能为空噢")
+            showMsgbox(_message: "帐号不能为空噢", _title: "哎呀")
             return
         }
         if txtPwd.text == ""{
-            showMsgbox(_message: "密码不能为空噢")
+            showMsgbox(_message: "密码不能为空噢", _title: "哎呀")
             return
         }
         let user = try! Realm().objects(Users.self)
         //判断用户是否存在数据库
         if user.count == 0 {
-            showMsgbox(_message: "不存在该用户，请先注册~")
+            showMsgbox(_message: "不存在该用户，请先注册~", _title: "操作失败")
         } else {
             print(user.count)
             for item in user {
@@ -65,7 +65,7 @@ class LoginpageViewController: UIViewController, UITextFieldDelegate {
                     return
                 }
             }
-            showMsgbox(_message: "帐号或密码输入错误")
+            showMsgbox(_message: "帐号或密码输入错误", _title: "哎呀")
             return
         }
         

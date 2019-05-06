@@ -109,6 +109,7 @@ class FeedbackViewController: UIViewController, UITableViewDataSource, UITableVi
             
         case "怎么在app中添加设备？":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Helpspage") as! HelpsViewController
+            //界面传值
             vc.id = "1"
             self.present(vc, animated: true, completion: nil)
             

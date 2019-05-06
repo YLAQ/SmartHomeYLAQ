@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ZKJ-57-r8L">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VvK-rC-5Da">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -712,14 +712,14 @@
             <point key="canvasLocation" x="2432.8000000000002" y="1417.2413793103449"/>
         </scene>
         <!--Add Example View Controller-->
-        <scene sceneID="SpU-gs-Pj6">
+        <scene sceneID="H45-x0-sgl">
             <objects>
-                <viewController storyboardIdentifier="AddExamplepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kkU-QB-OPu" customClass="AddExampleViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="6MZ-tq-bFK">
+                <viewController storyboardIdentifier="AddExamplepage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="dSr-5A-JlA" customClass="AddExampleViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="laO-16-Mhs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EqA-v7-nXc">
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" barStyle="black" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PX5-47-tHc">
                                 <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
                                 <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -728,22 +728,22 @@
                                     <color key="textShadowColor" red="0.36476840100000002" green="0.2575213012" blue="0.2052780444" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </textAttributes>
                                 <items>
-                                    <navigationItem title="添加设备" id="5xS-xy-DOs">
-                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="pyD-AT-CZd">
+                                    <navigationItem title="添加设备" id="MRF-A1-FOg">
+                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="8Vx-HL-QVX">
                                             <color key="tintColor" red="0.41716074939999997" green="0.50812160969999998" blue="0.60785651210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                             <connections>
-                                                <action selector="back:" destination="kkU-QB-OPu" id="LAn-Pn-UPk"/>
+                                                <action selector="back:" destination="dSr-5A-JlA" id="v89-TI-1RN"/>
                                             </connections>
                                         </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9I8-l3-xjD">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hNK-KD-fJT">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lCO-wh-ef5">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q22-uv-bJO">
                                 <rect key="frame" x="16" y="84" width="225" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -751,92 +751,83 @@
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6a-1Q-5om">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-mA-qxb">
                                 <rect key="frame" x="16" y="150" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="温度传感器" image="wendu">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95202803938356162" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95202803940000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="wd:" destination="kkU-QB-OPu" eventType="touchUpInside" id="AIZ-8v-Gj9"/>
+                                    <action selector="wd:" destination="dSr-5A-JlA" eventType="touchUpInside" id="mbU-xa-Xwh"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5s4-oM-lfW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7S4-jp-0Nt">
                                 <rect key="frame" x="197" y="150" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title=" 湿度传感器" image="shidu">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95408818493150682" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.95408818490000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="sd:" destination="kkU-QB-OPu" eventType="touchUpInside" id="sDD-QH-F6v"/>
+                                    <action selector="sd:" destination="dSr-5A-JlA" eventType="touchUpInside" id="qyu-r3-wqc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Utz-z2-VRW">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Alz-xt-h8M">
                                 <rect key="frame" x="16" y="235" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="PM2.5传感器" image="pm">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94774721746575341" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94774721750000002" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <action selector="pm:" destination="kkU-QB-OPu" eventType="touchUpInside" id="Z6X-dP-iKX"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GpX-NA-oZi">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B8Z-H3-AB8">
                                 <rect key="frame" x="16" y="321" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title=" 红外感应器" image="baojing">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94729238013698636" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94729238010000005" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <action selector="redline:" destination="kkU-QB-OPu" eventType="touchUpInside" id="OoT-Q2-zeq"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdb-Ta-sKe">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eng-B6-vpB">
                                 <rect key="frame" x="197" y="235" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title=" LED灯" image="dengpao">
-                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529965753422" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529970000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <action selector="led:" destination="kkU-QB-OPu" eventType="touchUpInside" id="cgK-pt-wL2"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fE6-ez-e1Z">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V1c-M4-bzH">
                                 <rect key="frame" x="197" y="321" width="160" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="0.64961472600000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 <state key="normal" title="烟雾报警器" image="xiangyan">
                                     <color key="titleColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="0.94817529970000003" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
-                                <connections>
-                                    <action selector="smoke:" destination="kkU-QB-OPu" eventType="touchUpInside" id="zhq-yB-maz"/>
-                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A0Q-Vo-iME">
-                                <rect key="frame" x="102" y="464" width="161" height="58"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MBw-qD-tfe">
+                                <rect key="frame" x="92" y="460" width="191" height="58"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.65743154287338257" green="0.78092581033706665" blue="0.97649520635604858" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="backgroundColor" red="0.50758767130000004" green="0.60974532370000001" blue="0.72942763570000002" alpha="0.74649507709999996" colorSpace="custom" customColorSpace="displayP3"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                <state key="normal" title="断开蓝牙连接" image="blue">
+                                <state key="normal" title="断开蓝牙连接 " image="blue">
                                     <color key="titleColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                     <color key="titleShadowColor" red="0.59980386500000005" green="0.58857303859999999" blue="0.56470280890000002" alpha="0.6016160103" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
                                 <connections>
-                                    <action selector="cancle:" destination="kkU-QB-OPu" eventType="touchUpInside" id="tHZ-bK-cVH"/>
+                                    <action selector="cancle:" destination="dSr-5A-JlA" eventType="touchUpInside" id="Whz-4N-yut"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <viewLayoutGuide key="safeArea" id="zCt-7P-avv"/>
+                        <viewLayoutGuide key="safeArea" id="7DQ-lc-XX0"/>
                     </view>
+                    <connections>
+                        <outlet property="cancle" destination="MBw-qD-tfe" id="jOb-AL-N9r"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="BqO-M9-yBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Nq3-hZ-Rzd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2013.5999999999999" y="-8.5457271364317844"/>
+            <point key="canvasLocation" x="-2129" y="-10"/>
         </scene>
         <!--Add Equipment View Controller-->
         <scene sceneID="G6f-OQ-Tsh">
@@ -1213,6 +1204,46 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lat-Sl-6ZK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="817" y="-726"/>
+        </scene>
+        <!--Add Devices View Controller-->
+        <scene sceneID="Pgv-hX-JnP">
+            <objects>
+                <viewController storyboardIdentifier="AddDevicespage" useStoryboardIdentifierAsRestorationIdentifier="YES" id="VvK-rC-5Da" customClass="AddDevicesViewController" customModule="SmartHomeYL" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="39L-1s-e9t">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" barStyle="black" translatesAutoresizingMaskIntoConstraints="NO" id="k0J-jn-qDD">
+                                <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.97191601989999998" green="0.93046635389999999" blue="0.85489112140000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="barTintColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" red="0.19597077369999999" green="0.19237759709999999" blue="0.1764684916" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="添加设备" id="cMF-16-bGR">
+                                        <barButtonItem key="leftBarButtonItem" title="⬅️返回" id="Glg-TP-PLI">
+                                            <color key="tintColor" red="0.41716074939999997" green="0.50812160969999998" blue="0.60785651210000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <connections>
+                                                <action selector="back:" destination="VvK-rC-5Da" id="pri-ry-MS7"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mb8-32-M1C">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.99216347930000004" green="0.99214500189999999" blue="0.99215751890000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="DCp-ur-BNX"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="osd-xJ-ghh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1387" y="-712"/>
         </scene>
         <!--Loginpage View Controller-->
         <scene sceneID="hfW-b8-FEF">

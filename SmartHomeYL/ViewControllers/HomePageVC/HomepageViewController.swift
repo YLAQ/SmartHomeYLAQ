@@ -54,7 +54,7 @@ class HomepageViewController: UIViewController {
     
     //添加设备按钮点击
     @IBAction func addEquBtn(_ sender: Any) {
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddExamplepage")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddDevicespage")
         //推出新的Controller
         self.present(vc, animated: true, completion: nil)
     }

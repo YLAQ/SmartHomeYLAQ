@@ -35,6 +35,11 @@
 		8088E484227AD67E00461802 /* PMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E483227AD67E00461802 /* PMViewController.swift */; };
 		8088E48A227DAA8F00461802 /* AddArduino.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E489227DAA8F00461802 /* AddArduino.swift */; };
 		8088E48C227DAE5200461802 /* HelpsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E48B227DAE5200461802 /* HelpsViewController.swift */; };
+		8088E4902280349400461802 /* AddDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E48F2280349400461802 /* AddDevicesViewController.swift */; };
+		8088E492228034D700461802 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E491228034D700461802 /* TableViewCell.swift */; };
+		8088E494228034FA00461802 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E493228034FA00461802 /* CollectionViewCell.swift */; };
+		8088E4962280351000461802 /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4952280351000461802 /* CollectionViewHeader.swift */; };
+		8088E4982280352A00461802 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4972280352A00461802 /* CollectionViewModel.swift */; };
 		80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16E3122748C3200981525 /* AddExampleViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
@@ -98,6 +103,11 @@
 		8088E483227AD67E00461802 /* PMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PMViewController.swift; sourceTree = "<group>"; };
 		8088E489227DAA8F00461802 /* AddArduino.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddArduino.swift; sourceTree = "<group>"; };
 		8088E48B227DAE5200461802 /* HelpsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelpsViewController.swift; sourceTree = "<group>"; };
+		8088E48F2280349400461802 /* AddDevicesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDevicesViewController.swift; sourceTree = "<group>"; };
+		8088E491228034D700461802 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		8088E493228034FA00461802 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		8088E4952280351000461802 /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
+		8088E4972280352A00461802 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
 		80B16E3122748C3200981525 /* AddExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExampleViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -213,6 +223,30 @@
 			path = Charts;
 			sourceTree = "<group>";
 		};
+		8088E48D228032E000461802 /* HomePageVC */ = {
+			isa = PBXGroup;
+			children = (
+				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
+				8088E48E2280342F00461802 /* TCVC */,
+				8088E489227DAA8F00461802 /* AddArduino.swift */,
+				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
+				80B16E3122748C3200981525 /* AddExampleViewController.swift */,
+			);
+			path = HomePageVC;
+			sourceTree = "<group>";
+		};
+		8088E48E2280342F00461802 /* TCVC */ = {
+			isa = PBXGroup;
+			children = (
+				8088E48F2280349400461802 /* AddDevicesViewController.swift */,
+				8088E491228034D700461802 /* TableViewCell.swift */,
+				8088E4952280351000461802 /* CollectionViewHeader.swift */,
+				8088E493228034FA00461802 /* CollectionViewCell.swift */,
+				8088E4972280352A00461802 /* CollectionViewModel.swift */,
+			);
+			path = TCVC;
+			sourceTree = "<group>";
+		};
 		80B199092269C3DE002EFE23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -263,10 +297,7 @@
 				80C92AD522633AE200D265F1 /* AppDelegate.swift */,
 				80C92B0D2263685000D265F1 /* LoginpageViewController.swift */,
 				80C92B4C2267277000D265F1 /* Register */,
-				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
-				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
-				8088E489227DAA8F00461802 /* AddArduino.swift */,
-				80B16E3122748C3200981525 /* AddExampleViewController.swift */,
+				8088E48D228032E000461802 /* HomePageVC */,
 				8086D48122716663006CC125 /* SmartPageVC */,
 				806D3FCF2269CF6B008DBE49 /* MyPageVC */,
 			);
@@ -402,8 +433,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
+				8088E4962280351000461802 /* CollectionViewHeader.swift in Sources */,
 				8088E480227AD22500461802 /* TempratureViewController.swift in Sources */,
 				8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */,
+				8088E4982280352A00461802 /* CollectionViewModel.swift in Sources */,
 				8088E4742279E6D300461802 /* YCContentView.swift in Sources */,
 				8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */,
 				8088E42F2275EC6B00461802 /* HsuFPSView.swift in Sources */,
@@ -426,6 +459,7 @@
 				8088E48A227DAA8F00461802 /* AddArduino.swift in Sources */,
 				8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
+				8088E492228034D700461802 /* TableViewCell.swift in Sources */,
 				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,
 				80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */,
 				80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */,
@@ -434,7 +468,9 @@
 				80C92AEA22633B2100D265F1 /* HomepageViewController.swift in Sources */,
 				806D3FCE2269CF2E008DBE49 /* SystemLogViewController.swift in Sources */,
 				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,
+				8088E494228034FA00461802 /* CollectionViewCell.swift in Sources */,
 				8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */,
+				8088E4902280349400461802 /* AddDevicesViewController.swift in Sources */,
 				8088E4772279E6D300461802 /* YCTitleStyle.swift in Sources */,
 				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
 				8088E4312275ECA700461802 /* HsuBallRoatationView.swift in Sources */,
@@ -599,6 +635,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -623,6 +660,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

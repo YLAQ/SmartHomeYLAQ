@@ -116,7 +116,6 @@ class ModifyViewController: UIViewController, UITableViewDataSource, UITableView
         case "用户名":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userNameChange")
             self.present(vc, animated: true, completion: nil)
-            print("dian")
             
         case "密码":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userPassChange")

@@ -20,7 +20,7 @@ class RedLineViewController: UIViewController {
             self.img.image = UIImage(named: "red")
             self.lable.text = "警报：有人靠近！"
             self.lable.textColor = UIColor.red
-            self.showMsgbox(_message: "请注意，红外警报已被触发！")
+            self.showMsgbox(_message: "请注意，红外警报已被触发！",_title: "警报")
         }
 
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 15) {
@@ -32,7 +32,7 @@ class RedLineViewController: UIViewController {
             self.img.image = UIImage(named: "red")
             self.lable.text = "警报：有人靠近！"
             self.lable.textColor = UIColor.red
-            self.showMsgbox(_message: "请注意，红外警报已被触发！")
+            self.showMsgbox(_message: "请注意，红外警报已被触发！",_title: "警报")
         }
     }
     
@@ -45,7 +45,7 @@ class RedLineViewController: UIViewController {
     }
     
     //提示
-    func showMsgbox(_message: String, _title: String = "警报"){
+    func showMsgbox(_message: String, _title: String){
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
         let btnOK = UIAlertAction(title: "好的", style: .default, handler: nil)
         alert.addAction(btnOK)

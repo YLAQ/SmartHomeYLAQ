@@ -39,13 +39,15 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
     }
     
     func stopYLble() {
-        self.centralManager!.cancelPeripheralConnection(self.peripheral!)
+        self.centralManager?.cancelPeripheralConnection(self.peripheral!)
         print("已断开蓝牙连接")
         self.peripheral = nil
     }
     //当创建中心管理对象的时候，会回调如下方法用来判断中心设备的蓝牙状态。当蓝牙状态没问题的时候，可以根据外设服务的UUID来扫描需要的外设。所以自然就想到了要定义与外设UUID相同的字符串
     // 判断手机蓝牙状态
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        //界面传值
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddExamplepage") as! AddExampleViewController
         switch central.state {
         case .unknown:
             print("蓝牙未知")
@@ -56,10 +58,11 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         case .unauthorized:
             print("蓝牙未验证")
         case .poweredOff:
-            print("蓝牙未启动")
+            vc.bleState = "蓝牙未启动"
+            print(vc.bleState)
         case .poweredOn:
             print("蓝牙可用")
-            central.scanForPeripherals(withServices: [CBUUID.init(string: Service_UUID)], options: nil)
+        central.scanForPeripherals(withServices: [CBUUID.init(string: Service_UUID)], options: nil)
         @unknown default:
             fatalError()
         }
@@ -202,4 +205,5 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
     //        }
     //        print("postDatas数据库里现在有 \(postDatas())")
     //    }
+
 }

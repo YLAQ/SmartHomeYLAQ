@@ -110,7 +110,6 @@ class FamilyManageViewController: UIViewController, UITableViewDataSource, UITab
         case "家庭名称":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userNameChange")
             self.present(vc, animated: true, completion: nil)
-            print("dian")
             
         case "房间管理":
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "userPassChange")
