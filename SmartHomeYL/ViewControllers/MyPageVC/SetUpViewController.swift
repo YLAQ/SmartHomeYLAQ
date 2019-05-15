@@ -7,14 +7,15 @@
 //
 
 import UIKit
+import RealmSwift
 
 class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
-    var count = 0
+ 
     @IBOutlet weak var table: UITableView! //tableview
     var allnames:Dictionary<Int, [String]>? //cell名称
     var adHeaders:[String]? //头部名称
-    var imgs:[String] = ["tongzhi","qingli","shengyin","diqu","yuyan","guanyu"]
+    var imgs:Dictionary<Int, [String]>? //图片名称
+    var detail: Dictionary<Int, [String]>? //右侧内容名称
     
     override func loadView() {
         super.loadView()
@@ -31,11 +32,27 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
                 "地区","语言"]),
             2:[String]([
                 "关于YLAQ's"])
-        ];
+        ]
+        self.imgs =  [
+            0:[String]([
+                "tongzhi","qingli","shengyin"]),
+            1:[String]([
+               "diqu","yuyan"]),
+            2:[String]([
+               "guanyu"])
+        ]
         self.adHeaders = [
             "通用",
             "地区与语言",
             "关于"
+        ]
+        self.detail =  [
+            0:[String]([
+                "已开启","(0.00M)","关"]),
+            1:[String]([
+                "中国","简体中文"]),
+            2:[String]([
+                ""])
         ]
         //创建一个重用的单元格
         table.register(UITableViewCell.self,
@@ -86,17 +103,17 @@ class SetUpViewController: UIViewController, UITableViewDataSource, UITableViewD
         //为了提供表格显示性能，已创建完成的单元需重复使用
         let identify:String = "SwiftCell"
         //同一形式的单元格重复使用，在声明时已注册
-        let cell = tableView.dequeueReusableCell(
-            withIdentifier: identify, for: indexPath)
+        let cell = UITableViewCell(style: UITableViewCell.CellStyle.value1, reuseIdentifier: identify)
         cell.accessoryType = .disclosureIndicator
         
         let secno = indexPath.section
         var data = self.allnames?[secno]
+        var img = self.imgs?[secno]
+        var dtl = self.detail?[secno]
         cell.textLabel?.text = data![indexPath.row]
-    
+        cell.detailTextLabel?.text = dtl![indexPath.row]
         //cell图片
-        cell.imageView!.image = UIImage(named:imgs[count])
-        count = count + 1
+        cell.imageView!.image = UIImage(named: img![indexPath.row])
         //cell背景色
         cell.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.6)
         

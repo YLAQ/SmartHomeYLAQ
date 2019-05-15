@@ -38,9 +38,6 @@ class userPhoneChangeViewController: UIViewController {
         imgUser.image = UIImage(named:"sj")
         txt.leftView!.addSubview(imgUser)
         
-        let realm = try! Realm()
-        //打印出数据库地址
-        print(realm.configuration.fileURL ?? "")
     }
     
     override func didReceiveMemoryWarning() {

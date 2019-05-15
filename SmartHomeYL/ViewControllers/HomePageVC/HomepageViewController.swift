@@ -10,7 +10,7 @@ import UIKit
 import RealmSwift
 
 class HomepageViewController: UIViewController {
-
+    
     //判断username是否存在，存在即返回值，不存在即设为空
     func usernameexit() -> String {
         if (UserDefaults.standard.object(forKey: "userName") != nil) {
@@ -30,7 +30,7 @@ class HomepageViewController: UIViewController {
         //username为空则跳转登录界面，存在则return
         if username == "" {
             let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loginpage")
-
+            
             self.tabBarController!.present(vc, animated: true, completion: nil)
             //            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 5) {
             //                print("时间2：", Date())
@@ -62,31 +62,29 @@ class HomepageViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-         self.view.backgroundColor = UIColor(patternImage: UIImage(named:"lgbg.jpg")!)
-        weather.image = UIImage(named: "zhongyu")
+        self.view.backgroundColor = UIColor(patternImage: UIImage(named:"lgbg.jpg")!)
+        weather.image = UIImage(named: "qingtian")
         userName.text = "\(usernameexit()) 的家"
         //获取当前时间
         let now = Date()
         // 创建一个日期格式器
         let dformatter = DateFormatter()
-        dformatter.dateFormat = "yyyy年MM月dd"
+        dformatter.dateFormat = "yyyy年MM月dd日"
         print("当前日期时间：\(dformatter.string(from: now)) \(week())")
         date.text = "\(dformatter.string(from: now))  \(week())"
-        
-        
-//        tips.layer.borderWidth = 0.5
-//        tips.layer.borderColor = UIColor.lightGray.cgColor
-//        tips.layer.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5).cgColor
-//        tips.layer.cornerRadius = 5
-//        tips.layer.shadowOpacity = 0.8//设置阴影透明度
-//        tips.layer.shadowOffset = CGSize(width: 2, height: 2)//设置阴影偏移量
+        let realm = try! Realm()
+//        let item1 = dataState(value: [false,false,false,false])
+//        try! realm.write {
+//            realm.add(item1)
+//        }
+        //        tips.layer.borderWidth = 0.5
+        //        tips.layer.borderColor = UIColor.lightGray.cgColor
+        //        tips.layer.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5).cgColor
+        //        tips.layer.cornerRadius = 5
+        //        tips.layer.shadowOpacity = 0.8//设置阴影透明度
+        //        tips.layer.shadowOffset = CGSize(width: 2, height: 2)//设置阴影偏移量
         scrollView.layer.cornerRadius = 10
         
-        //数据库监听
-        let realm = try! Realm()
-//        try! realm.write {
-//            realm.deleteAll()
-//        }
         let result = realm.objects(getDatas.self)
         token = result.observe({ (changes: RealmCollectionChange) in
             switch changes {
@@ -100,9 +98,25 @@ class HomepageViewController: UIViewController {
                 
                 //查询所有环境数据信息
                 let items = realm.objects(getDatas.self)
-                self.tempLable.text = "\(items.last!.temprature)°C"
-                self.humiLable.text = "\(items.last!.humidity)%RH"
-                self.pmLable.text = "\(items.last!.pm)μg/m³"
+                let itemstate = realm.objects(dataState.self)
+                
+                if(itemstate[0].tempState == true) {
+                    self.tempLable.text = "\(items.last!.temprature)°C"
+                } else {
+                    self.tempLable.text = "暂无数据"
+                }
+                
+                if(itemstate[0].humiState == true) {
+                    self.humiLable.text = "\(items.last!.humidity)%RH"
+                } else {
+                    self.humiLable.text = "暂无数据"
+                }
+                
+                if(itemstate[0].pmState == true) {
+                    self.pmLable.text = "\(items.last!.pm)μg/m³"
+                } else {
+                    self.pmLable.text = "暂无数据"
+                }
                 break
             default:
                 break
@@ -111,11 +125,11 @@ class HomepageViewController: UIViewController {
     }
     
     //小贴士
-//    func tips() -> String {
-//        if <#condition#> {
-//            <#code#>
-//        }
-//    }
+    //    func tips() -> String {
+    //        if <#condition#> {
+    //            <#code#>
+    //        }
+    //    }
     
     //判断星期函数
     func week() -> String {

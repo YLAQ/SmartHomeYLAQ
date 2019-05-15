@@ -37,10 +37,7 @@ class userNameChangeViewController: UIViewController {
         let imgUser =  UIImageView(frame:CGRect(x: 11, y: 11, width: 22, height: 22))
         imgUser.image = UIImage(named:"yh")
         txt.leftView!.addSubview(imgUser)
-        
-        let realm = try! Realm()
-        //打印出数据库地址
-        print(realm.configuration.fileURL ?? "")
+
     }
     
     override func didReceiveMemoryWarning() {

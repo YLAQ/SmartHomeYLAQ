@@ -25,6 +25,12 @@ class YLBlueTooth:NSObject {
     let Service_UUID: String = "FFE0"
     let Characteristic_UUID: String = "FFE1"
     
+    var bluetoothState = "" //蓝牙状态
+    var connectState = false //蓝牙连接状态
+    var addDevicesConnect = false
+    var arduinoName = "xx"
+//    var postData = ""
+    
     override init() {
         super.init()
 //        self.centralManager = CBCentralManager.init(delegate:self, queue:.main)
@@ -47,21 +53,30 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
     // 判断手机蓝牙状态
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         //界面传值
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "AddExamplepage") as! AddExampleViewController
+        
         switch central.state {
         case .unknown:
             print("蓝牙未知")
+            bluetoothState = "蓝牙未知"
         case .resetting:
             print("蓝牙重置中")
+            bluetoothState = "蓝牙重置中"
         case .unsupported:
             print("蓝牙不支持")
+            bluetoothState = "蓝牙不支持"
         case .unauthorized:
             print("蓝牙未验证")
+            bluetoothState = "蓝牙未验证"
         case .poweredOff:
-            vc.bleState = "蓝牙未启动"
-            print(vc.bleState)
+            print("蓝牙未开启")
+            bluetoothState = "蓝牙未开启"
         case .poweredOn:
-            print("蓝牙可用")
+            print("蓝牙已开启")
+            bluetoothState = "蓝牙已开启"
+//            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loadingpage") as! LoadingpageViewController
+//            vc.bluetooth = "蓝牙可用"
+//            print("蓝牙可用")
+            
         central.scanForPeripherals(withServices: [CBUUID.init(string: Service_UUID)], options: nil)
         @unknown default:
             fatalError()
@@ -73,7 +88,7 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         self.peripheral = peripheral
         //根据外设名称来过滤
         print(peripheral.name ?? "没有找到蓝牙设备")
-        if (peripheral.name?.hasPrefix("MLT-BT05"))! {
+        if (peripheral.name?.hasPrefix(arduinoName))! {
             central.connect(peripheral, options: nil)
             print("找到外设")
         }
@@ -87,6 +102,7 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         peripheral.delegate = self
         //根据UUID进行服务的查找
         peripheral.discoverServices([CBUUID.init(string: Service_UUID)])
+        connectState = true
         print("连接成功")
     }
     
@@ -97,6 +113,8 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
     
     func centralManager(_ central: CBCentralManager, didDisconnectPeripheral peripheral: CBPeripheral, error: Error?) {
         print("断开连接")
+        self.peripheral = nil
+        connectState = false
         // 重新连接
 //        central.connect(peripheral, options: nil)
     }
@@ -122,9 +140,12 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         
         self.characteristic = service.characteristics?.last
         // 读取特征里的数据
-        //        peripheral.readValue(for: self.characteristic!)
-        // 订阅
         peripheral.setNotifyValue(true, for: self.characteristic!)
+        // 订阅
+//        if(subscribe){
+//            peripheral.setNotifyValue(true, for: self.characteristic!)
+//        }
+        
     }
     
     /** 订阅状态 */
@@ -159,12 +180,45 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         let item = getDatas()
         item.humidity = (arrayStrings[0] as NSString).doubleValue
         item.temprature = (arrayStrings[1] as NSString).doubleValue
+        item.redline = (arrayStrings[2] as NSString).doubleValue
+//        var itempm = (arrayStrings[3] as NSString).doubleValue
+        if (arrayStrings[3] as NSString).doubleValue > 0 {
+            item.pm = (arrayStrings[3] as NSString).doubleValue
+        } else {
+            item.pm = 0
+        }
+//        item.pm = (arrayStrings[2] as NSString).doubleValue
         item.date = Date(timeIntervalSinceNow: 0)
         //将时间转化为string格式作为x轴时间
         let dformatter = DateFormatter()
         dformatter.dateFormat = "HH:mm"
         item.time = dformatter.string(from: Date())
         print("item:\(item)")
+        
+        //当红外感应超过150，添加信息至logs表
+        if item.redline > 150 {
+            let log = logs()
+            log.type = "红外警报"
+            let dformatter = DateFormatter()
+            dformatter.dateFormat = "yyyy-MM-dd HH:mm"
+            log.time = dformatter.string(from: item.date)
+            try! realm.write {
+                realm.add(log)
+            }
+        }
+        
+        //当PM值感应超过150，添加信息至logs表
+        if item.pm > 150 {
+            let log = logs()
+            log.type = "烟雾警报"
+            let dformatter = DateFormatter()
+            dformatter.dateFormat = "yyyy-MM-dd HH:mm"
+            log.time = dformatter.string(from: item.date)
+            try! realm.write {
+                realm.add(log)
+            }
+        }
+        
         try! realm.write {
             realm.add(item)
         }
@@ -173,37 +227,14 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         
     }
     
-    /** 传出数据 */
-//    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
-//        let data = (self.textField.text ?? "empty input")!.data(using: String.Encoding.utf8)
-//        let postText = String.init(data: data!, encoding: String.Encoding.utf8)
-//        print("传出数据 \(postText ?? "error in post")")
+    func didClickPost(postData:String) {
+        let data = (postData).data(using: String.Encoding.utf8)
+        self.peripheral?.writeValue(data!, for: self.characteristic!, type: CBCharacteristicWriteType.withResponse)
+    }
     
-        //建立字典（传来的第ipost个postDatas，其中存储的temprature）
-        //        var postDictionary = [Int: String]()
-        //        postDictionary[ipost] = postText
-        
-        //存入数据库
-        //        let realm = try! Realm()
-        
-        
-        //        for _ in postDictionary {
-        //            let item = postDatas()
-        ////            item.id = ipost
-        //            item.postmsg = postText!
-        //            item.date = Date(timeIntervalSinceNow: 0)
-        //            try! realm.write {
-        //                realm.add(item)
-        //            }
-        //            print("发出的第\(ipost)个反馈是 \(item.postmsg)")
-        //            打印出数据库地址
-        //            print(realm.configuration.fileURL ?? "")
-        //            ipost += 1
-//    }
-    //        try! realm.write {
-    //            realm.deleteAll()
-    //        }
-    //        print("postDatas数据库里现在有 \(postDatas())")
-    //    }
+    /** 写入数据 */
+    func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        print("写入数据")
+    }
 
 }

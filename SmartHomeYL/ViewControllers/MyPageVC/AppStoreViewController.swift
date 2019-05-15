@@ -31,6 +31,7 @@ class AppStoreViewController: UIViewController {
                                      handler: {
                                         action in
                                         self.gotoAppStore()
+                                        self.back()
         })
         alertController.addAction(cancelAction)
         alertController.addAction(okAction)

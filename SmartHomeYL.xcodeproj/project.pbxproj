@@ -14,7 +14,6 @@
 		8086D45D2269DCF6006CC125 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45A2269DCF5006CC125 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		8086D45E2269DCF6006CC125 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; };
 		8086D45F2269DCF6006CC125 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8086D45B2269DCF6006CC125 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */; };
 		8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D464226ED249006CC125 /* ModifyViewController.swift */; };
 		8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D468226F38BC006CC125 /* FeedbackViewController.swift */; };
 		8086D47A22708D3F006CC125 /* userNameChangeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D47922708D3F006CC125 /* userNameChangeViewController.swift */; };
@@ -40,7 +39,13 @@
 		8088E494228034FA00461802 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E493228034FA00461802 /* CollectionViewCell.swift */; };
 		8088E4962280351000461802 /* CollectionViewHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4952280351000461802 /* CollectionViewHeader.swift */; };
 		8088E4982280352A00461802 /* CollectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4972280352A00461802 /* CollectionViewModel.swift */; };
-		80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B16E3122748C3200981525 /* AddExampleViewController.swift */; };
+		8088E49A2281779900461802 /* LoadingpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4992281779900461802 /* LoadingpageViewController.swift */; };
+		8088E4A02285A29F00461802 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8088E49F2285A29F00461802 /* MessageUI.framework */; };
+		8088E4A32286B1C700461802 /* FamilyNameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4A22286B1C700461802 /* FamilyNameViewController.swift */; };
+		8088E4A52286B1E600461802 /* FamilyAddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4A42286B1E600461802 /* FamilyAddressViewController.swift */; };
+		8088E4A922879A0A00461802 /* LogWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4A822879A0A00461802 /* LogWarningViewController.swift */; };
+		8088E4AB22879A1B00461802 /* LogFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */; };
+		8088E4AD22879A4500461802 /* LogInformsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4AC22879A4500461802 /* LogInformsViewController.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -82,7 +87,6 @@
 		806D3FD22269D02D008DBE49 /* SetUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetUpViewController.swift; sourceTree = "<group>"; };
 		8086D45A2269DCF5006CC125 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
 		8086D45B2269DCF6006CC125 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEquipmentViewController.swift; sourceTree = "<group>"; };
 		8086D464226ED249006CC125 /* ModifyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModifyViewController.swift; sourceTree = "<group>"; };
 		8086D468226F38BC006CC125 /* FeedbackViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedbackViewController.swift; sourceTree = "<group>"; };
 		8086D47922708D3F006CC125 /* userNameChangeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userNameChangeViewController.swift; sourceTree = "<group>"; };
@@ -108,7 +112,13 @@
 		8088E493228034FA00461802 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		8088E4952280351000461802 /* CollectionViewHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewHeader.swift; sourceTree = "<group>"; };
 		8088E4972280352A00461802 /* CollectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewModel.swift; sourceTree = "<group>"; };
-		80B16E3122748C3200981525 /* AddExampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExampleViewController.swift; sourceTree = "<group>"; };
+		8088E4992281779900461802 /* LoadingpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingpageViewController.swift; sourceTree = "<group>"; };
+		8088E49F2285A29F00461802 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		8088E4A22286B1C700461802 /* FamilyNameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyNameViewController.swift; sourceTree = "<group>"; };
+		8088E4A42286B1E600461802 /* FamilyAddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyAddressViewController.swift; sourceTree = "<group>"; };
+		8088E4A822879A0A00461802 /* LogWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWarningViewController.swift; sourceTree = "<group>"; };
+		8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFamilyViewController.swift; sourceTree = "<group>"; };
+		8088E4AC22879A4500461802 /* LogInformsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInformsViewController.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +146,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8088E4A02285A29F00461802 /* MessageUI.framework in Frameworks */,
 				8086D45E2269DCF6006CC125 /* Realm.framework in Frameworks */,
 				8086D45C2269DCF6006CC125 /* RealmSwift.framework in Frameworks */,
 				EC0550DE94EFED3B13ED0761 /* libPods-SmartHomeYL.a in Frameworks */,
@@ -159,8 +170,8 @@
 			children = (
 				80C92AED22633B3900D265F1 /* MypageViewController.swift */,
 				8086D4782270664A006CC125 /* Modify */,
-				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
-				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
+				8088E4A12286B19500461802 /* FamilyManage */,
+				8088E4A7228799DB00461802 /* SystemLog */,
 				8086D468226F38BC006CC125 /* FeedbackViewController.swift */,
 				8088E48B227DAE5200461802 /* HelpsViewController.swift */,
 				806D3FD02269CFCC008DBE49 /* AppStoreViewController.swift */,
@@ -227,10 +238,10 @@
 			isa = PBXGroup;
 			children = (
 				80C92AE922633B2100D265F1 /* HomepageViewController.swift */,
-				8088E48E2280342F00461802 /* TCVC */,
+				8088E4992281779900461802 /* LoadingpageViewController.swift */,
 				8088E489227DAA8F00461802 /* AddArduino.swift */,
-				8086D460226EC3BD006CC125 /* AddEquipmentViewController.swift */,
-				80B16E3122748C3200981525 /* AddExampleViewController.swift */,
+				8088E48F2280349400461802 /* AddDevicesViewController.swift */,
+				8088E48E2280342F00461802 /* TCVC */,
 			);
 			path = HomePageVC;
 			sourceTree = "<group>";
@@ -238,7 +249,6 @@
 		8088E48E2280342F00461802 /* TCVC */ = {
 			isa = PBXGroup;
 			children = (
-				8088E48F2280349400461802 /* AddDevicesViewController.swift */,
 				8088E491228034D700461802 /* TableViewCell.swift */,
 				8088E4952280351000461802 /* CollectionViewHeader.swift */,
 				8088E493228034FA00461802 /* CollectionViewCell.swift */,
@@ -247,9 +257,31 @@
 			path = TCVC;
 			sourceTree = "<group>";
 		};
+		8088E4A12286B19500461802 /* FamilyManage */ = {
+			isa = PBXGroup;
+			children = (
+				80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */,
+				8088E4A22286B1C700461802 /* FamilyNameViewController.swift */,
+				8088E4A42286B1E600461802 /* FamilyAddressViewController.swift */,
+			);
+			path = FamilyManage;
+			sourceTree = "<group>";
+		};
+		8088E4A7228799DB00461802 /* SystemLog */ = {
+			isa = PBXGroup;
+			children = (
+				806D3FCD2269CF2E008DBE49 /* SystemLogViewController.swift */,
+				8088E4A822879A0A00461802 /* LogWarningViewController.swift */,
+				8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */,
+				8088E4AC22879A4500461802 /* LogInformsViewController.swift */,
+			);
+			path = SystemLog;
+			sourceTree = "<group>";
+		};
 		80B199092269C3DE002EFE23 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8088E49F2285A29F00461802 /* MessageUI.framework */,
 				F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */,
 			);
 			name = Frameworks;
@@ -433,9 +465,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				80C92B1922671A3900D265F1 /* RegisterpageViewController.swift in Sources */,
+				8088E4A52286B1E600461802 /* FamilyAddressViewController.swift in Sources */,
+				8088E4A32286B1C700461802 /* FamilyNameViewController.swift in Sources */,
 				8088E4962280351000461802 /* CollectionViewHeader.swift in Sources */,
 				8088E480227AD22500461802 /* TempratureViewController.swift in Sources */,
-				8086D461226EC3BD006CC125 /* AddEquipmentViewController.swift in Sources */,
 				8088E4982280352A00461802 /* CollectionViewModel.swift in Sources */,
 				8088E4742279E6D300461802 /* YCContentView.swift in Sources */,
 				8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */,
@@ -444,14 +477,15 @@
 				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
 				8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */,
 				8086D47C22708D7D006CC125 /* userPassChangeViewController.swift in Sources */,
+				8088E49A2281779900461802 /* LoadingpageViewController.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
+				8088E4AD22879A4500461802 /* LogInformsViewController.swift in Sources */,
 				8088E4792279E77800461802 /* UIColor-Extension.swift in Sources */,
 				8086D47E22708D9D006CC125 /* userPhoneChangeViewController.swift in Sources */,
 				8088E48C227DAE5200461802 /* HelpsViewController.swift in Sources */,
 				80C92AD822633AE200D265F1 /* ViewController.swift in Sources */,
 				806D3FD32269D02D008DBE49 /* SetUpViewController.swift in Sources */,
 				8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */,
-				80B16E3222748C3200981525 /* AddExampleViewController.swift in Sources */,
 				8088E484227AD67E00461802 /* PMViewController.swift in Sources */,
 				80C92B0722634ACD00D265F1 /* database.swift in Sources */,
 				80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */,
@@ -460,6 +494,8 @@
 				8088E482227AD5E700461802 /* HumidityViewController.swift in Sources */,
 				80C92B502267296400D265F1 /* RegisterService.swift in Sources */,
 				8088E492228034D700461802 /* TableViewCell.swift in Sources */,
+				8088E4A922879A0A00461802 /* LogWarningViewController.swift in Sources */,
+				8088E4AB22879A1B00461802 /* LogFamilyViewController.swift in Sources */,
 				80C92B4E226727AC00D265F1 /* RegisterNetworkService.swift in Sources */,
 				80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */,
 				80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */,
