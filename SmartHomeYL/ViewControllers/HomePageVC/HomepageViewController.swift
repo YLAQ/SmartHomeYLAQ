@@ -51,6 +51,8 @@ class HomepageViewController: UIViewController {
     @IBOutlet weak var tips: UITextView! //小贴士
     @IBOutlet weak var scrollView: UIScrollView!
     var token : NotificationToken? = nil //监听
+    var tokenlog : NotificationToken? = nil //监听
+    
     
     //添加设备按钮点击
     @IBAction func addEquBtn(_ sender: Any) {
@@ -73,16 +75,16 @@ class HomepageViewController: UIViewController {
         print("当前日期时间：\(dformatter.string(from: now)) \(week())")
         date.text = "\(dformatter.string(from: now))  \(week())"
         let realm = try! Realm()
-//        let item1 = dataState(value: [false,false,false,false])
-//        try! realm.write {
-//            realm.add(item1)
-//        }
-        //        tips.layer.borderWidth = 0.5
-        //        tips.layer.borderColor = UIColor.lightGray.cgColor
-        //        tips.layer.backgroundColor = UIColor(red: 255/255, green: 255/255, blue: 255/255, alpha: 0.5).cgColor
-        //        tips.layer.cornerRadius = 5
-        //        tips.layer.shadowOpacity = 0.8//设置阴影透明度
-        //        tips.layer.shadowOffset = CGSize(width: 2, height: 2)//设置阴影偏移量
+    
+        
+        let states = realm.objects(dataState.self)
+        if(states.count < 1){
+            let item1 = dataState(value: [false,false,false,false])
+            try! realm.write {
+                realm.add(item1)
+            }
+        }
+        
         scrollView.layer.cornerRadius = 10
         
         let result = realm.objects(getDatas.self)
@@ -113,7 +115,7 @@ class HomepageViewController: UIViewController {
                 }
                 
                 if(itemstate[0].pmState == true) {
-                    self.pmLable.text = "\(items.last!.pm)μg/m³"
+                    self.pmLable.text = "\(items.last!.pm )μg/m³"
                 } else {
                     self.pmLable.text = "暂无数据"
                 }
@@ -122,14 +124,32 @@ class HomepageViewController: UIViewController {
                 break
             }
         })
+        
+        let log = realm.objects(logs.self)
+        tokenlog = log.observe({ (changes:  RealmCollectionChange) in
+            switch changes {
+            case .initial:
+                break
+            case .update(_, deletions: _, insertions: _, modifications: _):
+                //数据库发生更改（增删改）调用
+                debugPrint("首页数据更新")
+                
+                //查询所有环境数据信息
+                let itemstate = realm.objects(logs.self)
+                
+                switch itemstate.last!.type {
+                case "烟雾警报":
+                    self.showMsgbox(_message: "系统监测到烟雾浓度超标，请检查房间内是否有物体燃烧", _title: "烟雾警报❗️")
+                case "红外警报":
+                    self.showMsgbox(_message: "系统监测到红外感应，请检查门窗是否有异常", _title: "红外警报❗️")
+                default:
+                    break
+                }
+            default:
+                break
+            }
+        })
     }
-    
-    //小贴士
-    //    func tips() -> String {
-    //        if <#condition#> {
-    //            <#code#>
-    //        }
-    //    }
     
     //判断星期函数
     func week() -> String {
@@ -158,5 +178,12 @@ class HomepageViewController: UIViewController {
         }
     }
     
+    //提示
+    func showMsgbox(_message: String, _title: String){
+        let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
+        let btnOK = UIAlertAction(title: "我知道了", style: .default, handler: nil)
+        alert.addAction(btnOK)
+        self.present(alert, animated: true, completion: nil)
+    }
 }
 

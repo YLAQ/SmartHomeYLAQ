@@ -65,12 +65,14 @@ class LogWarningViewController: UIViewController {
                 time.text = timing
                 img.image = UIImage(named: "red")
                 title.text = "红外警报❗️"
-                content.text = "系统检测到红外感应"
+                content.text = "系统监测到红外感应"
+                
             case "烟雾警报":
                 time.text = timing
                 img.image = UIImage(named: "xiangyan")
                 title.text = "烟雾警报❗️"
-                content.text = "系统检测到烟雾浓度超标"
+                content.text = "系统监测到烟雾浓度超标"
+//
             default:
                 return
             }
@@ -87,6 +89,14 @@ class LogWarningViewController: UIViewController {
             drawItem(type: item.type,timing:item.time)
         }
         
+    }
+    
+    //提示
+    func showMsgbox(_message: String, _title: String){
+        let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
+        let btnOK = UIAlertAction(title: "我知道了", style: .default, handler: nil)
+        alert.addAction(btnOK)
+        self.present(alert, animated: true, completion: nil)
     }
 }
 

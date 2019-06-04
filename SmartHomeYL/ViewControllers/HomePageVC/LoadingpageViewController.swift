@@ -54,6 +54,13 @@ class LoadingpageViewController: UIViewController {
                 self.view.dismissLoading()
                 self.showMsgbox(_message: "快去首页查看数据吧~",_title: "设备连接成功(๑`▽´๑)۶")
             }
+        case "智能灯泡":
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+                
+                self.view.dismissLoading()
+                self.showMsgbox(_message: "快去首页查看数据吧~",_title: "设备连接成功(๑`▽´๑)۶")
+            }
+            
         case "风扇":
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 

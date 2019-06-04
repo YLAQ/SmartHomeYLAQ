@@ -115,6 +115,19 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         print("断开连接")
         self.peripheral = nil
         connectState = false
+        
+        //将所有设备断开连接
+        let realm = try! Realm()
+        let datas = realm.objects(dataState.self)
+        try! realm.write {
+            datas[0].tempState = false
+            datas[0].humiState = false
+            datas[0].pmState = false
+            datas[0].ledState = false
+            datas[0].redState = false
+            datas[0].lightState = false
+            datas[0].fanState = false
+        }
         // 重新连接
 //        central.connect(peripheral, options: nil)
     }
@@ -208,7 +221,7 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         }
         
         //当PM值感应超过150，添加信息至logs表
-        if item.pm > 150 {
+        if item.pm > 250 {
             let log = logs()
             log.type = "烟雾警报"
             let dformatter = DateFormatter()

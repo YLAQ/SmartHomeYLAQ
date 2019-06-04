@@ -359,12 +359,20 @@ extension AddDevicesViewController: UICollectionViewDelegateFlowLayout, UICollec
                 //界面跳转
                 self.present(vc, animated: true, completion: nil)
             }
-        //第五行 小家电
+        //第六行 小家电
         case 5:
             switch indexPath.row {
-            case 0: vc.loadId = "暂无"
-            //界面跳转
-            self.present(vc, animated: true, completion: nil)
+            case 0: vc.loadId = "风扇"
+            if(itemstate[0].fanState == false) {
+                //灯泡状态改变
+                try! realm.write {
+                    itemstate[0].fanState = !itemstate[0].fanState
+                }
+                //界面跳转
+                self.present(vc, animated: true, completion: nil)
+            } else {
+                self.alreadyConnect(_message: "再看看其他设备吧~", _title: "该设备已连接", numb:5)
+                }
                 
             default:
                 vc.loadId = "暂无"
@@ -449,6 +457,11 @@ extension AddDevicesViewController: UICollectionViewDelegateFlowLayout, UICollec
                 try! realm.write {
                     itemstate[0].lightState = !itemstate[0].lightState
                 }
+            case 5:
+                //风扇状态改变
+                try! realm.write {
+                    itemstate[0].fanState = !itemstate[0].fanState
+                }
             default:
                 return
             }
@@ -479,7 +492,20 @@ extension AddDevicesViewController: UICollectionViewDelegateFlowLayout, UICollec
             action in
             ble.addDevicesConnect = false
             ble.stopYLble()
+            //将所有设备断开连接
+            let realm = try! Realm()
+            let datas = realm.objects(dataState.self)
+            try! realm.write {
+                datas[0].tempState = false
+                datas[0].humiState = false
+                datas[0].pmState = false
+                datas[0].ledState = false
+                datas[0].redState = false
+                datas[0].lightState = false
+                datas[0].fanState = false
+            }
             self.view.dismissLoading()
+            self.showMsgbox(_message: "已断开Arduino连接",_title: "操作成功")
         })
         alert.addAction(btnOK)
         alert.addAction(btnCancle)

@@ -139,7 +139,7 @@ class TempratureViewController: UIViewController {
                     limitLine1.labelPosition = .rightBottom //位置
                     limitLine1.lineDashLengths = [4, 2] //虚线样式
                     //界限2
-                    let limitLine2 = ChartLimitLine(limit: 25, label: "🥵")
+                    let limitLine2 = ChartLimitLine(limit: 27, label: "🥵")
                     limitLine2.lineWidth = 1 //线宽
                     limitLine2.lineColor = UIColor(r: 255, g: 69, b: 0) //颜色
                     limitLine2.labelPosition = .rightBottom //位置
@@ -214,7 +214,7 @@ class TempratureViewController: UIViewController {
                     limitLine1.labelPosition = .rightBottom //位置
                     limitLine1.lineDashLengths = [4, 2] //虚线样式
                     //界限2
-                    let limitLine2 = ChartLimitLine(limit: 25, label: "🥵")
+                    let limitLine2 = ChartLimitLine(limit: 27, label: "🥵")
                     limitLine2.lineWidth = 1 //线宽
                     limitLine2.lineColor = UIColor(r: 255, g: 69, b: 0) //颜色
                     limitLine2.labelPosition = .rightBottom //位置

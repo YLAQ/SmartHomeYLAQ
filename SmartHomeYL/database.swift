@@ -50,6 +50,8 @@ class dataState:Object {
     @objc dynamic var redState = false
     //
     @objc dynamic var lightState = false
+    //
+    @objc dynamic var fanState = false
     
     @objc dynamic var date = Date()
 }

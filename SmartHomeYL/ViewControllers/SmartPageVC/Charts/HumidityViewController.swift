@@ -151,7 +151,7 @@ class HumidityViewController: UIViewController {
                 }
             case .update(_, deletions: _, insertions: _, modifications: _):
                 //数据库发生更改（增删改）调用
-                if(itemstate[0].tempState == true) {
+                if(itemstate[0].humiState == true) {
                     debugPrint("湿度表更新")
                     //数据库
                     var dataEntries = [ChartDataEntry]()

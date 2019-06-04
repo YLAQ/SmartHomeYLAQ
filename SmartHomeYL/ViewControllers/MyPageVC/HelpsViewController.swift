@@ -30,7 +30,7 @@ class HelpsViewController: UIViewController {
             insertPicture(UIImage(named: "1-1")!, mode:.fitTextView)
             insertString("\n\n2️⃣进入「添加设备」界面后，点击右上角蓝牙标识连接Arduino\n\n")
             insertPicture(UIImage(named: "1-2")!, mode:.fitTextView)
-            insertString("\n\n3️⃣系统显示Arduino连接成功后，即可在列表中选择自己想要连接的设备啦")
+            insertString("\n\n3️⃣系统显示Arduino连接成功后，即可在列表中选择自己想要连接的设备啦\n\n")
             insertPicture(UIImage(named: "1-3")!, mode:.fitTextView)
         case "2":
             header.text = "怎么对多个设备进行群组控制？"

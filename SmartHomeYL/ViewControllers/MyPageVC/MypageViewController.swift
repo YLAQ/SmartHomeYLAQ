@@ -94,11 +94,7 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
     }
     
     @IBAction func logoutBtn(_ sender: Any) {
-        //删除当前UserDefaults，退出用户
-        UserDefaults.standard.setValue("", forKey: "userName")
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loginpage")
-        //返回Loginpage
-        self.present(vc, animated: true, completion: nil)
+        showMsgboxCancle(_message: "您确定要退出登录吗",_title: "退出登录")
         
     }
     
@@ -216,5 +212,20 @@ class MypageViewController: UIViewController, UITableViewDataSource, UITableView
         super.didReceiveMemoryWarning()
     }
     
-    
+    //带取消的提示
+    func showMsgboxCancle(_message: String, _title: String){
+        let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
+        let btnCancle = UIAlertAction(title: "点错啦", style: .cancel, handler: nil)
+        let btnOK = UIAlertAction(title: "我要退出", style: .default, handler: {
+            action in
+            //删除当前UserDefaults，退出用户
+            UserDefaults.standard.setValue("", forKey: "userName")
+            let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Loginpage")
+            //返回Loginpage
+            self.present(vc, animated: true, completion: nil)
+        })
+        alert.addAction(btnOK)
+        alert.addAction(btnCancle)
+        self.present(alert, animated: true, completion: nil)
+    }
 }

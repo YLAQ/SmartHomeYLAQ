@@ -96,7 +96,7 @@ class FamilyNameViewController: UIViewController {
         let alert = UIAlertController(title: _title, message: _message, preferredStyle: UIAlertController.Style.alert)
         let btnOK = UIAlertAction(title: "好的", style: .default, handler: {
             action in
-            self.presentingViewController?.presentingViewController?.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: true, completion: nil)
         })
         alert.addAction(btnOK)
         self.present(alert, animated: true, completion: nil)

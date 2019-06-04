@@ -23,7 +23,6 @@
 		8086D485227166F2006CC125 /* ChartspageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8086D484227166F2006CC125 /* ChartspageViewController.swift */; };
 		8088E42F2275EC6B00461802 /* HsuFPSView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E42E2275EC6B00461802 /* HsuFPSView.swift */; };
 		8088E4312275ECA700461802 /* HsuBallRoatationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4302275ECA700461802 /* HsuBallRoatationView.swift */; };
-		8088E437227603E800461802 /* RedLineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E436227603E800461802 /* RedLineViewController.swift */; };
 		8088E4742279E6D300461802 /* YCContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4702279E6D200461802 /* YCContentView.swift */; };
 		8088E4752279E6D300461802 /* YCPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4712279E6D200461802 /* YCPageView.swift */; };
 		8088E4762279E6D300461802 /* YCTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4722279E6D200461802 /* YCTitleView.swift */; };
@@ -46,6 +45,7 @@
 		8088E4A922879A0A00461802 /* LogWarningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4A822879A0A00461802 /* LogWarningViewController.swift */; };
 		8088E4AB22879A1B00461802 /* LogFamilyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */; };
 		8088E4AD22879A4500461802 /* LogInformsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8088E4AC22879A4500461802 /* LogInformsViewController.swift */; };
+		80BDA0D9228C6CEB00979EDB /* Warning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80BDA0D8228C6CEB00979EDB /* Warning.swift */; };
 		80C92AD622633AE200D265F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD522633AE200D265F1 /* AppDelegate.swift */; };
 		80C92AD822633AE200D265F1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92AD722633AE200D265F1 /* ViewController.swift */; };
 		80C92ADB22633AE200D265F1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80C92AD922633AE200D265F1 /* Main.storyboard */; };
@@ -61,6 +61,8 @@
 		80C92B502267296400D265F1 /* RegisterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B4F2267296400D265F1 /* RegisterService.swift */; };
 		80C92B5222672A7600D265F1 /* RegisterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5122672A7600D265F1 /* RegisterViewModel.swift */; };
 		80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C92B5322672BD500D265F1 /* BindingExtensions.swift */; };
+		80CA0706229A6DE600300BC0 /* DesignpageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0705229A6DE600300BC0 /* DesignpageViewController.swift */; };
+		80CA0708229A739E00300BC0 /* DesignItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80CA0707229A739E00300BC0 /* DesignItemsViewController.swift */; };
 		80F85C8D2269B249001D6F6B /* FamilyManageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */; };
 		EC0550DE94EFED3B13ED0761 /* libPods-SmartHomeYL.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */; };
 /* End PBXBuildFile section */
@@ -96,7 +98,6 @@
 		8086D484227166F2006CC125 /* ChartspageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartspageViewController.swift; sourceTree = "<group>"; };
 		8088E42E2275EC6B00461802 /* HsuFPSView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuFPSView.swift; sourceTree = "<group>"; };
 		8088E4302275ECA700461802 /* HsuBallRoatationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HsuBallRoatationView.swift; sourceTree = "<group>"; };
-		8088E436227603E800461802 /* RedLineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedLineViewController.swift; sourceTree = "<group>"; };
 		8088E4702279E6D200461802 /* YCContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCContentView.swift; sourceTree = "<group>"; };
 		8088E4712279E6D200461802 /* YCPageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCPageView.swift; sourceTree = "<group>"; };
 		8088E4722279E6D200461802 /* YCTitleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YCTitleView.swift; sourceTree = "<group>"; };
@@ -119,6 +120,7 @@
 		8088E4A822879A0A00461802 /* LogWarningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogWarningViewController.swift; sourceTree = "<group>"; };
 		8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogFamilyViewController.swift; sourceTree = "<group>"; };
 		8088E4AC22879A4500461802 /* LogInformsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInformsViewController.swift; sourceTree = "<group>"; };
+		80BDA0D8228C6CEB00979EDB /* Warning.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Warning.swift; sourceTree = "<group>"; };
 		80C92AD222633AE200D265F1 /* SmartHomeYL.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SmartHomeYL.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80C92AD522633AE200D265F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		80C92AD722633AE200D265F1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -136,6 +138,8 @@
 		80C92B4F2267296400D265F1 /* RegisterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterService.swift; sourceTree = "<group>"; };
 		80C92B5122672A7600D265F1 /* RegisterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewModel.swift; sourceTree = "<group>"; };
 		80C92B5322672BD500D265F1 /* BindingExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BindingExtensions.swift; sourceTree = "<group>"; };
+		80CA0705229A6DE600300BC0 /* DesignpageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignpageViewController.swift; sourceTree = "<group>"; };
+		80CA0707229A739E00300BC0 /* DesignItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignItemsViewController.swift; sourceTree = "<group>"; };
 		80F85C8C2269B249001D6F6B /* FamilyManageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamilyManageViewController.swift; sourceTree = "<group>"; };
 		F4F3939566B44F1C3A11A6EA /* Pods-SmartHomeYL.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SmartHomeYL.debug.xcconfig"; path = "Target Support Files/Pods-SmartHomeYL/Pods-SmartHomeYL.debug.xcconfig"; sourceTree = "<group>"; };
 		F5564092012C89C9F7C85770 /* libPods-SmartHomeYL.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SmartHomeYL.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,7 +201,8 @@
 				80C92AEB22633B3100D265F1 /* SmartpageViewController.swift */,
 				8086D482227166BB006CC125 /* ScenepageViewController.swift */,
 				8086D484227166F2006CC125 /* ChartspageViewController.swift */,
-				8088E436227603E800461802 /* RedLineViewController.swift */,
+				80CA0705229A6DE600300BC0 /* DesignpageViewController.swift */,
+				80CA0707229A739E00300BC0 /* DesignItemsViewController.swift */,
 				8088E47E227AD20400461802 /* Charts */,
 			);
 			path = SmartPageVC;
@@ -274,6 +279,7 @@
 				8088E4A822879A0A00461802 /* LogWarningViewController.swift */,
 				8088E4AA22879A1B00461802 /* LogFamilyViewController.swift */,
 				8088E4AC22879A4500461802 /* LogInformsViewController.swift */,
+				80BDA0D8228C6CEB00979EDB /* Warning.swift */,
 			);
 			path = SystemLog;
 			sourceTree = "<group>";
@@ -473,11 +479,11 @@
 				8088E4742279E6D300461802 /* YCContentView.swift in Sources */,
 				8086D483227166BB006CC125 /* ScenepageViewController.swift in Sources */,
 				8088E42F2275EC6B00461802 /* HsuFPSView.swift in Sources */,
-				8088E437227603E800461802 /* RedLineViewController.swift in Sources */,
 				80C92B5422672BD500D265F1 /* BindingExtensions.swift in Sources */,
 				8086D469226F38BC006CC125 /* FeedbackViewController.swift in Sources */,
 				8086D47C22708D7D006CC125 /* userPassChangeViewController.swift in Sources */,
 				8088E49A2281779900461802 /* LoadingpageViewController.swift in Sources */,
+				80BDA0D9228C6CEB00979EDB /* Warning.swift in Sources */,
 				80C92AEE22633B3900D265F1 /* MypageViewController.swift in Sources */,
 				8088E4AD22879A4500461802 /* LogInformsViewController.swift in Sources */,
 				8088E4792279E77800461802 /* UIColor-Extension.swift in Sources */,
@@ -506,9 +512,11 @@
 				806D3FD12269CFCC008DBE49 /* AppStoreViewController.swift in Sources */,
 				8088E494228034FA00461802 /* CollectionViewCell.swift in Sources */,
 				8086D465226ED249006CC125 /* ModifyViewController.swift in Sources */,
+				80CA0708229A739E00300BC0 /* DesignItemsViewController.swift in Sources */,
 				8088E4902280349400461802 /* AddDevicesViewController.swift in Sources */,
 				8088E4772279E6D300461802 /* YCTitleStyle.swift in Sources */,
 				80C92AEC22633B3100D265F1 /* SmartpageViewController.swift in Sources */,
+				80CA0706229A6DE600300BC0 /* DesignpageViewController.swift in Sources */,
 				8088E4312275ECA700461802 /* HsuBallRoatationView.swift in Sources */,
 				8088E4762279E6D300461802 /* YCTitleView.swift in Sources */,
 			);
@@ -568,7 +576,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 864410187@qq.com (27AFBRS9RF)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -629,7 +637,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: 864410187@qq.com (27AFBRS9RF)";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -658,6 +666,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R393YN2P93;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -665,15 +674,17 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SmartHomeYL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -683,6 +694,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = R393YN2P93;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -690,15 +702,17 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SmartHomeYL/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = yuli.SmartHomeYL;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_ENABLE_BATCH_MODE = No;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

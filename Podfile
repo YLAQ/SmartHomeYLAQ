@@ -7,4 +7,5 @@ pod 'RxSwift'
 pod 'RxCocoa'
 pod 'Charts'
 pod 'LLCycleScrollView'
+pod 'RealmSwift'
 end

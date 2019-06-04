@@ -20,7 +20,7 @@ class ScenepageViewController: UIViewController {
         let scrollView = UIScrollView(frame:CGRect(x:0,y:0,width:w,height:588))
         scrollView.backgroundColor = UIColor(red: 250/255, green: 246/255, blue: 237/255, alpha: 0.5)
         //scrollView大小
-        scrollView.contentSize = CGSize(width:w,height:850)
+        scrollView.contentSize = CGSize(width:w,height:1180)
         self.view.addSubview(scrollView)
         //banner
         let imagesURLStrings = [
@@ -84,12 +84,45 @@ class ScenepageViewController: UIViewController {
         buttonrl.frame = CGRect.init(x: 0, y: sunsetbtn.ll_y + 120, width: w , height: 30)
         buttonrl.setTitle("天黑时开灯", for: .normal)
         
+        
+        //开风扇
+        let fanon = UIButton.init(type: .custom)
+        fanon.frame = CGRect.init(x: 0, y: sunsetbtn.ll_y + 155, width: w, height: 150)
+        fanon.setImage(UIImage(named:"fanon"), for: .normal)
+        scrollView.addSubview(fanon)
+        //按钮点击操作
+        fanon.addTarget(self, action:#selector(fanonfunc(sender:)), for: .touchUpInside)
+        
+        //文字说明
+        let fanontxt = UIButton.init(type: .custom)
+        scrollView.addSubview(fanontxt)
+        fanontxt.setTitleColor(UIColor(red: 50/255, green: 49/255, blue: 45/255, alpha: 0.8),for: .normal)
+        fanontxt.backgroundColor = UIColor(red: 253/255, green: 253/255, blue: 253/255, alpha: 0.3)
+        fanontxt.frame = CGRect.init(x: 0, y: fanon.ll_y + 120, width: w , height: 30)
+        fanontxt.setTitle("开启风扇", for: .normal)
+        
+        //关风扇
+        let fanoff = UIButton.init(type: .custom)
+        fanoff.frame = CGRect.init(x: 0, y: fanon.ll_y + 155, width: w, height: 150)
+        fanoff.setImage(UIImage(named:"fanoff"), for: .normal)
+        scrollView.addSubview(fanoff)
+        //按钮点击操作
+        fanoff.addTarget(self, action:#selector(fanofffunc(sender:)), for: .touchUpInside)
+        
+        //文字说明
+        let fanofftxt = UIButton.init(type: .custom)
+        scrollView.addSubview(fanofftxt)
+        fanofftxt.setTitleColor(UIColor(red: 50/255, green: 49/255, blue: 45/255, alpha: 0.8),for: .normal)
+        fanofftxt.backgroundColor = UIColor(red: 253/255, green: 253/255, blue: 253/255, alpha: 0.3)
+        fanofftxt.frame = CGRect.init(x: 0, y: fanoff.ll_y + 120, width: w , height: 30)
+        fanofftxt.setTitle("关闭风扇", for: .normal)
+        
         //文字说明
         let buttonzn = UIButton.init(type: .custom)
         //将按钮添加到视图中
         scrollView.addSubview(buttonzn)
         buttonzn.setTitleColor(UIColor(red: 50/255, green: 49/255, blue: 45/255, alpha: 0.8),for: .normal)
-        buttonzn.frame = CGRect.init(x: 0, y: sunsetbtn.ll_y + 170, width: 80, height: 30)
+        buttonzn.frame = CGRect.init(x: 0, y: fanoff.ll_y + 170, width: 80, height: 30)
         buttonzn.setTitle("智能编排", for: .normal)
         
         //智能编排
@@ -119,7 +152,7 @@ class ScenepageViewController: UIViewController {
         if(itemstate[0].lightState == true) {
             ble.didClickPost(postData: "C")
             print("日出关灯")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
                 self.showMsgbox(_message: "已将所有灯关闭~",_title: "操作成功")
             }
         } else {
@@ -129,14 +162,13 @@ class ScenepageViewController: UIViewController {
     }
     //开灯
     @objc func sunset(sender:UIButton){
-//        ble.didClickPost(postData: "B")
+        //        ble.didClickPost(postData: "B")
+        print("日落开灯")
         //查询所有记录
         let realm = try! Realm()
         let itemstate = realm.objects(dataState.self)
-        print("日落开灯")
         if(itemstate[0].lightState == true) {
             ble.didClickPost(postData: "B")
-            print("日出关灯")
             DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.showMsgbox(_message: "已将所有灯开启~",_title: "操作成功")
             }
@@ -144,9 +176,45 @@ class ScenepageViewController: UIViewController {
             self.showMsgbox(_message: "请先连接Arduino设备哦~",_title: "操作失败")
         }
     }
+    
+    //开风扇
+    @objc func fanonfunc(sender:UIButton){
+        //        ble.didClickPost(postData: "B")
+        print("打开风扇")
+        //查询所有记录
+        let realm = try! Realm()
+        let itemstate = realm.objects(dataState.self)
+        if(itemstate[0].fanState == true) {
+            ble.didClickPost(postData: "D")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                self.showMsgbox(_message: "已将风扇开启~",_title: "操作成功")
+            }
+        } else {
+            self.showMsgbox(_message: "请先连接Arduino设备哦~",_title: "操作失败")
+        }
+    }
+    
+    //关风扇
+    @objc func fanofffunc(sender:UIButton){
+        //        ble.postData = "B"
+        //查询所有记录
+        let realm = try! Realm()
+        let itemstate = realm.objects(dataState.self)
+        if(itemstate[0].fanState == true) {
+            ble.didClickPost(postData: "E")
+            print("关闭风扇")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+                self.showMsgbox(_message: "已将风扇关闭~",_title: "操作成功")
+            }
+        } else {
+            self.showMsgbox(_message: "请先连接Arduino设备哦~",_title: "操作失败")
+        }
+        
+    }
+    
     //智能编排
     @objc func diy(sender:UIButton){
-        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Redpage")
+        let vc = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "DesignItempage")
         //推出新的Controller
         self.present(vc, animated: true, completion: nil)
     }

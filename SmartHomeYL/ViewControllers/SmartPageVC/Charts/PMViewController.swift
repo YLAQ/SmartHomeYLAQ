@@ -134,35 +134,35 @@ class PMViewController: UIViewController {
                     chartDataSet.highlightLineWidth = 1 //十字线线宽
                     chartDataSet.highlightLineDashLengths = [4, 2] //使用虚线样式的十字线
                     //界限1
-                    let limitLine1 = ChartLimitLine(limit: 35, label: "☺️")
+                    let limitLine1 = ChartLimitLine(limit: 50, label: "☺️")
                     limitLine1.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine1)
                     limitLine1.lineColor = UIColor(r: 102, g: 205, b: 170) //颜色
                     limitLine1.labelPosition = .rightBottom //位置
                     limitLine1.lineDashLengths = [4, 2] //虚线样式
                     //界限2
-                    let limitLine2 = ChartLimitLine(limit: 75, label: "😀")
+                    let limitLine2 = ChartLimitLine(limit: 100, label: "😀")
                     limitLine2.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine2)
                     limitLine2.lineColor = UIColor(r: 205, g: 190, b: 112) //颜色
                     limitLine2.labelPosition = .rightBottom //位置
                     limitLine2.lineDashLengths = [4, 2] //虚线样式
                     //界限3
-                    let limitLine3 = ChartLimitLine(limit: 115, label: "😐")
+                    let limitLine3 = ChartLimitLine(limit: 150, label: "😐")
                     limitLine3.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine3)
                     limitLine3.lineColor = UIColor(r: 205, g: 186, b: 150) //颜色
                     limitLine3.labelPosition = .rightBottom //位置
                     limitLine3.lineDashLengths = [4, 2] //虚线样式
                     //界限4
-                    let limitLine4 = ChartLimitLine(limit: 150, label: "🙁")
+                    let limitLine4 = ChartLimitLine(limit: 200, label: "🙁")
                     limitLine4.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine4)
                     limitLine4.lineColor = UIColor(r: 139, g: 115, b: 85) //颜色
                     limitLine4.labelPosition = .rightBottom //位置
                     limitLine4.lineDashLengths = [4, 2] //虚线样式
                     //界限5
-                    let limitLine5 = ChartLimitLine(limit: 250, label: "🙄")
+                    let limitLine5 = ChartLimitLine(limit: 300, label: "🙄")
                     limitLine5.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine5)
                     limitLine5.lineColor = UIColor(r: 255, g: 69, b: 0) //颜色
@@ -174,7 +174,7 @@ class PMViewController: UIViewController {
                 }
             case .update(_, deletions: _, insertions: _, modifications: _):
                 //数据库发生更改（增删改）调用
-                if(itemstate[0].tempState == true) {
+                if(itemstate[0].pmState == true) {
                     debugPrint("PM表更新")
                     //数据库
                     var dataEntries = [ChartDataEntry]()
@@ -225,35 +225,35 @@ class PMViewController: UIViewController {
                     chartDataSet.highlightLineWidth = 1 //十字线线宽
                     chartDataSet.highlightLineDashLengths = [4, 2] //使用虚线样式的十字线
                     //界限1
-                    let limitLine1 = ChartLimitLine(limit: 35, label: "☺️")
+                    let limitLine1 = ChartLimitLine(limit: 50, label: "☺️")
                     limitLine1.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine1)
                     limitLine1.lineColor = UIColor(r: 102, g: 205, b: 170) //颜色
                     limitLine1.labelPosition = .rightBottom //位置
                     limitLine1.lineDashLengths = [4, 2] //虚线样式
                     //界限2
-                    let limitLine2 = ChartLimitLine(limit: 75, label: "😀")
+                    let limitLine2 = ChartLimitLine(limit: 100, label: "😀")
                     limitLine2.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine2)
                     limitLine2.lineColor = UIColor(r: 205, g: 190, b: 112) //颜色
                     limitLine2.labelPosition = .rightBottom //位置
                     limitLine2.lineDashLengths = [4, 2] //虚线样式
                     //界限3
-                    let limitLine3 = ChartLimitLine(limit: 115, label: "😐")
+                    let limitLine3 = ChartLimitLine(limit: 150, label: "😐")
                     limitLine3.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine3)
                     limitLine3.lineColor = UIColor(r: 205, g: 186, b: 150) //颜色
                     limitLine3.labelPosition = .rightBottom //位置
                     limitLine3.lineDashLengths = [4, 2] //虚线样式
                     //界限4
-                    let limitLine4 = ChartLimitLine(limit: 150, label: "🙁")
+                    let limitLine4 = ChartLimitLine(limit: 200, label: "🙁")
                     limitLine4.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine4)
                     limitLine4.lineColor = UIColor(r: 139, g: 115, b: 85) //颜色
                     limitLine4.labelPosition = .rightBottom //位置
                     limitLine4.lineDashLengths = [4, 2] //虚线样式
                     //界限5
-                    let limitLine5 = ChartLimitLine(limit: 250, label: "🙄")
+                    let limitLine5 = ChartLimitLine(limit: 300, label: "🙄")
                     limitLine5.lineWidth = 1 //线宽
                     self.chartView.leftAxis.addLimitLine(limitLine5)
                     limitLine5.lineColor = UIColor(r: 255, g: 69, b: 0) //颜色
