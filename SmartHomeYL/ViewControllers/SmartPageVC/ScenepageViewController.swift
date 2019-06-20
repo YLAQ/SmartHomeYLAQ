@@ -152,7 +152,7 @@ class ScenepageViewController: UIViewController {
         if(itemstate[0].lightState == true) {
             ble.didClickPost(postData: "C")
             print("日出关灯")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.showMsgbox(_message: "已将所有灯关闭~",_title: "操作成功")
             }
         } else {
@@ -185,8 +185,8 @@ class ScenepageViewController: UIViewController {
         let realm = try! Realm()
         let itemstate = realm.objects(dataState.self)
         if(itemstate[0].fanState == true) {
-            ble.didClickPost(postData: "D")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            ble.didClickPost(postData: "O")
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.showMsgbox(_message: "已将风扇开启~",_title: "操作成功")
             }
         } else {
@@ -201,9 +201,9 @@ class ScenepageViewController: UIViewController {
         let realm = try! Realm()
         let itemstate = realm.objects(dataState.self)
         if(itemstate[0].fanState == true) {
-            ble.didClickPost(postData: "E")
+            ble.didClickPost(postData: "F")
             print("关闭风扇")
-            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 2) {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
                 self.showMsgbox(_message: "已将风扇关闭~",_title: "操作成功")
             }
         } else {

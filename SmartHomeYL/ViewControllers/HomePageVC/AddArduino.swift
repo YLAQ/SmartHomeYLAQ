@@ -117,17 +117,17 @@ extension YLBlueTooth : CBCentralManagerDelegate, CBPeripheralDelegate {
         connectState = false
         
         //将所有设备断开连接
-        let realm = try! Realm()
-        let datas = realm.objects(dataState.self)
-        try! realm.write {
-            datas[0].tempState = false
-            datas[0].humiState = false
-            datas[0].pmState = false
-            datas[0].ledState = false
-            datas[0].redState = false
-            datas[0].lightState = false
-            datas[0].fanState = false
-        }
+//        let realm = try! Realm()
+//        let datas = realm.objects(dataState.self)
+//        try! realm.write {
+//            datas[0].tempState = false
+//            datas[0].humiState = false
+//            datas[0].pmState = false
+//            datas[0].ledState = false
+//            datas[0].redState = false
+//            datas[0].lightState = false
+//            datas[0].fanState = false
+//        }
         // 重新连接
 //        central.connect(peripheral, options: nil)
     }
